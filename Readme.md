@@ -1,10 +1,9 @@
 Tools:
-    - Python
-    - Jupyter Notebooks
-    - Github
-    - Pandas
-    - Scikit Learn
-    - Numpy
+- Python
+- Jupyter Notebooks
+- Github
+- Scikit Learn
+- Numpy
 
 Lernziele:
 - Nutzung von Python mit Jupyter Notebooks
