@@ -1,0 +1,654 @@
+% !TEX root = ../SFV15001_MdQM_Fertigungsmesstechnik_Rev02.tex
+
+\subsection{Messunsicherheit}
+\label{Sec:Messunsicherheit}
+
+\frame{\frametitle{Messergebnis und Messunsicherheit}
+\framesubtitle{Der Vergleich einer Messgr\"o{\ss}e mit einer Einheit gelingt nicht fehlerfrei.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+	 
+     		\item Messger\"ateabweichungen
+		\item Instabilit\"at der Messgr\"o{\ss}e
+		\item Umwelteinfl\"usse (z.B. Temperatur)
+		\item Beobachtereinfl\"usse
+		\item Es werden unterschieden:
+		\begin{itemize}
+			\item Systematische Messabweichungen
+			\begin{itemize}
+			\item bekannt o. unbekannt
+			\end{itemize}
+			\item Zuf\"allige Messabweichungen
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+		\vspace{.4cm}
+         	\begin{center}
+            		\includegraphics[width=0.75\textwidth]{Messfehler}
+        		\end{center}
+     \end{column}
+ \end{columns}
+  
+ \begin{definition}[Messergebnis]
+	Das Messergebnis ist der Sch\"atzwert des wahren Wertes einer Messgr\"o{\ss}e.
+	\end{definition}
+}
+
+%\frame{\frametitle{Quellen von Messabweichungen}
+%\framesubtitle{Quellen von Messabweichungen lassen sich gut im Ishikawa-Diagramm ermitteln.}
+%\begin{center}
+%            		\includegraphics[width=0.95\textwidth]{Ishikawa}
+%        		\end{center}
+%\begin{itemize}
+%\item Aufteilung systematisch/zuf\"allig, bekannt/unbekannt, Ausrei{\ss}er
+%\end{itemize}
+%}
+
+%%\frame{\frametitle{Auswirkungen der Messabweichungen}
+%%\framesubtitle{Messabweichungen formen die Verteilung der Stichproben f\"ur den Sch\"atzer.}
+%%\begin{columns}[t] 
+%%     \begin{column}[T]{5cm}
+%%     \hspace{.1cm}
+%%          \scriptsize 
+%%	\begin{tabular}{|l|c|l|}
+%%	\hline
+%%	Abweichung & Auswirkung & Einrechnung \\ \hline
+%%	\multirow{3}{40 pt}{bekannt, systematisch} & $\hat{\mu} = \mu + \gamma$& 		\multirow{3}{50 pt}{korrigieren, nicht in $U$ ber\"ucksichtigen} \\ & & \\ & &  \\ 		\hline
+%%	\multirow{2}{40 pt}{unbekannt, systematisch} & $\hat{\mu} = \mu + \gamma$& 
+%%	\multirow{2}{50 pt}{In $U$ einrechnen} \\ & &   \\ 
+%%	\hline 
+%%	\multirow{2}{40 pt}{zuf\"allig} & $\hat{\sigma} \geq \sigma$&
+%%	 \multirow{2}{50 pt}{In $U$ einrechnen}  \\ & &  \\ 	\hline
+%%	 \multirow{2}{40 pt}{Ausrei{\ss}er} & $\hat{\mu} \neq \mu$&
+%%	 \multirow{2}{50 pt}{nicht in $U$ einrechnen}  \\ & &  \\ 	\hline
+%%	\end{tabular}
+%%     \end{column}
+%%     \begin{column}[T]{.3cm}
+%%     \end{column}
+%%     	\begin{column}[T]{6cm} 
+%%	
+%%         	\begin{center}
+%%            		\setlength{\unitlength}{0.0200bp}%
+%%\begin{picture}(8000.00,9000.00)%
+%%\tiny
+%% \put(0,0){\includegraphics[scale=0.4]{Error}}%
+%%\put(1204,896){\makebox(0,0)[r]{\strut{}0}}%
+%%            \put(1204,1992){\makebox(0,0)[r]{\strut{}0.05}}%
+%%            \put(1204,3088){\makebox(0,0)[r]{\strut{}0.1}}%
+%%      \put(1204,4184){\makebox(0,0)[r]{\strut{}0.15}}%
+%%      
+%%      \put(1204,5280){\makebox(0,0)[r]{\strut{}0.2}}%
+%%      
+%%      \put(1204,6375){\makebox(0,0)[r]{\strut{}0.25}}%
+%%      
+%%      \put(1204,7471){\makebox(0,0)[r]{\strut{}0.3}}%
+%%      
+%%      \put(1204,8567){\makebox(0,0)[r]{\strut{}0.35}}%
+%%      
+%%      \put(1204,9663){\makebox(0,0)[r]{\strut{}0.4}}%
+%%      
+%%      \put(1372,616){\makebox(0,0){\strut{}0}}%
+%%      
+%%      \put(2597,616){\makebox(0,0){\strut{}2}}%
+%%      
+%%      \put(3821,616){\makebox(0,0){\strut{}4}}%
+%%      
+%%      \put(5046,616){\makebox(0,0){\strut{}6}}%
+%%      
+%%      \put(6270,616){\makebox(0,0){\strut{}8}}%
+%%      
+%%      \put(7495,616){\makebox(0,0){\strut{}10}}%
+%%      
+%%      \put(224,5279){\rotatebox{90}{\makebox(0,0){\strut{}Rel. Haeufigkeit}}}%
+%%      
+%%      \put(4433,196){\makebox(0,0){\strut{}x}}%
+%%    %}%
+%%    %\gplgaddtomacro\gplfronttext{%
+%%      
+%%      \put(6000,9460){\makebox(0,0)[l]{\strut{}$\hat{\mu}\! =\! \mu$}}%
+%%      
+%%      \put(6000,9180){\makebox(0,0)[l]{\strut{}$\hat{\mu}\! =\! \mu\!+\!\gamma$}}%
+%%      
+%%      \put(6000,8900){\makebox(0,0)[l]{\strut{}$\hat{\sigma}\! \geq\! \sigma$}}%
+%%    %}%
+%%   % \%gplbacktext
+%%   
+%%    %\gplfronttext
+%%  \end{picture}%
+%%        		\end{center}
+%%     \end{column}
+%% \end{columns}
+%%}
+%
+%\frame{\frametitle{Definition und Darstellung von Messunsicherheiten}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{5.5cm} 
+%     	\begin{itemize}
+%     		\item Korrekte Angabe eines Messergebnisses:
+%		\begin{itemize}
+%		\item Merkmalsbezeichnung
+%		\item Messresultat (Stellenzahl nicht gr\"o{\ss}er als Angabe der Messunsicherheit)
+%		\item Messunsicherheit $U$ (gleiche Einheit)
+%		\item Erweiterungsfaktor $k$ (f\"ur erweiterte Messunsicherheit)%\footnote{Erl\"auterung folgt}
+%		\end{itemize}
+%		\vspace{.5cm}
+%		\item Beispiel:
+%		\begin{equation*}
+%		A1 = \left( 120{,}037 \pm 0{,}007 \right) \mathrm{mm}, \, k = 2
+%		\end{equation*}
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{5.5cm} 
+%	\scriptsize
+%         	\begin{definition}[Messunsicherheit]
+%		[...] ein dem Messergebnis zugeordneter Parameter, der die Streuung der Werte kennzeichnet, die der Messgr\"o{\ss}e zugeordnet werden k\"onnen.
+%        		\end{definition}
+%		\begin{definition}[Erweiterte Messunsicherheit]
+%		[...] ein Kennwert, der einen Bereich um dass Messergebnis kennzeichnet, von dem erwartet wird, dass er einen gro{\ss}en Anteil der Werte umfasst, die der Messgr\"o{\ss}e zugeordnet werden k\"onnen.
+%        		\end{definition}
+%     \end{column}
+% \end{columns}
+%}
+
+
+\subsubsection{Verfahren gemäß GUM}
+\frame{\frametitle{Verfahren zur Absch\"atzung der Messunsicherheit}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{Verfahren A}
+     	\begin{itemize}
+     		\item Absch\"atzung aus vorliegender Stichprobe
+		\item $n$ Messwerte liegen vor und k\"onnen statistisch ausgewertet werden
+		\item Die Messwerte sind n\"aherungsweise normalverteilt
+		\begin{equation*}
+		u = \frac{s}{\sqrt{n}}
+		\end{equation*}
+		\item[] $s$: Standardabweichung der Stichprobe
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	\textbf{Verfahren B}
+         	\begin{itemize}
+     		\item Ermittlung der minimalen/maximalen Messabweichung $a$ durch Modellbildung
+		\item Ermittlung von Grenzen und Form der Verteilung der Messabweichungen
+		\begin{equation*}
+		u = \frac{a}{k}
+		\end{equation*}
+		\item[] $k = \sqrt{4}$ f\"ur Normalverteilung
+		\item[] $k = \sqrt{3}$ f\"ur Gleichverteilung
+		\item[] $k = \sqrt{6}$ f\"ur Dreiecksverteilung
+     	\end{itemize}
+     \end{column}
+ \end{columns}
+}
+
+
+
+\frame{\frametitle{Sch\"atzfunktionen}
+\framesubtitle{Eine Sch\"atzfunktion (Sch\"atzer) dient zur Ermittlung eines Parameter-Sch\"atzwertes aus empirischen Daten}
+\begin{columns}[t] 
+     \begin{column}[T]{5cm} 
+     	\begin{itemize}
+     		\item Grundlage: endlich viele Beobachtungen (Stichprobe)
+		\begin{itemize}
+			\item Sch\"atzer selbst fehlerbehaftet
+			\item H\"aufig Zufallsvariable
+		\end{itemize}
+		\item Schlu{\ss} auf Grundgesamtheit
+		\item Sch\"atzen einzelner Parameter der Verteilung
+		\begin{itemize}
+			\item Mittelwert
+			\item Median
+			\item Standardabweichung
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+		\begin{definition}[Zufallsvariable]
+		Als Zufallsvariable bezeichnet man eine messbare Funktion von einem Wahrscheinlichkeitsraum in einen Messraum.
+		\end{definition}
+		\begin{definition}[Sch\"atzfunktion]
+		Eine Sch\"atzfunktion dient dazu, aufgrund von empirischen Daten einer Stichprobe einen Schätzwert zu ermitteln und dadurch Informationen über unbekannte Parameter einer Grundgesamtheit zu erhalten.
+		\end{definition}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Sch\"atzfunktionen und Eigenschaften}
+\framesubtitle{G\"angige Sch\"atzfunktionen und w\"unschenswerte Eigenschaften}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Mittelwert
+		\begin{eqnarray*}
+		\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_{i} \\
+		\hat{\mu} = \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_{i} 
+		\end{eqnarray*}
+		\item Varianz 
+		\begin{eqnarray*}
+		S_{n}^{2} = \frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i} - \bar{X}\right)^{2} \\
+		\hat{\sigma}^{2} = s_{n}^{2} = \frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i} - \bar{x}\right)^{2}
+		\end{eqnarray*}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{itemize}
+     		\item Erwartungstreue:
+		\begin{itemize}
+		\item Erwartungswert der Sch\"atzfunktion gleich wahrem Parameter
+		\item Kein systematischer Fehler (Bias).
+		\end{itemize}
+		\item Konsistenz:
+		\begin{itemize}
+		\item Unsicherheit des Sch\"atzers nimmt f\"ur $n \rightarrow \infty$ ab
+		\end{itemize}
+		\item Effizienz:
+		\begin{itemize}
+		\item Minimale Varianz des Sch\"atzers
+		\end{itemize}
+		\item BLUE: Best Linear Unbiased Estimator
+     	\end{itemize}
+     \end{column}
+ \end{columns}
+}
+
+%\frame{\frametitle{Standardfehler}
+%\framesubtitle{Die Standardabweichung des Mittelwerts nimmt mit der Stichprobengr\"o{\ss}e $\backsim \frac{1}{\sqrt{n}}$ an.}
+%     	\begin{itemize}
+%     		\item Der Standardfehler des arithmetischen Mittels einer Stichprobe des Umfangs $n$ ist
+%		\begin{equation*}
+%			\sigma\left(\bar{X}\right) = \frac{\sigma}{\sqrt{n}}
+%		\end{equation*}
+%		mit $\sigma$ der Standardabweichung einer Einzelmessung.
+%		\item Herleitung: 
+%		\begin{itemize}
+%			\item Mittelwert einer Stichprobe: $\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_{i}$
+%			\item Sch\"atzer: $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_{i}$ mit $X_{i}$ unabh\"angig und identisch verteilt mit $\sigma^{2} < \infty$.
+%			\item Damit folgt f\"ur die Varianz $\Var\left(\bar{X}\right) = \left(\sigma\left(\bar{X}\right)\right)^{2}$: \tiny
+%			\begin{equation*}
+%					\Var\left(\bar{X}\right) = \Var\left(\frac{1}{n}\sum_{i=1}^{n} X_{i}\right) = \frac{1}{n^{2}} \Var\left(\sum_{i=1}^{n} X_{i}\right) = \frac{1}{n^{2}} \sum_{i=1}^{n}\Var\left(X_{i}\right) = \frac{1}{n^{2}} n \sigma^{2} = \frac{\sigma^{2}}{n}
+%			\end{equation*} \normalsize
+%			\item Damit folgt $\sigma\left(\bar{X}\right) = \frac{\sigma}{\sqrt{n}}$
+%		\end{itemize}
+%     	\end{itemize}
+%   }
+
+
+
+\frame{\frametitle{Bestimmung der Messunsicherheit durch Modellbildung}
+\begin{itemize}
+\item Ermitteln der Einflussgr\"o{\ss}en:
+\begin{itemize}
+\item Ermittlung systematischer Abweichungen, ggf. kompensieren.
+\item Einfluss des Normals
+\item Wiederholpr\"azision (Messunsicherheit bei wiederholter Messung an einem Messobjekt)
+\item Temperatureinfluss
+\end{itemize}
+\item Modellbildung Messgr\"o{\ss}e $y = f\left(x_{1}, x_{2}, \ldots, x_{n}\right)$
+\item Bestimmung kombinierte Standardunsicherheit $u_{c}$
+\begin{equation*}
+u_{c} = \sqrt{\left(\frac{\partial f}{\partial x_{1}} u_{x_{1}} \right)^{2} + \left(\frac{\partial f}{\partial x_{2}} u_{x_{n}} \right)^{2} + \ldots + \left(\frac{\partial f}{\partial x_{n}} u_{x_{n}}\right)^{2}}
+\end{equation*}
+\item Vereinfachung f\"ur Linearit\"at von $f$ und gleichem Gewicht der $x_{i}$
+\begin{equation*}
+u_{c} = \sqrt{u^{2}_{x_{1}} + u^{2}_{x_{2}} + \ldots + u^{2}_{x_{n}}}
+\end{equation*}
+\end{itemize}
+}
+
+
+\subsubsection{Bestimmung der Messunsicherheit durch Monte Carlo Simulation, Faltungsintegrale}
+
+
+%\offslide{Warum ein weiteres Verfahren?}
+
+%\frame{\frametitle{Kombinierte Wahrscheinlichkeitsdichte}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item Experiment: Wurf mit zwei W\"urfeln
+%		\item Einzelne W\"urfel gleichverteilt
+%		\item Summe dreiecksverteilt
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{6cm} 
+%         	\begin{center}
+%		 %\pgfplotsset{width=3cm,compat=1.12}
+%		\begin{tikzpicture}[scale = 0.5]
+%            \begin{axis}[
+%                ybar,
+%                ymin=0, xmin = 1, xmax = 6
+%            ]
+%            \addplot +[
+%                hist={
+%                    bins=6,
+%%                    data min=1,
+%%                    data max=6
+%                }   
+%            ] table [y=W1] {Faltung.dat};
+%            \end{axis}
+%            %\draw[draw = red, ultra thick] (3.41,0) -- (3.41,5.7); 
+%            \end{tikzpicture}
+%            \begin{tikzpicture}[scale = 0.5]
+%            \begin{axis}[
+%                ybar,
+%                ymin=0, xmin = 1, xmax = 6
+%            ]
+%            \addplot +[
+%                hist={
+%                    bins=6,
+%%                    data min=1,
+%%                    data max=6
+%                }   
+%            ] table [y=W2] {Faltung.dat};
+%            \end{axis}
+%            %\draw[draw = red, ultra thick] (3.41,0) -- (3.41,5.7); 
+%            \end{tikzpicture}
+%
+%% \begin{tikzpicture}[scale = 0.8]
+%%            \begin{axis}[
+%%                ybar,
+%%                ymin=0, xmin = 2, xmax = 12
+%%            ]
+%%            \addplot +[
+%%                hist={
+%%                    bins=11,
+%%%                    data min=1,
+%%%                    data max=6
+%%                }   
+%%            ] table [y=S] {Faltung.dat};
+%%            \end{axis}
+%%            %\draw[draw = red, ultra thick] (3.41,0) -- (3.41,5.7); 
+%%            \end{tikzpicture}
+%%
+%%        		\end{center}
+%%     \end{column}
+%% \end{columns}
+%%}
+%%
+%%\offslide{Faltungsintegral}
+
+\frame{\frametitle{Monte-Carlo-Simulation: Motivation}
+\framesubtitle{Monte-Carlo-Simulationen (MC-Simulationen) k\"onnen zur Ermittlung kombinierter Wahrscheinlichkeiten eingesetzt werden.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Statistische Verfahren:
+		\begin{itemize}
+		\item Hohe Stichprobenzahlen f\"ur Validit\"at n\"otig
+		\item Zeitaufw\"andig
+		\item Teuer
+		\end{itemize}
+		\item Fehlerfortpflanzung:
+		\begin{itemize}
+		\item Analytisch teils komplex
+		\item Konservativ bei nicht normalverteilten Zufallsvariablen:
+		\begin{itemize}
+		\item Ann\"aherung Gleichverteilung durch Normalverteilung
+		\end{itemize}
+		\end{itemize}
+	     	\end{itemize}
+     \end{column}
+     	\begin{column}{6cm} 
+         	\begin{center}
+            		\include{MCIntro}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Monte-Carlo-Simulation: Grundlagen}
+\framesubtitle{MC-Simulationen basieren auf der h\"aufig wiederholten Simulation von Zufallsexperimenten.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Grundlage:
+		\begin{itemize}
+		\item Gesetz der gro{\ss}en Zahlen
+		\item Pseudozufallsverteilungen der Parameter erzeugen
+		\item Resultierendes Ergebnis bilden
+		\item Analyse der Lage- und Streuparameter
+		\end{itemize}
+		\item Vorteile:
+		\begin{itemize}
+		\item Einfache Modellierung
+		\item Einfache Durchf\"uhrung
+		\end{itemize}
+		\item Nachteil:
+		\begin{itemize}
+		\item Korrektheit der L\"osungen nicht immer einfach zu beurteilen
+		\end{itemize}
+	     	\end{itemize}
+     \end{column}
+     	\begin{column}{6cm} 
+         	\begin{center}
+            		\include{MCIntro}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Vergleich der Verfahren des GUM und MC-Simulationen}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{MC-Simulation}
+     	\begin{itemize}
+     		\item Eingangsgr\"o{\ss}en $x_{i}$ werden explizit W-Dichtefunktionen zugeordnet
+		\item Keine partiellen Ableitungen ben\"otigt, k\"onnen bereitgestellt werden
+		\item Keine Einschr\"ankung in Form der Verteilung von $y$
+		\item Allgemeine, k\"urzest m\"ogliche, Konfidenzintervalle
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	\textbf{GUM Verfahren A/B}
+         	\begin{itemize}
+     		\item Eingangsgr\"o{\ss}en $x_{i}$ werden Sch\"atzwert und Standardunsicherheit zugeordnet
+		\item Empfindlichkeitskoeffizienten und Taylor-Approximation ben\"otigt
+		\item Beschr\"ankung auf Gau{\ss}- oder t-Verteilung
+		\item Um den Sch\"atzwert symmetrische Konfidenzintervalle
+     	\end{itemize}
+     \end{column}
+ \end{columns}
+}
+
+
+\frame{\frametitle{Monte-Carlo-Simulation: Beispiel}
+\framesubtitle{Parameter eines Produktes variieren h\"aufig in Form von Gleich- oder Dreiecksverteilungen.}
+\begin{columns}[t] 
+     \begin{column}[T]{5cm} 
+     \begin{center}
+     \include{Federspeicher}
+     \end{center}
+     	\begin{itemize}
+     		\item Kraft eines Federspeicherzylinders 
+		\begin{equation*}
+		\begin{split}
+			\triangle F &= \\ &c\left(\triangle h_{1} + \triangle l + \triangle d + \triangle h_{2}  \right)
+		\end{split}
+		\end{equation*}
+		\item MC-Simulation mit N = 10000
+    	\end{itemize}
+     \end{column}
+     	\begin{column}{6cm} 
+         	\begin{center}
+         		\vspace{1cm}
+            		\input{MCExample}
+        		\end{center}
+		
+     \end{column}
+ \end{columns}
+}
+
+
+
+
+\frame{\frametitle{MC-Simulation zur Bestimmung der Messunsicherheit}
+\framesubtitle{Nicht normatives Beiblatt 1 zu DIN V ENV 13005}
+\begin{itemize}
+\item MC-Simulation als Erg\"anzung zu Verfahren A und B des ``GUM'', z.B. falls
+\begin{itemize}
+		\item Linearisierung des Modells zu unangemessener Darstellung f\"uhrt, z.B. durch Sensibilit\"at
+		\item Partielle Ableitungen schwierig oder unm\"oglich zu finden sind
+		\item die Wahrscheinlichkeitsdichte merklich von Gau{\ss}- oder $t$-Verteilung abweicht , z.B. durch Asymmetrie
+		\item Wiederholte Versuche zur Bestimmung der Messunsicherheit nicht m\"oglich sind
+		\item Modell des Messprozesses nicht in explizite Form gebracht werden kann
+		\item Unsicherheitsbeitr\"age nicht n\"aherungsweise von der gleichen Gr\"o{\ss}enordnung sind 
+		\end{itemize}
+	\item MC-Simulation ist im Einklang mit GUM
+	\begin{itemize}
+		\item Ermittlung von Erwartungswert, Standardunsicherheit und \"Uberdeckungsintervall der Messgr\"o{\ss}e $y$
+		\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Ablauf Erstellung einer MC-Simulation}
+\framesubtitle{}
+     	\begin{enumerate}[1)]
+     		\item Modellierung des Systems:
+		\begin{enumerate}[a)]
+		\item Ausgangsgr\"o{\ss}e $y$
+		\item Eingangsgr\"o{\ss}en $\mathbf{x} = \left(x_{1}, \ldots, x_{i}\right)^{T}$
+		\item Modell als Beziehung zwischen $y$ und $\mathbf{x}$, nicht zwingend explizit
+		\item Zuordnung von Wahrscheinlichkeitsdichtefunktionen zu den $x_{i}$
+		\begin{itemize}
+		\item $x_{i}$ unabh\"angig: individuelle W-Verteilungen, z.B. Gau{\ss}-, Gleichverteilung etc.
+		\item $x_{i}, x_{j}$ abh\"angig: Gemeinsame W-Verteilung
+		\end{itemize}
+		\end{enumerate}
+		\item Fortpflanzung: Simulation des Systems
+		\begin{enumerate}[a)]
+		\item Bestimmung des Wertes $y$ aus den $x_{i}$
+		\item Werte der $x_{i}$ als Pseudozufallszahlen
+		\end{enumerate}
+		\item Zusammenfassung:
+		\begin{enumerate}[a)]
+		\item Bestimmung des Erwartungswerts $\E(y)$\footnote{Nicht alle W-Verteilungen weisen einen Erwartungswert auf.}
+		\item Bestimmung der Standardabweichung $\sigma_{y}$\footnote{Nicht alle W-Verteilungen weisen eine Standardabweichung auf.}
+		\item Bestimmung des Konfidenzintervalls (\"Uberdeckungsintervalls), das $y$ mit einer festgelegten Wahrscheinlichlichkeit enth\"alt
+		\end{enumerate}
+     	\end{enumerate}
+}
+
+\frame{\frametitle{Bestimmung der Fortpflanzung}
+\framesubtitle{Neben analytischen und statistischen Methoden sind MC-Simulationen zul\"assig und effizient. Verschiedene W-Verteilungen und nichtlineare Systemfunktionen machen sie notwendig.}
+\begin{picture}(340,170)(-130,-85)
+\thicklines
+\put(-70,-15){
+\put(-25,0){\vector(1,0){50}}
+\put(0,0){\vector(0,1){30}}
+\put(-15,0){\line(0,1){15}}
+\put(15,0){\line(0,1){15}}
+\put(-15,15){\line(1,0){30}}
+\put(40,10){\vector(1,0){30}}
+\put(-5, -8){$x_{2}$}
+}
+\put(-70,30){
+\put(-25,0){\vector(1,0){50}}
+\put(0,0){\vector(0,1){30}}
+\put(-15,0){\line(1,1){15}}
+\put(15,0){\line(-1,1){15}}
+\put(40,10){\vector(1,0){30}}
+\put(-5, -8){$x_{1}$}
+}
+
+\put(-70,-60){
+\put(-25,0){\vector(1,0){50}}
+\put(0,0){\vector(0,1){30}}
+\qbezier(-20,0)(-12,2)(-8,10)
+\qbezier(-8,10)(-4,21)(0,23)
+\qbezier(20,0)(12,2)(8,10)
+\qbezier(8,10)(4,21)(0,23)
+\put(40,10){\vector(1,0){30}}
+\put(-5, -8){$x_{3}$}
+}
+
+\put(150,-15){
+\put(-40,0){\vector(1,0){80}}
+\put(0,0){\vector(0,1){50}}
+\qbezier(-20,0)(-10,0)(-8,10)
+\qbezier(-8,10)(-3,40)(0,40)
+\qbezier(40,0)(23,0)(20,10)
+\qbezier(20,10)(10,40)(0,40)
+\put(-70,10){\vector(1,0){30}}
+\put(-3, -8){$y$}
+}
+
+
+\put(40,-5){\oval[3](60,120)}
+\put(20,-8){$y = f\left(\mathbf{x}\right)$}
+\end{picture}
+}
+
+
+\frame{\frametitle{W-Dichtefunktionen f\"ur die Eingangsgr\"o{\ss}en}
+\framesubtitle{}
+\begin{itemize}
+\item Allgemein: $\mathbf{x}$ wird gemeinsame PDF zugeordnet
+\item Unabh\"angigen $x_{i}$ werden einzelne PDF zugewiesen
+\item Allgemein: Bestimmung PDF gem\"a{\ss} Bayes-Theorem oder Prinzip der maximalen Entropie
+\item Praktisch h\"aufig auftretende F\"alle: \cite[S. 34f.]{en13005}
+	\begin{itemize}
+		\item Rechteckverteilung: Toleranzb\"ander
+		\item $\arcsin$-Verteilung (U-f\"ormig): Sinusf\"ormige periodische Schwingungen
+		\item Gau{\ss}-Verteilung: Schwankung durch viele Einflussfaktoren (Zentraler GWS)
+		\item $t$-Verteilung: Modellierung aus endlich vielen Anzeigewerten
+		\item Exponential-Verteilung: Linkssteile Verteilung f\"ur positive Gr\"o{\ss}en
+	\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Voraussetzungen f\"ur Anwendbarkeit und G\"ultigkeit der MC-Simulation}
+\framesubtitle{}
+\begin{itemize}
+\item Es ist $f$ stetig bez\"uglich der $x_{i}$ in der Nachbarschaft der besten Sch\"atzwerte $\hat{x}_{i}$
+\item Die Verteilungsfunktion f\"ur $y$ ist streng wachsend
+\item Die Wahrscheinlichkeitsdichtefunktion (PDF) f\"ur $y$ ist
+	\begin{itemize}
+		\item stetig \"uber dem Intervall, f\"ur das die PDF streng positiv ist
+		\item unimodal
+		\item streng wachsend (oder 0) links vom Modalwert und streng fallend (oder 0) rechts vom Modalwert
+		\end{itemize}
+	\item Es existieren $\E(y)$ und $\Var(y)$
+	\begin{itemize}
+		\item[$\rightarrow$] Gew\"ahrleistet stochastische Konvergenz mit steigendem $M$ 
+	\end{itemize}
+	\item Es ist die Zahl der Monte-Carlo-Versuche $M$ ausreichend gro{\ss} gew\"ahlt
+	\begin{itemize}
+		\item[$\rightarrow$] Gew\"ahrleistet Zuverl\"assigkeit der stochastischen Information
+		\end{itemize}
+\end{itemize}
+}
+
+%\offslide{Weitere Anwendungen der MC-Simulation}
+
+\frame{\frametitle{Praktische Umsetzung einer MC-Simulation}
+\framesubtitle{Die hohe Anzahl Versuche $M$ macht effiziente Software n\"otig.}
+\begin{enumerate}
+%\item Software: Hohe Anzahl Versuche $M$ n\"otig, daher Effizienz wichtig
+\item $M$ w\"ahlen:
+	\begin{itemize}
+		\item Da MC-Simulationen Zufallsexperimente sind, kann kein festes $M$ Korrektheit des Algorithmus garantieren
+		\item F\"ur Signifikanzniveau $\alpha$: $M \gg \frac{1}{1-\alpha}$, z.B. $M \geq 10^{4} \frac{1}{1-\alpha}$
+		\item Alternativ: Adaptive Verfahren
+	\end{itemize}
+	\item Erzeugung von Zufallszahlen f\"ur $\mathbf{x}_{r}$ aus den gew\"ahlten PDF
+	\begin{itemize}
+		\item Pseudozufallszahlengenerator muss \"uber gewisse Eigenschaften verf\"ugen, z.B. Sequenzl\"ange
+		\end{itemize}
+	\item Bestimmung der Werte $y_{r} = f\left(\mathbf{x}_{r}\right)$ f\"ur $r = 1, \ldots, M$
+	\item Diskrete Darstellung der Verteilungsfunktion f\"ur die Ausgangsgr\"o{\ss}e
+	\item Sch\"atzung der Ausgangsr\"o{\ss}e und der beigeordneten Standardunsicherheit
+	\begin{itemize}
+		\item $\bar{y} = \frac{1}{M} \sum_{i = 1}^{M} y_{i}$
+		\item $s^{2}\left(\bar{y}\right) = \frac{1}{M-1} \sum_{i = 1}^{M} \left(y_{i} - \bar{y}\right)^{2} $
+	\end{itemize}
+\end{enumerate}
+}
+

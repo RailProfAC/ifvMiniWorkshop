@@ -1,0 +1,158 @@
+\documentclass[10pt,slidestop,compress,mathserif]{beamer}
+\usepackage{etex}
+%\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2
+%\usetheme{Singapore} % Beamer theme v 3.0
+\usecolortheme{seagull} % Beamer color theme
+%\usepackage{etex}
+%\usepackage[round]{natbib}
+%\useoutertheme[subsection = false]{smoothbars}
+\useinnertheme{rectangles}
+%\usepackage{bibentry}
+\usepackage{graphicx}
+\usepackage{epigraph}
+\usepackage{makeidx}
+\usepackage[]{amsmath}
+\usepackage[]{amssymb}
+\usepackage{color}
+\usepackage{pict2e}
+\usepackage{algorithm2e}
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{keyval}
+\usepgfmodule{shapes}
+\usepackage{pgfplots}
+\usepackage{sansmath}
+\usepackage{pgfgantt}
+\usetikzlibrary{arrows}
+\usetikzlibrary{graphs, automata, spy, positioning}
+\usetikzlibrary{shapes.gates.logic.US,trees}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{pdfpages}
+\pgfplotsset{width=6cm}
+
+
+\definecolor{RYB1}{RGB}{240,249,232}
+\definecolor{RYB2}{RGB}{186,228,188}
+\definecolor{RYB3}{RGB}{123,204,196}
+\definecolor{RYB4}{RGB}{67,162,202}
+\definecolor{RYB5}{RGB}{18,104,172}
+
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{mint}{cmyk}{75,0,40,0}
+\definecolor{mint}{rgb}{32,178,170}
+\graphicspath{{../../figures/}}
+
+\mode<handout>{
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+}
+
+\AtBeginSection{\frame{\sectionpage}}
+\AtBeginSubsection{\frame{\subsectionpage}}
+\newtranslation[to=ngerman]{Section}{Teil}
+\newtranslation[to=ngerman]{Subsection}{Abschnitt}
+
+\setbeamersize{text margin left=.8cm, text margin right=.8cm}
+
+%\setbeamertemplate{frametitle}{%
+%    \nointerlineskip%
+%    \begin{beamercolorbox}[wd=\paperwidth,ht=2.0ex,dp=0.6ex]{frametitle}
+%        \hspace*{1ex}\insertframetitle%
+%    \end{beamercolorbox}%
+%}
+
+\newcommand\MyBox[2]{
+  \fbox{\lower0.75cm
+    \vbox to 1.7cm{\vfil
+      \hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+      \vfil}%
+  }%
+}
+
+\pgfmathdeclarefunction{norm}{3}{%
+                      \pgfmathparse{sqrt(0.5*#3/pi)*exp(-0.5*#3*(#1-#2)^2)}%
+                    }
+\begin{document}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\tikzstyle{element} = [draw,rectangle, align = center, text width = 2.5 cm, node distance = 1.25 cm]
+
+% Formalia
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\mum}{\operatorname{\mu m}}
+\newcommand{\E}{\operatorname{E}}
+\newcommand{\offslide}[2]{\frame{\frametitle{ \includegraphics[scale=0.01] {Off}\hspace{1.5mm} #1}
+\framesubtitle{#2}
+}}
+\newcommand{\source}[1]{\rotatebox{90}{\tiny \color{gray} #1}}
+
+\title{Rail-Data}
+%\subtitle{im Produktlebenszyklus mechatronischer Produkte}
+\author[R. Pfaff]{Prof. Dr. Raphael Pfaff}
+\institute[\jobname]{Fachhochschule Aachen}
+\logo{\put(-362, 0){\includegraphics[width=0.6cm]{logo.jpg}}}
+\date{\includegraphics[width = 4cm]{by-nc-saeu}}
+\begin{frame} % Cover slide
+\titlepage
+\end{frame}
+
+%Pr\"aliminarien
+%\input{parts/part1}
+%\section{Data Science als Methode des QM}
+\input{parts/introDataScience}
+
+\input{parts/toolsMethodsDataScience}
+
+%\section{Lebenszyklus}
+%%Zuverl\"assigkeitstechnik
+%\input{parts/part8}
+
+%\section{Mechatronik}
+%%Elektrische Komponenten
+%\input{parts/part7}
+%%Software-Qualit\"at
+%\input{parts/part9}
+
+\input{parts/part2}
+%%Pr\"ufdatenerfassung und -auswertung
+\input{parts/part3}
+%Messunsicherheit
+\input{parts/part4}
+%Messmethoden, -strategien, Lehrende Pr\"ufung
+\input{parts/part5}
+%Messmethoden, -strategien, Lehrende Pr\"ufung
+\input{parts/part6}
+
+\section{Manufacturing data}
+\input{parts/manufacturingdata}
+% \section{QM-Systeme}
+% %%Requirements Engineering
+% \input{parts/part1a}
+% %% QM-Systeme
+% \input{parts/part1b}
+% %%QFD, FTA, FMEA
+% \section{Methoden}
+% \input{parts/part1c}
+%%%% Einf\"uhrung FMT
+
+
+\frame[allowframebreaks]{\frametitle{Literatur}
+\framesubtitle{}
+\nocite{pfeifer10}
+%\nocite{hoischen}
+%\renewcommand{\bibname}{References}
+%\renewcommand{\refname}{References}
+%\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{abbrv}
+\bibliography{../../../bib}
+}
+
+
+\end{document}

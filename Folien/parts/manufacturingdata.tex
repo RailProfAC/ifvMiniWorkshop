@@ -1,0 +1,70 @@
+\begin{frame}\frametitle{Scenario}
+    Please assume that you are working as a freelance quality consultant to a manufacturing company in the railway sector. Your client manufactures spring parking brake cylinders as depicted below.
+    \vspace{1cm}
+\begin{center}
+\include{Federspeicher}
+\end{center}
+A spring parking brake is used to maintain a rail vehicle in a stationary position, for movements, the brake is released by applying compressed air to the cylinder. For this purpose, one of the determining parameters of a spring parking brake the force is the force applied to the so called hammerheads of the brake cylinder. This force has to maintain the vehicle stationary. For the product under consideration, the required minimum force is $18 \, \mathrm{kN}$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tasks}
+    \framesubtitle{Data import and graphical representation}
+        You receive a call from you client because in todays production shift, more than 10\% of the production had to be scrapped due to insufficient force. The client sends you a .csv file containing the quality records of the shift.
+
+The file contains the following data:
+\vspace{.5cm}
+
+{\small
+\begin{tabular}{|c|c|c|c|c|c|c|}
+
+\hline
+Time, Date & F/N & $\triangle d$/mm & $\triangle h_{1}$/mm & $ \triangle h_{2}$/mm & $\triangle l$/mm & $x$/mm \\ \hline
+\end{tabular}}
+
+\begin{equation*}
+x = h_1 + h_2 + d + l
+\end{equation*}
+\vspace{.5cm}
+
+In order to start your analysis, you import it and inspect it qualitatively for randomness and systematic influences. Your customer is rather fluent in Python, so you decide to exchange Jupyter Notebooks highlighting your findings.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tasks}
+    \framesubtitle{Optional: Monte-Carlo simulation}
+    The client considers a systematic behaviour of the spring stiffness as a possible root cause of the force loss. Each cylinder contains 24 springs of three types, each being supplied with a $\pm 10 \, \%$ tolerance on the nominal value:
+    \begin{itemize}
+        \item 8 small springs: $c_{1, \text{nom}} = 100\, \mathrm{N/mm}$
+        \item 8 medium springs: $c_{2, \text{nom}} = 150\, \mathrm{N/mm}$
+        \item 8 large springs: $c_{3, \text{nom}} = 200\, \mathrm{N/mm}$
+    \end{itemize} 
+    
+    Perform a Monte Carlo Simulation of the combined spring stiffness $c$ and its variation. Assume two cases:
+    \begin{itemize}
+        \item[$C_1$] The supplier ships springs equally distributed within the tolerance range.
+        \item[$C_2$] The supplier ships large springs within tolerance, however the distribution is skewed towards the lower end of the spectrum, yielding forces with $c_{3} \in \left[180, 190\right]\, \mathrm{N/mm}$. All other springs are as described above.
+    \end{itemize}
+
+    Hint: remember to draw the individual springs of a set from an independent and identically distributed (i.i.d.) random variable.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tasks}
+    \framesubtitle{Using support vector machine to predict an unobserved product property}
+    esting of the cylinders for their effective force is a costly task. The customer would prefer to sort the components such that only capable cylinders are assembled. They propose to use the hammerhead dimensions $h_{1}$, $h_{2}$ as well as the length $l$ to predict the force based on learned data.
+
+For this purpose:
+\begin{itemize}
+	\item Import the existing dataset
+	\item Scale the data using a standard scaler
+	\item Train a support vector machine based on this data
+	\item Use the new data set (unknown to the SVM) ``SpringPBDataValidation.csv'' to test the performance
+	\begin{itemize}
+		\item You may also generate test data using a Monte-Carlo simulation
+	\end{itemize}
+	\item Plot a confusion matrix of the results
+\end{itemize}
+
+How do you like the performance of your classifier? Can you manufacture without end of line testing? Is your data basis sufficient to exclude any non-conforming cylinders from being shipped to the customer?
+\end{frame}

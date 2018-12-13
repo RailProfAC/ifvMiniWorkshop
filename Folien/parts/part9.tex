@@ -1,0 +1,414 @@
+% !TEX root = ../SFV15001_MdQM_Fertigungsmesstechnik_Rev05.tex
+ \subsection{Software-Qualität}
+\label{Sec:Software}
+\subsubsection{Einf\"uhrung}
+\frame{\subsectionpage}
+\frame{\frametitle{Motivation}
+\framesubtitle{Zunehmende Allgegenw\"artigkeit von Computersystemen in Alltag und Industrie erh\"oht die Bedeutung von qualitativ hochwertiger Software.}
+\begin{itemize}
+\item Trends:
+\begin{itemize}
+	\item Industrie 4.0 / Internet of Things: 
+	\begin{itemize}
+		\item Selbststeuerung
+		\item M2M-Kommunikation
+		\item Embedded Systems
+	\end{itemize}
+	\item Zunehmende Wertsch\"opfung durch Software:
+	\begin{itemize}
+		\item Siemens einer der gr\"o{\ss}ten Software-Hersteller der Welt (nach Code-Menge)
+		\item H\"aufig wird Software-Anteil im Maschinen- und Anlagenbau vorausgesetzt
+		\item Aufstieg zur h\"aufigsten Fehlerursache
+	\end{itemize}
+	\item Code-Gr\"o{\ss}e je SW-Produkt steigt exponentiell	
+\end{itemize}
+	\item Software-Engineering junge Ingenieursdisziplin
+	\begin{itemize}
+		\item Detail-Spezifikationen n\"otig
+		\item Experimentierfreudige Entwickler
+		\item Wachsende Teamgr\"o{\ss}en
+	\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Defintion und Aspekte von Software-Qualit\"at}
+\framesubtitle{}
+\begin{definition}[Software-Qualit\"at]
+Software-Qualit\"at ist die Gesamtheit der Merkmale und Merkmalswerte eines Software-Produkts, die sich auf die Eignung beziehen, festgelegt Erfordernisse zu erf\"ullen.
+\end{definition}
+\begin{itemize}
+\item Funktionalit\"at \textit{Functionality, Capability}
+\item Laufzeit \textit{Performance}
+\item Zuverl\"assigkeit \textit{Reliability}
+\item Benutzbarkeit \textit{Usability}
+\item Wartbarkeit \textit{Maintainability}
+\item Transparenz \textit{Transparency}
+\item \"Ubertragbarkeit \textit{Portability}
+\item Testbarkeit \textit{Testability}
+\end{itemize}}
+
+\frame{\frametitle{Gr\"unde f\"ur mangelnde SW-Qualit\"at}
+\framesubtitle{}
+\begin{itemize}
+\item H\"andisch erstellter Code: Fehlerdichte $>0$
+\item Komplexit\"atswachstum exponentiell
+\item Spezialisierung der SW-Ingenieure in junger Disziplin
+\begin{itemize}
+	\item Vergleichbar mit fr\"uher Phase des Maschinenbaus
+\end{itemize}
+\item Dokumentation des Codes im Code oder im Mitarbeiter
+\begin{itemize}
+	\item Fluktuation f\"uhrt zu Problemen
+\end{itemize}
+\item Inkrementelles Wachstum des SW-Produkts
+\begin{itemize}
+	\item Kompromissl\"osungen f\"ur Abw\"artskompatibilit\"at n\"otig
+\end{itemize}
+\item Unzureichende Code-Metriken
+\end{itemize}
+}
+
+\frame{\frametitle{Ma{\ss}nahmen zur Quali\"atssicherung von Software}
+\framesubtitle{}
+     	\begin{itemize}
+     		\item Produktqualit\"at
+		\begin{itemize}
+		\item Konstruktive Qualit\"atssicherung
+		\only<1>{
+		\begin{itemize}
+		\item Software-Richtlinien
+		\item Typisierung
+		\item Vertragsbasierte Programmierung
+		\item Fehlertolerante Programmierung
+		\item Portabilit\"at
+		\item Dokumentation
+		\end{itemize}}
+		\item Analytische Qualit\"atssicherung
+		\only<2>{
+		\begin{itemize}
+		\item Software-Test: Black-Box, White-Box, Test-Metriken
+		\item Statistische Analyse: Software-Metriken, Konformit\"atspr\"ufung, Exploit-Analyse, Anomalienanalyse, Manuelle Software-Pr\"ufung
+		\item Software-Verifikation
+		\end{itemize}}
+		\end{itemize}
+		\item Prozessqualit\"at
+		\only<3>{
+		\begin{itemize}
+		\item Software-Infrastruktur
+		\begin{itemize}
+		\item Konfigurationsmanagement
+		\item Build-Automatisierung
+		\item Test-Automatisierung
+		\item Defektmanagement
+		\end{itemize}
+		\item Managementprozess
+		\begin{itemize}
+		\item Vorgehensmodelle
+		\item Reifegradmodelle
+		\end{itemize}
+		\end{itemize}
+		}
+     	\end{itemize}
+}
+
+\frame{\frametitle{Arten von Software-Fehlern}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Lexikalische und syntaktische Fehlerquellen
+		\only<1>{\begin{itemize}
+		\item Nutzung reservierter Ausdr\"ucke
+		\item Fehlerhafte Syntax
+		\end{itemize}}
+		\item Semantische Fehlerquellen
+		\only<2>{\begin{itemize}
+		\item Fehlerhafte Nutzung der Bedeutung der Befehle
+		\item Auch bei Kommunikation, z.B. \"uber Bus
+		\end{itemize}}
+		\item Parallelit\"at
+		\only<3>{\begin{itemize}
+		\item Bei Multitasking scheduling der Prozesse abh\"angig von Last
+		\end{itemize}}
+		\item Numerische Fehlerquellen:
+		\only<4>{\begin{itemize}
+		\item \"Uberlauf
+		\item Rundung
+		\end{itemize}}
+		\item Portabilit\"at
+		\only<5>{\begin{itemize}
+		\item HW-abh\"angiges Verhalten
+		\end{itemize}}
+		\item Spezifikationsfehler
+		\only<6>{\begin{itemize}
+		\item Gefordertes Verhalten fehlerhaft
+		\end{itemize}}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+		\scriptsize
+         	\lstinputlisting[language = Fortran]{Mercury.txt}
+     \end{column}
+ \end{columns}
+}
+\subsubsection{Beispiel konstruktiver Software-QS}
+\frame{\subsectionpage}
+\frame{\frametitle{Coding conventions}
+\framesubtitle{Mittels coding conventions erh\"alt der Quellcode ein standardisiertes Erscheinungsbild.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Definition:
+		\begin{itemize}
+		\item Darstellun Schachtelung
+		\item Einr\"uckung
+		\end{itemize}
+		\item Einschr\"ankung Sprachkonstrukte
+		\item etc.
+		\item Beispiel: MISRA-C
+		\begin{itemize}
+		\item 127 Regeln
+		\end{itemize}
+		\item Nutzung automatischer Pr\"ufwerkzeuge
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+			\vspace{-1cm}
+            		\scriptsize
+         	\lstinputlisting[language = C]{CodingConventions.txt}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+
+\subsubsection{Analytische Qualit\"atssicherung}
+\frame{\subsectionpage}
+
+%\offslide{V-Modell in der Software-Entwicklung}
+
+\offslide{Branch-Modell in der Software-Entwicklung}
+
+\frame{\frametitle{Integrationsstrategien}
+\framesubtitle{}
+\begin{itemize}
+\item Big-Bang-Integration: gleichzeitige Zusammenf\"uhrung aller Module
+\item Strukturorientiert:
+\begin{itemize}
+		\item Bottom-Up: beginnend mit Basiskomponenten
+		\item Top-Down: beginneng mit oberster SW-Schicht
+		\item Outside-In: Integration gleichzeitig von Top und Bottom
+		\item Inside-Out: Integration beginnend mit der Zwischenschicht
+\end{itemize}
+\item Funktionsgetrieben:
+\begin{itemize}
+		\item Termingetrieben
+		\item Risikogetrieben
+		\item Testgetrieben
+		\item Anwendungsgetrieben
+		\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Klassifizierung von Tests}
+\framesubtitle{}
+\begin{itemize}
+\item Pr\"ufebene:
+\begin{itemize}
+		\item Unit-Test
+		\item Integrationstest
+		\item Systemtest
+		\item Abnahmetest
+		\end{itemize}
+\item Pr\"ufkriterien:
+	\begin{itemize}
+		\item Funktionale Tests
+		\item Operationale Tests
+		\item Temporale Tests
+		\end{itemize}
+\item Pr\"uftechniken:
+\begin{itemize}
+		\item Black-Box-Test
+		\item White-Box-Test
+		\item Grey-Box-Test
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Tests nach Pr\"ufebene}
+\framesubtitle{}
+\begin{itemize}
+\item Unit-Test:
+	\begin{itemize}
+		\item Kleinste testbare Einheit
+		\item z.B. Funktion, Klasse, etc.
+		\item Fokus auf Schnittstellen
+	\end{itemize}
+\item Integrationstest:
+	\begin{itemize}
+		\item Zusammenwirken der einzelnen Module wird gepr\"uft
+		\item Abh\"angig von Integrationsstrategie
+	\end{itemize}
+\item Systemtest:
+\begin{itemize}
+		\item Nach vollst\"andiger Integration
+		\item Funktionalit\"at nach Pflichtenheft
+		\end{itemize}
+\item Abnahmetest:
+\begin{itemize}
+		\item Unter Kundenbeteiligung
+		\item Nach Kundenvorgaben
+		\item In Einsatzumgebung
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Tests nach Pr\"ufkriterium}
+\framesubtitle{}
+\begin{itemize}
+\item Funktionale Tests:
+	\begin{itemize}
+		\item Funktionstest
+		\item Trivialtest
+		\item Crashtest
+		\item Kompatibilit\"atstests
+		\item Zufallstests
+	\end{itemize}
+\item Operationale Tests:
+\begin{itemize}
+		\item Installationstests
+		\item Ergonomietests
+		\item Sicherheitstests
+		\end{itemize}
+\item Temporale Tests:
+\begin{itemize}
+		\item Komplexit\"atstests
+		\item Laufzeittests
+		\item Lasttests
+		\item Stresstest (\"Uberlasttest)
+		\end{itemize}
+\end{itemize}
+}
+
+\frame[allowframebreaks]{
+\frametitle{Black-Box-Testtechniken}
+\framesubtitle{Testen nur durch Bewertung des Eingabe- und Ausgabeverhaltens.}
+\begin{itemize}
+\item \"Aquivalenzklassentest:
+\begin{itemize}
+	\item Testen aller Zahlenwerte zu aufwendig
+	\item \"Aquivalenzklassen bilden Wertebereich ab, f\"ur die gleiches Verhalten erwartet wird
+	\item Test mit Zufallszahl aus \"Aquivalenzklasse
+	\item Bei mehrdimensionalen Funktionen Kombination der individuellen \"Aquivalenzklassen
+	\item Einschlie{\ss}lich oder ausschlie{\ss}lich ung\"ultiger Kombinationen
+\end{itemize}
+\item Grenzwertbetrachtung:
+\begin{itemize}
+		\item Nutzung von unterem und oberen Randwert, je innerhalb und au{\ss}erhalb
+		\item Komination f\"ur mehrdimensionale Funktionen
+		\end{itemize}
+		\newpage
+\item Zustandsbasierter Softwaretest
+\begin{itemize}
+		\item F\"ur ged\"achtnisbehaftete Funktionen
+		\item Nutzung endlicher Automaten
+		\item Pr\"ufung jedes \"Ubergangs 
+		\end{itemize}
+\item Use-Case-Test: 
+\begin{itemize}
+		\item \"Uberpr\"ufung einzelner Anwendungsf\"alle
+		\end{itemize}
+\item Entscheidungstabellenbasierter Test
+\begin{itemize}
+		\item Pr\"ufung aller Kombination (insbesonderer diskrete) Werte
+		\item Reduzierung der Tabelle m\"oglich
+		\end{itemize}
+\item Paarweises Testen:
+\begin{itemize}
+		\item Reduzierung auf Paare fehlerhafter Eingaben
+		\end{itemize}
+\item Diversifizierende Verfahren:
+\begin{itemize}
+		\item Back-to-Back-Test
+		\item Regressionstest
+		\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{ \includegraphics[scale=0.01] {Off}\hspace{1.5mm} Entwicklung Kontrollflussgraph}
+\framesubtitle{Entwicklung am Beispiel der Manhattan-Distanz (Taxi-Cab-Norm): $d\left( \left( x_1, y_1 \right), \left( x_2, y_2 \right) \right) = \left| x_1 - x_2 \right| + \left| y_1 - y_2 \right|$}
+\begin{center}
+         	\lstinputlisting[language = C]{Manhattan.txt}
+\end{center}
+
+}
+
+
+\frame[allowframebreaks]{
+\frametitle{White-Box-Testtechniken}
+\framesubtitle{Testen unter Kenntnis der Quellodes der Software.}
+\begin{itemize}
+\item Kontrollflussorientierte Tests
+\begin{itemize}
+		\item Modellierung des Kontrolflusses \"uber gerichtete Graphen 
+		\item Anweisungs\"uberdeckung ($C_{0}$-Test): alle Knoten des Kontrollflussgraphen einmal durchlaufen
+		\item Zweig\"uberdeckung ($C_{1}$-Test): alle Kanten des Kontrollflussgraphen einmal durchlaufen
+		\item Pfad\"uberdeckung: alle Pfade des Kontrollflussgraphen einmal durchlaufen
+		\item Bedingungs\"uberdeckung:
+		\begin{itemize}
+		\item Einfach: alle atomaren Pr\"adikate m\"ussen beide Wahrheitswerte annehmen
+		\item Minimal Mehrfach: alle atomaren und zusammengesetzten Pr\"adikate m\"ussen beide Wahrheitswerte annehmen
+		\item Mehrfach: alle Kombinationen der atomaren Pr\"adikate wurden getestet
+		\end{itemize}
+		\item McCabe-\"Uberdeckung: Reduzierung auf Elementarpfade
+		\end{itemize}
+\item Datenflussorientierte Tests
+\begin{itemize}
+		\item Defs-Uses-\"Uberdeckung
+		\item Required-$k$-Tupel
+		\end{itemize}
+\item \"Ublicher Ablauf:
+\begin{itemize}
+		\item Strukturanalyse: Erstellung Kontrollflussgraph
+		\item Testkonstruktion
+		\item Testdurchf\"uhrung
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Testmetriken}
+\framesubtitle{}
+\begin{itemize}
+\item \"Uberdeckungsmetrik:
+\begin{itemize}
+		\item Verh\"altnis \"uberdeckter Knoten zu Anzahl Knoten
+		\item Ab 80\% gilt Software als gut getestet
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Grenzen des Software-Tests}
+\framesubtitle{}
+\begin{itemize}
+\item Unklare oder fehlende Anforderungen
+\begin{itemize}
+		\item Insbesondere bei funktionalen Tests
+		\end{itemize}
+\item Programmkomplexit\"at
+\begin{itemize}
+		\item Starkes Wachstum der n\"otigen Testf\"alle
+		\end{itemize}
+\item Fehlende Unterst\"utzung durch das Management
+\begin{itemize}
+		\item Fehlende Ressourcen oder Zeit
+		\end{itemize}
+\item Ausbildungs- und Fortbildungsdefizite
+\begin{itemize}
+		\item Thema Testing vernachl\"assigt
+		\end{itemize}
+\end{itemize}
+}
+

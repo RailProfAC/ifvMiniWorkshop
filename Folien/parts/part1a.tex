@@ -1,0 +1,180 @@
+% !TEX root = ../17-MdQM-Vorlesung.tex
+\subsection{Requirements Engineering}
+%\sectionpage
+
+\frame{\frametitle{Beispiel mechatronisches System: Gleitschutz}
+\begin{center}
+            		\includegraphics[width=\textwidth]{WSP}\source{}
+        		\end{center}
+}
+
+\frame{\frametitle{Beispiel mechatronisches System}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Mechatronik nach VDI 2206:
+		\begin{itemize}
+		\item Synergetisches Zusammenwirken der Disziplinen:
+		\begin{itemize}
+		\item Maschinenbau
+		\item Eletrotechnik
+		\item Informationstechnik
+		\end{itemize}
+		\end{itemize}
+		\item H\"aufiges Kennzeichen:
+		\begin{itemize}
+		\item Verschmelzung von Sensorik, Aktorik, Rechner und Mechanik
+		\end{itemize}
+		\item Typisch
+		\begin{itemize}
+		\item Hoher Aufwand w\"ahrend Inbetriebnahme
+		\item Schnittstellenkl\"arung schwierig
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=\textwidth]{WSP}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Warum Requirements Engineering (RE)?}
+\framesubtitle{Requirements Engineering befasst sich mit dem systematischen Erfassen, Umsetzen und Pr\"ufen von Anforderungen im Entwicklungsprozess.}
+\begin{itemize}
+\item Qualit\"at: 
+\begin{itemize}
+		\item Grad, in dem ein Satz inhärenter Merkmale eines Objekts Anforderungen erfüllt \cite{iso9000}
+		\item Qualit\"at ist das Ma{\ss} der Erf\"ullung der Anforderungen an ein Produkt
+		\end{itemize}
+\item Durch RE Reduzierung von:
+\begin{itemize}
+		\item Entwicklungs- und Garantiekosten
+		\item Konstruktions\"anderungen
+		\item Design lead time
+		\item Fehlerrate in Entwicklung und Einsatz
+		\end{itemize}
+\item Kosten- und Termintreue
+\item Einbindung der Stakeholder (Anspruchsteller)
+\item Systematisierung der Beschaffung und der Produktentwicklung
+\item Nachvollziehbare Entscheidungen und Risikomanagement
+\end{itemize}
+}
+
+%\frame{\frametitle{Key-Aspects of Requirements Engineering}
+%\framesubtitle{}
+%\begin{itemize}
+%\item Stakeholder Involvement
+%\item Technical Reviews
+%\item Traceability
+%\end{itemize}
+%}
+
+%\offslide{Generisches Phasenmodell}{Modell einer beliebigen Phase eines Entwicklungsprozesses}
+
+\frame{\frametitle{Erweitertes V-Modell mit Lebenszyklus}
+\framesubtitle{}
+\begin{center}
+\includegraphics[width = 11cm]{VModel} \source{Quelle: \cite{SEGuide}}
+\end{center}
+}
+
+
+\frame{\frametitle{Generisches Phasenmodell}
+\framesubtitle{Modell einer beliebigen Phase eines Entwicklungsprozesses}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{F\"ur jede Phase festzulegen:}
+     	\begin{itemize}
+     		\item Purpose
+		\item Inputs
+		\item Entry Criteria
+		\item Roles
+		\item Verification steps
+		\item Outputs
+		\item Exit criteria
+		\item Resources
+		\item Management review activities
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{center}
+            		\includegraphics[width=1.0\textwidth]{Phase.png}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{System Requirements}
+\framesubtitle{Obtain System Level Requirements}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{Questions:}
+     	\begin{itemize}
+		\item What are the stakeholders?
+     		\item What is the system to do?
+		\item How well it is to do it?
+		\item Under what conditions?
+     	\end{itemize}
+	\textbf{Typical Milestone: Initial Design Review (IDR)}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{center}
+            		\includegraphics[width=0.95\textwidth]{Phase}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{High Level Design}
+\framesubtitle{Top Level Design: Architekture, Solutions, Subsystems}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{Questions:}
+     	\begin{itemize}
+		\item Is the required system feasible?
+     		\item What are system and subsystem borders?
+		\item What are associated costs/lead times/risks?
+		\item How can the risk be reduced?
+		\item Which system integration steps are necessary?
+		\item What is the suitable subsystem structure?
+     	\end{itemize}
+	\textbf{Typical Milestone: Preliminary Design Review (PDR)}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{center}
+            		\includegraphics[width=0.95\textwidth]{Phase}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+%\offslide{Erg\"anzen des generischen Phasenmodells}%{Durchf\"uhrung in der \"Ubung}
+
+\frame{\frametitle{Subsystem Design}
+\framesubtitle{``Build to Specifications'': Drawings, Electrical Schemes,...}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{Questions:}
+     	\begin{itemize}
+		\item What are the subsystem requirements?
+		%\item Make or Buy?
+		\item Which deliverables (e.g. documentation) are requested?
+		%\item How can the module be realised efficiently?
+		\item What are critical characteristics of the module and its parts?
+		\item Can service proven modules be used or adapted?
+     	\end{itemize}
+	\textbf{Typical Milestone: Critical Design Review (CDR)}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{center}
+            		\includegraphics[width=0.95\textwidth]{Phase}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+%\offslide{Erg\"anzen des generischen Phasenmodells}%{Durchf\"uhrung in der \"Ubung}
+

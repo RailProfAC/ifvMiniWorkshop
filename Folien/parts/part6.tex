@@ -1,0 +1,298 @@
+% !TEX root = ../SFV15001_MdQM_Fertigungsmesstechnik_Rev01.tex
+%% \section{Erforderliche Messgenauigkeit}
+%\label{Sec:Messgenauigkeit}
+%%\offslide{Erforderliche Messgenauigkeit}
+%
+%\frame{
+%\frametitle{Erforderliche Messgenauigkeit}
+%\framesubtitle{Die Einhaltung gewisser Intervalle kann nur mit einer gegebenen Wahrscheinlichkeit bestimmt werden.}{
+%\begin{center}
+%\begin{picture}(320,160)(0,0)
+%\thicklines
+%\put(76,23){\line(0,1){120}}
+%\put(267,23){\line(0,1){120}}
+%\put(10,10){Untere Toleranzgrenze (UT)}
+%\put(190,10){Obere Toleranzgrenze (OT)}
+%\put(171.4,115){\oval[0](191,15)}
+%\put(130,112){Toleranzzone}
+% 
+%\put(0,0){\includegraphics[width=1.02\textwidth]{Toleranz}}
+%\put(76,23){\line(0,1){120}}
+%\put(267,23){\line(0,1){120}}
+%\put(10,10){Untere Toleranzgrenze (UT)}
+%\put(190,10){Obere Toleranzgrenze (OT)}
+%\put(171.4,115){\oval[0](191,15)}
+%\put(130,112){Toleranzzone}
+% 
+%\put(55,130){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}}
+%\put(55,23){\line(0,1){120}}
+%\put(76,130){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}}
+%\put(97,23){\line(0,1){120}}
+%
+%\put(246,23){\line(0,1){120}}
+%\put(246,130){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}}
+%\put(288,23){\line(0,1){120}}
+%\put(267,130){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}}  
+%\put(171.5,97){\oval[0](149,15)}
+%\put(130,92){\"Ubereinstimmung}  
+%\put(294,30){\rotatebox{90}{Ablehnung durch Kunden}}
+%\put(41,30){\rotatebox{90}{Ablehnung durch Kunden}}  
+%\put(171.5,77){\oval[0](107,15)}
+%\put(130,72){Nutzbare Toleranz} 
+%\put(97,77){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}} 
+%\put(225,77){\vector(1,0){21.5}
+%\put(21,0){\vector(-1,0){21.5}}
+%\put(8,2){$U$}} 
+%
+%\end{picture}
+%\end{center}
+%}}
+%
+%\frame{\frametitle{Nutzbare Toleranz}
+%\framesubtitle{Die Messunsicherheit bestimmt die nutzbare Toleranz.}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item Pr\"azisere Messtechnik erlaubt Nutzung breiterer Toleranzen
+%		\item Kostenreduzierung in der Fertigung
+%		\item Reduzierte Ausfallquoten
+%		\item Faustregel \textit{(Goldene Regel)} \\
+%		$U \leq \frac{1}{10} \left(\mathsf{OT} - \mathsf{UT}\right)$
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{6cm} 
+%         	\begin{center}
+%            		\begin{picture}(320,100)(0,0)
+%			\setlength{\unitlength = 0.5pt}
+%        %\thicklines
+%        \tiny
+%        \put(76,23){\line(0,1){120}}
+%        \put(267,23){\line(0,1){120}}
+%        \put(10,10){Untere Toleranzgrenze (UT)}
+%        \put(190,10){Obere Toleranzgrenze (OT)}
+%        \put(171.4,115){\oval[0](191,15)}
+%        \put(130,112){Toleranzzone}
+%        \put(0,0){\includegraphics[width=0.95\textwidth]{Toleranz}}
+%        \put(76,23){\line(0,1){120}}
+%        \put(267,23){\line(0,1){120}}
+%        \put(10,10){Untere Toleranzgrenze (UT)}
+%        \put(190,10){Obere Toleranzgrenze (OT)}
+%        \put(171.4,115){\oval[0](191,15)}
+%        \put(130,112){Toleranzzone}
+%        \put(55,130){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}}
+%        \put(55,23){\line(0,1){120}}
+%        \put(76,130){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}}
+%        \put(97,23){\line(0,1){120}}
+%        
+%        \put(246,23){\line(0,1){120}}
+%        \put(246,130){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}}
+%        \put(288,23){\line(0,1){120}}
+%        \put(267,130){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}}  
+%        \put(171.5,97){\oval[0](149,15)}
+%        \put(130,92){\"Ubereinstimmung} 
+%        \put(294,30){\rotatebox{90}{Ablehnung}}
+%        \put(41,30){\rotatebox{90}{Ablehnung}} 
+%        \put(171.5,77){\oval[0](107,15)}
+%        \put(125,72){Nutzbare Toleranz} 
+%        \put(97,77){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}} 
+%        \put(225,77){\vector(1,0){21.5}
+%        \put(21,0){\vector(-1,0){21.5}}
+%        \put(8,2){$U$}} 
+%\end{picture}
+%
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\section{Pr\"ufprozesseignung}
+%\frame{\frametitle{Pr\"ufprozesseignung}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item Ermittlung Teil des Pr\"ufmittelmanagements
+%		\item Vornehmlich f\"ur quantitative Merkmale anwendbar
+%		\item Typisch: Messprozesse
+%		\item Teilgebiet: Pr\"ufmittelf\"ahigkeit
+%		\item i.d.R. Voraussetzung: Normalverteilung
+%		\begin{itemize}
+%		\item Zentraler Grenzwertsatz
+%		\end{itemize} 
+%		\item Vier Methoden:
+%		\begin{itemize}
+%		\item Goldene Regel
+%		\item Pr\"ufprozessf\"ahigkeit
+%		\item R\&R-Studie
+%		\item Konformit\"atspr\"ufung
+%		\end{itemize}
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{6cm} 
+%         	\begin{center}
+%			\only<1>{
+%            		\includegraphics[width=0.95\textwidth]{Prozessfahigkeit}\\
+%			Beherrscht}
+%			\only<2>{
+%            		\includegraphics[width=0.95\textwidth]{Prozessfahigkeit2}\\
+%			Mittelwertsdrift}
+%			\only<3>{
+%            		\includegraphics[width=0.95\textwidth]{Prozessfahigkeit3}\\
+%			Ver\"anderliche Streuung}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%
+%
+%\frame{\frametitle{Prozessf\"ahigkeitsindex}
+%\framesubtitle{Der \textit{Process Capability Index} gibt skalare Werte zum Vergleich der Messprozessf\"ahigkeit an.}
+%    	\begin{itemize}
+%		\item Allgemein
+%     			\begin{equation*}
+%				C_{p} = \frac{T}{x_{99{,}865\%} - x_{0{;}135\%}}
+%			\end{equation*}
+%			\begin{equation*}
+%			C_{pk} = \min\left(\frac{OT - x_{50\%}}{x_{99{,}865\%} - x_{50\%}}, \, \frac{\left|UT - x_{50\%}\right|}{\left|x_{0{,}135\%} - x_{50\%}\right|}  \right)
+%			\end{equation*}
+%			\normalsize
+%		\item F\"ur Normalverteilung
+%			\begin{equation*}
+%				C_{p} = \frac{T}{6 \sigma} \approx \frac{T}{6s}
+%			\end{equation*}
+%			\begin{equation*}
+%			C_{pk} = \min\left(\frac{OT - \mu}{3\sigma}, \, \frac{\left|UT -\mu\right|}{3\sigma}  \right) \approx \min\left(\frac{OT - \mu}{3s}, \, \frac{\left|UT -\mu\right|}{3s}  \right)
+%			\end{equation*}
+%			\item $T$, $UT$, $OT$ bezogen auf Messprozess
+%		\end{itemize} 
+%}
+%
+%\frame{\frametitle{Prozessf\"ahigkeitsindex}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{5cm} 
+%     	\begin{itemize}
+%		\item $C_{p}$: Beurteilung Streuung
+%		\item $C_{pk}$: Beurteilung Mittelwertslage
+%     		\item Geforderte Werte brachen- bzw. unternehmensabh\"angig
+%		\item H\"aufig: $C_{p} \geq 1{,}33$ und $C_{pk} \geq 1{,}33$
+%		\begin{itemize}
+%		\item Entspricht 75\% Toleranzausnutzung
+%		\end{itemize}
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{itemize}
+%		\item $C_{p} \geq 1{,}33$: 
+%		\begin{itemize}
+%		\item Fehlerfreie Fertigung unproblematisch
+%		\end{itemize}
+%		\item $ 1 \leq C_{p} \leq 1{,}33$: 
+%		\begin{itemize}
+%		\item Fehlerfreie Fertigung problematisch
+%		\end{itemize}
+%		\item $C_{p} < 1$: 
+%		\begin{itemize}
+%		\item Fehlerfreie Fertigung nicht m\"oglich
+%		\item 100\% Sortierpr\"ufung veranlassen
+%		\end{itemize}
+%		\item $C_{pk} \geq 1{,}33$: 
+%		\begin{itemize}
+%		\item Fehlerfreie Fertigung unproblematisch
+%		\end{itemize}
+%		\item $C_{pk} < 1{,}33$: 
+%		\begin{itemize}
+%		\item Fehlerfreie Fertigung problematisch
+%		\end{itemize}
+%		\end{itemize}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\section{R\"uckf\"uhrbarkeit}
+%\label{Sec:Rueckfuehr}
+%\frame{\frametitle{Pr\"ufmittel\"uberwachung}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item Ab Verf\"ugbarkeit im Betrieb bis Ausmusterung
+%		\item Notwendig z.B. wegen Verschlei{\ss}, Alterung oder Besch\"adigung
+%		\item \"Uberwachung
+%		\begin{itemize}
+%		\item Pr\"ufmittelorientiert
+%		\item Pr\"ufaufgabenorientiert
+%		\end{itemize}
+%		\item \"Uberwachung:
+%		\begin{itemize}
+%		\item Erstmalige Eignungspr\"ufung
+%		\item \"Uberwachungspr\"ufung
+%		\item Nach Justierung oder Reparatur
+%		\end{itemize}
+%		\item \"Uberwachungskennzeichen am Pr\"ufmittel
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{5cm} 
+%         	\begin{definition}
+%            		Die \textbf{Pr\"ufmittel\"uberwachung} umfasst alle Ma{\ss}nahmen, welche die Genauigkeit, Zuverl\"assigkeit und Einsatzf\"ahigkeit von  Pr\"ufmitteln gew\"ahrleisten. Die Qualit\"at und F\"ahigkeit eines Pr\"ufmittels ist anhand eines Pr\"ufplans oder einer Checkliste nachzuweisen.
+%        		\end{definition}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\frame{\frametitle{R\"uckf\"uhrbarkeit}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item Zweck
+%		\begin{itemize}
+%		\item Weltweite Austauschbarkeit von Einzelzeilen
+%		\item Weltweite Anerkennung von Messungen
+%		\item Weltweite Vergleichbarkeit von Messger\"aten
+%		\end{itemize}
+%		\item Forderung ISO 9001: 
+%		\begin{itemize}
+%		\item Kalibrierung kann auf nationale oder internationale Normale zur\"uckgef\"uhrt werden
+%		\end{itemize}
+%		\item Ununterbrochene Kette von Vergleichsmessungen mit Messunsicherheiten, endend bei nationalen Normalen
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{5cm} 
+%         	\begin{center}
+%	\vspace{1cm}
+%            		\includegraphics[width=0.9\textwidth]{Ruckfuhrbarkeit}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\frame{\frametitle{R\"uckf\"uhrbarkeit}
+%         	\begin{center}
+%            		\includegraphics[width=0.95\textwidth]{Ruckfuhrbarkeit}
+%		\rotatebox{90}{\tiny nach \cite[S. 442]{pfeifer10}}
+%        		\end{center}
+%		
+%}
+

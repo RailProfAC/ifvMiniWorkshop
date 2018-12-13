@@ -1,0 +1,3 @@
+// Eingabe:  a:int, b:int// Ergebnis: |a| + |b|
+int manhattan2(int a, int b){    if (a < 0)        a = -a;    if (b < 0)        b = -b;    return a+b; 
+}

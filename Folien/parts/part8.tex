@@ -1,0 +1,721 @@
+% !TEX root = ../SFV15001_MdQM_Fertigungsmesstechnik_Rev04.tex
+
+\label{Sec:Zuverlaessig}
+
+\frame{\frametitle{Motivation}
+\framesubtitle{Ein Gro{\ss}teil der Kosten technischer Systeme entsteht h\"aufig erst im Betrieb.}
+\begin{itemize}
+\item Kunde:
+\begin{itemize}
+	\item Verf\"ugbarkeit des Systems
+	\item Ersatzteilbedarf
+	\item Wartungsplanung
+\end{itemize}
+\item Lieferant:
+\begin{itemize}
+	\item Erwartungswert Gew\"ahrleistungskosten
+	\item Absch\"atzung Obsolenszenz 
+	\item Erf\"ullung vertraglicher Forderungen
+\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Zuverl\"assigkeit}
+\framesubtitle{}
+\begin{itemize}
+\item Zuverl\"assigkeit ist die F\"ahigkeit eines Objekts, unter gegebenen Bedingungen f\"ur eine bestimmte Zeit eine geforderte Funktion auszu\"uben.
+\begin{itemize}
+	\item Anwendbar f\"ur Systeme ohne Reparatur oder Wartung 
+\end{itemize}
+\item Verf\"ugbarkeit ist die Wahrscheinlichkeit, dass sich ein System zu einem beliebigen Zeitpunkt in einem Zustand befindet, in dem es seine Funktion erf\"ullen kann.
+\begin{itemize}
+		\item Auch anwendbar f\"ur reparierte und gewartete Systeme
+		\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Fehler, Fehlertypen und Fehlerrate}
+\framesubtitle{}
+\begin{itemize}
+\item Fehler:
+\begin{itemize}
+	\item System kann seine geforderten Eigenschaften nicht erf\"ullen
+	\item Trotz ordnungsgem\"a{\ss}em Betrieb
+\end{itemize}
+\item Fehlertypen:
+\begin{itemize}
+	\item Fr\"uhe Fehler: nahezu ausschlie{\ss}lich am Anfang des Lebenszyklus auftretend
+	\item Zuf\"allige Fehler: Auftreten unerwartet und unabh\"angig von Alter oder Nutzung einer Komponente
+	\item Verschlei{\ss}fehler: zunehmende Fehler mit steigendem Alter der Komponente
+\end{itemize}
+\item Fehlerrate $\lambda$:
+\begin{itemize}
+	\item Fehler pro Zeiteinheit
+	\item Basis: tats\"achliche Betriebsdauer
+	\item Einheit f\"ur Elektrokomponenten h\"aufig FIT $\left(1 \mathrm{FIT} = 10^{-9} \mathrm{h}^{-1} \right)$ 
+\end{itemize}
+\end{itemize}
+}
+
+ \frame{\frametitle{Praktisches Verhalten der Ausfallrate}
+\framesubtitle{}
+\begin{center}
+			 \pgfplotsset{width=12cm, height = 7cm}
+            		\begin{tikzpicture}
+			\only<3->{\fill[fill = yellow!50!black, opacity = 0.3] (0,0) rectangle (1.4,5.4);
+			\node[rotate = 90] at (0.7,3.5) {\Large Fr\"uhausf\"alle};}
+			\only<4->{\fill[fill = green!70!black, opacity = 0.3] (1.4,0) rectangle (6.8,5.4);
+			\node[rotate = 90] at (4,3.5) {\Large Nutzbare Zeit};}
+			\only<5->{\fill[fill = red!70!black, opacity = 0.3] (6.8,0) rectangle (10.4,5.4);
+			\node[rotate = 90] at (9,3.5) {\Large Unzuverl\"assigkeit};}
+			\only<6-6>{\draw[thick, draw = red!90!black] (6.8,0.4) circle [radius=0.2];
+			\node[align = center] at (6,1){Wie l\"asst sich der \\ \"Ubergang erkennen?};}
+			 
+			\begin{scope}
+				[spy using outlines={circle, black,
+				magnification=2, size=3.5cm, connect spies}]
+			 
+				\begin{axis}[stack plots=y, no marks,
+				xmax=14, xmin = 0,
+				 ymin = 0, ymax = 1, %grid=both,
+				 xtick = \empty, ytick = \empty,
+				%axis lines=middle, 
+				%ylabel = {$p$},
+				%xlabel = {$t/\mathrm{a}$},
+				%legend entries={Zufallssch\"aden, Zeitabh\"angigkeit},
+				legend style = {at={(0.5,0.8)},
+      				  anchor=north}]
+  
+  				\only<1->{\addplot[fill = red!70!black, opacity = 0.5, thick, draw = red!70!black] table[x=t,y=h, %row sep=crcr
+				] {Exponential.dat} \closedcycle; }
+				\only<1-2>{\addlegendentry{Zufallssch\"aden};}
+  
+  				\only<2->{\addplot[fill = blue!70!black, opacity = 0.5, thick, draw = blue!70!black] table[x=t,y=h, %row sep=crcr
+				] {Weibull.dat} 
+				coordinate [pos=.6] (A)
+   				coordinate [pos=.7]  (B)
+				\closedcycle ; }
+				
+				\only<1-2>{\addlegendentry{Zeitabh\"angigkeit};}
+				\only<7->{\fill[thick, draw = black, fill = black] (A) -| (B)
+				 node [align = center, pos=2.5,anchor=west]
+    				 {Wie entwickelt \\ sich die \\Zuverl\"assigkeit?};}
+
+	\end{axis}
+	\only<7->{ \spy on (6.8,0.5) in node (zoom) [left] at (8.5,3.5);}
+	\end{scope}
+	
+	\end{tikzpicture}
+\end{center}
+}
+
+
+\frame{\frametitle{Mathematische Beschreibung des Ausfallverhaltens}
+\framesubtitle{Durch mathematische Beschreibung lassen sich zu verschiedenen Zwecken Daten gewinnen.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+		\only<1-3>{\item Zuverl\"assigkeitsfunktion $R(t)$
+		\begin{itemize}
+		\item Anteil funktionsf\"ahiger Komponenten zum Zeitpunkt $t$
+		\end{itemize}
+		\item Hazard rate $h$
+		\begin{itemize}
+		\item Anteil ausfallender Komponenten zum Zeitpunkt $t$
+		\end{itemize}}
+     		\only<2-2>{\item Konstante Fehlerrate:
+		\begin{itemize}
+			\item Exponentialverteilung
+			\begin{eqnarray*}
+			R(t) &=& e^{-\left(\lambda t \right)}\\
+			h &=& \lambda
+			\end{eqnarray*}
+		\end{itemize}}
+		\only<3-3>{\item Zeitabh\"angige Fehlerraten:
+		\begin{itemize}
+			\item (Misch-)Weibull-Verteilung
+			\begin{eqnarray*}
+			R(t) &=& e^{-\left(\lambda t \right)^{\beta}}\\
+			h&=& \beta \lambda \left(\lambda t \right)^{\beta-1}
+			\end{eqnarray*}
+			\end{itemize}}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{5cm} 
+         	\begin{center}
+			% Pgf plots
+            		\begin{tikzpicture}
+				\begin{axis}[no marks,
+				xmax=14, xmin = 0,
+				 ymin = 0, ymax = 1, grid=both,
+				%axis lines=middle, 
+				%ylabel = {$p$},
+				xlabel = {$t/\mathrm{a}$},
+				legend entries={\small Survival rate $\bar{F}$, \small Hazard rate $h$, PDF $f$},
+				legend style = {at={(0.5,1.28)},
+      				  anchor=north}]
+				
+				\only<1-2>{\addplot[thick, draw = blue!70!black] table[x=t,y=Fq, %row sep=crcr
+				] {Exponential.dat}; 
+  
+  				\addplot[thick, draw = red!70!black] table[x=t,y=h, %row sep=crcr
+				] {Exponential.dat}; }
+
+ 				 \only<3-3>{\addplot[thick, draw = blue!70!black] table[x=t,y=Fq, %row sep=crcr
+				 ] {Weibull.dat}; 
+  
+  				\addplot[thick, draw = red!70!black] table[x=t,y=h, %row sep=crcr
+				] {Weibull.dat}; }
+  
+  %\addplot[thick, draw = green!70!black] table[x=t,y=f, row sep=crcr] {Weibull.dat}; 
+  
+\end{axis}
+\end{tikzpicture}
+
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Zuverl\"assigkeitswerte bei bekanntem Ausfallverhalten}
+\framesubtitle{Definition von Vergleichsgr\"o{\ss}en}
+\begin{itemize}
+\item Mittlere Lebensdauer $T$:
+\begin{itemize}
+	\item Erwartungswert der Zeit bis zum Ausfall
+\end{itemize}
+\item MTBF (Mean Time Between Failures) (auch MDBF)
+\begin{itemize}
+	\item Erwartungswert der Zeit zwischen zwei Ausf\"allen
+\end{itemize}
+\end{itemize}
+}
+
+%\offslide{Herleitung mittlere Lebensdauer und MTBF}
+
+%\offslide{\small Fehlerrate und MTBF f\"ur Systeme aus mehreren Komponenten}
+
+\frame{\frametitle{Beispielsystem f\"ur Zuverl\"assigkeitsanalyse}
+\framesubtitle{}
+		\begin{itemize}
+		\item Elektronische F\"uhrerbremsventilanlage
+		\begin{itemize}
+		\item Bremssteuerger\"at (BSG) $R_{B}(t), \lambda_{B}$
+		\item F\"uhrerbremsventil (FbrV) $R_{F}(t), \lambda_{F}$
+		\item Elektropneumatische R\"uckfallebene (BU) $R_{R}(t), \lambda_{R}$
+		\end{itemize}
+		\item Aufgabe: Umwandlung Sollwert (SW) in HL-Druck (HL)
+		\end{itemize}
+         	\begin{center}
+            		\tikz 	{
+			\node (sw) [rectangle, fill = gray!30, minimum width = 1.2cm] at (-1,0) {SW};
+			\node[minimum width = 0cm] (a) at (0.5,1) {};
+			\node (bsg) [rectangle, fill = gray!30, minimum width = 1.2cm] at (2,1) {BSG}; 
+			\node (fbrv) [rectangle, fill = gray!30, minimum width = 1.2cm] at (4,1) {FbrV}; 
+			\node (b) at (5.5,1) {};
+			\node (bu) [rectangle, fill = gray!30, minimum width = 1.2cm] at (3,-1) {BU}; 
+			\node (hl) [rectangle, fill = gray!30, minimum width = 1.2cm] at (7,0) {HL};
+ 			 %\graph { (sw) -> (bsg) -> (fbrv) -> (hl) 
+			%(sw) -> (bu) -> (hl)};
+			\draw[thick] (sw) -| (0.5,1);
+			\draw[thick, ->] (0.5,1) -> (bsg);
+			\draw[thick, ->] (bsg) -> (fbrv);
+			\draw[thick]  (fbrv) -| (5.5,0);
+			\draw[thick, ->] (5.5,0) -> (hl);
+			\draw[thick] (sw) -| (0.5,-1);
+			\draw[thick, ->] (0.5,-1) -> (bu);
+			\draw[thick]  (bu) -| (5.5,0);
+			}
+        		\end{center}
+}
+
+%\offslide{Analytische Bestimmung der Zuverl\"assigkeit}
+
+\subsection{Verfahren mittels Weibull-Verteilung und MCMC-Simulation}
+\frame{\frametitle{Betriebszust\"ande der elektronischen F\"uhrerbremsventilanlage}
+\framesubtitle{Die elektronische F\"uhrerbremsventilanlage kann verschiedene Betriebszust\"ande annehmen.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item $S_{0}$: Ausgeschaltet
+		\begin{itemize}
+		\item Ca. 3600 Betriebsstunden/Jahr
+		\end{itemize}
+		\item $S_{1}$: Normaler Betrieb (BSG und FbrV)
+		\begin{itemize}
+		\item  \"Ubergang zur Nutzung R\"uckfallebene: Wahrscheinlichkeit $p_{1}$
+		\end{itemize}
+		\item $S_{2}$: Betrieb mit R\"uckfallebene
+		\begin{itemize}
+		\item \"Ubergang zur St\"orung: Wahrscheinlichkeit $p_{2}$
+		\end{itemize}
+		\item $S_{3}$: St\"orung
+		\begin{itemize}
+		\item Fahrzeugst\"orung ``Stop on line''
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\only<1>{\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+ 		 \tikzstyle{every state}=[fill=gray!30,draw=none]
+
+ 		 \node[state] (s0)    at (0,0)                {$S_{0}$};
+ 		 \node[state]         (s1)  at (-2,-2) {$S_{1}$};
+		  \node[state]         (s2) at (2,-2) {$S_{2}$};
+		  \node[state]         (s3) at (0,-4)     {$S_{3}$};
+
+ 		 \path (s0) edge [bend left]  node {$p_{01}$} (s1)
+		 edge [loop right] node{$p_{00}$} (s0)
+           	(s1) edge [bend right]             node {$p_{12}$} (s2)
+		edge [bend left] node{$p_{10}$} (s0)
+		 edge [loop below] node{$p_{11}$} (s1)
+		%(s2) edge              node {$p_{3}$} (s0)
+        		(s2) edge              node {$p_{23}$} (s3)
+		edge[loop above] node{$p_{22}$} (s1)
+		edge[bend right] node{$p_{20}$} (s0)
+		(s3) edge[loop left] node{$p_{33}$} (s3);
+		\end{tikzpicture}}
+		\only<2>{
+		\begin{equation*}
+		P = 
+		\left( \begin{matrix}
+ 		p_{00} & p_{01} & 0 &0 \\
+		p_{10} & p_{11} & p_{12} & 0 \\
+		p_{20} & 0 & p_{22} & p_{23} \\
+		0 & 0 & 0 & p_{33} \\
+		\end{matrix} \right)
+		\end{equation*}
+		}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Ausfallzeitpunkte Bremssteuerger\"at}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Annahme:
+		\begin{itemize}
+		\item Elektronikkomponente
+		\item Weibullverteilt:
+		\begin{itemize}
+		\item $\beta = 5$
+		\item $\lambda = 12$
+		\end{itemize}
+		\item Flottengr\"o{\ss}e $N = 100$
+		\end{itemize}
+		\item Ergebnis:
+		\begin{itemize}
+		\item $\hat{\beta} = 4.5$
+		\item $\hat{\lambda} = 12.2$
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	\vspace{-.8cm}
+         	\begin{center}
+            		\begin{tabular}{|c|c|}
+		\hline
+			Nr. & TTF \\ \hline
+    			1 & 4.4 a \\ \hline  
+    			2 & 5.6 a  \\ \hline
+    			3 & 5.7 a \\ \hline  
+   			4 & 5.7 a \\ \hline 
+    			5 & 6.3 a \\ \hline 
+    			6 & 6.3 a \\ \hline 
+    			7 & 6.7 a \\ \hline 
+    			8 & 6.9 a \\ \hline 
+    			9 & 7.1 a \\ \hline 
+    			10 & 7.6 a \\ \hline 
+    			11 & 7.7 a \\ \hline
+    			12 & 7.8 a \\ \hline 
+    			13 & 7.8 a \\ \hline 
+    			14 & 7.9 a \\ \hline 
+    			16 & 8.0 a \\ \hline 
+			\end{tabular}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Ausfallzeitpunkte F\"uhrerbremsventilanlage}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Annahme:
+		\begin{itemize}
+		\item Elektropneumatik-Komponente
+		\item Exponentialverteilt:
+		\begin{itemize}
+		\item $\lambda = 50$
+		\end{itemize}
+		\item Flottengr\"o{\ss}e $N = 100$
+		\end{itemize}
+		\item Ergebnis:
+		\begin{itemize}
+		\item $\hat{\lambda} = 55.6$
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	%\vspace{-.8cm}
+         	\begin{center}
+            		\begin{tabular}{|c|c|}
+			\hline
+			Nr. & TTF \\ \hline
+    			1 & 0.24 a \\ \hline  
+    			2 & 0.30 a  \\ \hline
+    			3 & 0.35 a \\ \hline  
+   			4 & 0.53 a \\ \hline 
+    			5 & 2.71 a \\ \hline 
+    			6 & 3.08 a \\ \hline 
+    			7 & 3.44 a \\ \hline 
+    			8 & 3.46 a \\ \hline 
+    			9 & 5.05 a \\ \hline 
+    			10 & 7.44 a \\ \hline 
+    			\end{tabular}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Identifikation Verschleissdaten Bremssteuerger\"at}
+\framesubtitle{}
+\begin{center}
+ \pgfplotsset{width=12cm, height = 7cm}
+\begin{tikzpicture}
+\begin{axis}[no marks,
+xmax=15, xmin = 0,
+ ymin = 0, ymax = 1, grid=both,
+%axis lines=middle, 
+%ylabel = {$p$},
+xlabel = {$t/\mathrm{a}$},
+%legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{sim}}$, $\hat{F}$, $\hat{h}$}, 
+legend style = {at={(0.05,0.5)},
+        anchor=west}]
+
+  \only<1,5>{\addplot[draw = blue!70!black] table[x=t,y=Fq, %row sep=crcr
+  ] {BSG.dat}; \addlegendentry{$\bar{F}$}
+
+ \addplot[draw = orange!70!black] table[x=t,y=h, %row sep=crcr
+ ] {BSG.dat}; 
+ \addlegendentry{$h$}
+ }
+
+\only<2-4>{ \addplot[thick, draw = red!70!black] table[x=t,y=Fqest, %row sep=crcr
+] {BSG2.dat}; \addlegendentry{$\bar{F}_{\text{sim}}$}}
+    
+  
+\only<3-5>{  \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim,% row sep=crcr
+] {BSG.dat}; \addlegendentry{$\hat{F}$}}
+  
+  
+ \only<4-5>{ \addplot[thick, draw = gray] table[x=t,y=hest, %row sep=crcr
+ ] {BSG.dat}
+ coordinate [pos=0.53] (A)
+   coordinate [pos=0.6]  (B)
+ ; \addlegendentry{$\hat{h}$}
+ \fill[fill = gray!70, opacity = 0.8] (A) -| (B)
+ node [pos=0.75,anchor=west]
+     {$\triangle h = 0.048$};}
+ \end{axis}
+\end{tikzpicture}
+%%
+\end{center}
+}
+
+
+
+\frame{\frametitle{Identifikation Verschleissdaten F\"uhrerbremsventilanlage}
+\framesubtitle{}
+\begin{center}
+ \pgfplotsset{width=12cm, height = 7cm}
+\begin{tikzpicture}
+\begin{axis}[no marks,
+xmax=15, xmin = 0,
+ ymin = 0, ymax = 1, grid=both,
+%axis lines=middle, 
+%ylabel = {$p$},
+xlabel = {$t/\mathrm{a}$},
+%legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{sim}}$, $\hat{F}$, $\hat{h}$}, 
+legend style = {at={(0.05,0.5)},
+        anchor=west}]
+
+  \only<1,5>{\addplot[draw = blue!70!black] table[x=t,y=Fq, %row sep=crcr
+  ] {FbrVA.dat}; \addlegendentry{$\bar{F}$}
+
+ \addplot[draw = orange!70!black] table[x=t,y=h, %row sep=crcr
+ ] {FbrVA.dat}; 
+ \addlegendentry{$h$}
+ }
+
+\only<2-4>{ \addplot[thick, draw = red!70!black] table[x=t,y=Fqest, %row sep=crcr
+] {FbrVA2.dat}; \addlegendentry{$\bar{F}_{\text{sim}}$}}
+    
+  
+\only<3-5>{  \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim, %row sep=crcr
+] {FbrVA.dat}; \addlegendentry{$\hat{F}$}}
+  
+  
+ \only<4-5>{ \addplot[thick, draw = gray] table[x=t,y=hest, %row sep=crcr
+ ] {FbrVA.dat}
+ coordinate [pos=0.53] (A)
+   coordinate [pos=0.6]  (B)
+ ; \addlegendentry{$\hat{h}$}}
+ \end{axis}
+\end{tikzpicture}
+%%
+\end{center}
+}
+
+\frame{\frametitle{Simulationsergebnisse}
+\framesubtitle{Die wiederholte Simulation der Markov-Kette eines Betriebstages liefert die Wahrscheinlichkeitsdichte der Betriebszust\"ande.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Markov-Chain-Monte-Carlo-Simulation
+		\begin{itemize}
+		\item Wiederholte Ausf\"uhrung einer Markov Kette
+		\item $N = 10^6$ Betriebstage
+		\end{itemize}
+		\item Zust\"ande:
+		\begin{itemize}
+		\item $S_{0}$: 39{,}8\%
+		\item $S_{1}$: 60{,}2\%
+		\item $S_{2}$: 0{,}014\%
+		\item $S_{3}$: 0\%
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+ 		 \tikzstyle{every state}=[fill=gray!30,draw=none]
+
+ 		 \node[state] (s0)    at (0,0)                {$S_{0}$};
+ 		 \node[state]         (s1)  at (-2,-2) {$S_{1}$};
+		  \node[state]         (s2) at (2,-2) {$S_{2}$};
+		  \node[state]         (s3) at (0,-4)     {$S_{3}$};
+		  
+		  \node [red!70!black,above] at (s0.north) {39{,}8\%};
+		  \node [red!70!black,below] at (s1.south) {60{,}2\%};
+		  \node [red!70!black,below] at (s2.south) {0{,}014\%};
+		  \node [red!70!black,below] at (s3.south) {0\%}; 
+
+ 		 \path (s0) edge [bend left]  (s1)
+		 edge [loop right]  (s0)
+           	(s1) edge [bend right]  (s2)
+		edge [bend left]  (s0)
+		 edge [loop above]  (s1)
+        		(s2) edge (s3)
+		edge[loop above]  (s1)
+		edge[bend right] (s0)
+		(s3) edge[loop left]  (s3);
+		\end{tikzpicture}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Nutzung der Zuverl\"assigkeitsdaten}
+\framesubtitle{Erkenntnisse \"uber das Lebensdauerverhalten lassen sich zur B\"undelung von Aktivit\"aten oder zur Fristverl\"angerung nutzen.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item B\"undelung von Aktivit\"aten
+		\begin{itemize}
+		\item Vorhersage \"uber Ausfallwahrscheinlichkeit im n\"achsten Intervall
+		\item Reduzierung von reaktiven T\"atigkeiten
+		\end{itemize}
+		\item Verl\"angerung von Fristen
+		\begin{itemize}
+		\item Eskalation \"uber Instandhaltungsentwicklung
+		\item Wirtschaftlichkeitspr\"ufung
+		\item \"Anderung Wartungsanweisung
+		\end{itemize}
+		\item Vorhersage Ersatzteilbedarf
+		\item Unterst\"utzung Fehlerdiagnose
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+		\tikzstyle{decision} = [diamond, fill=blue!20, 
+	    text width=6em, text badly centered, inner sep=0pt, yshift = 1.5cm]
+                    \tikzstyle{block} = [rectangle, fill=blue!20, 
+                        text width=8em, text centered, rounded corners, minimum height=4em, yshift = 1.5cm]
+                    \tikzstyle{line} = [thick, draw, -latex']
+                    \tikzstyle{cloud} = [fill=red!20,  text width=8em, node distance=5cm, text centered,
+                        minimum height=2em]
+                     \vspace{-1cm}
+                     \resizebox{!}{7cm}{   
+                    \begin{tikzpicture}[node distance =  4cm, auto]%[node distance = 2cm,auto]
+                        % Place nodes
+                        \node [block] (init) {Komponente w\"ahlen};
+                        \node [cloud, right of=init] (expert) {Expertenwissen};
+                        \node [decision, below of=init] (decide) {Optimierung};
+                        \node [block, below of = decide] (daten1) {Lebensdauerkurve identifizieren};
+                        \node [block, below of = daten1] (predict1) {Vorhersage Zuverl\"assigkeit};
+                        \node [block, below of = predict1] (decide2) {Entscheidung Eingriff};
+                        
+                       \node [block, right of = daten1] (daten2) {Lebensdauerkurve identifizieren};
+                       \node [block, below of = daten2] (predict2) {Vorhersage Risiko};
+                       \node [block, below of = predict2] (assess) {Bewertung Risiko};
+                       \node [block, below of = assess] (do2) {Umsetzung};
+                       
+                        % Draw edges
+                        \path [line] (init) -- (decide);
+                        \path [line,dashed] (expert) -- (init);
+                        \path [line] (decide) -| node [above, near start] {Verl\"angerung} (daten2);
+                        \path [line] (decide) -- node {B\"undelung} (daten1);
+                         \path [line] (daten1) -- (predict1);
+                          \path [line] (predict1) -- (decide2);
+                          
+                           \path [line] (daten2) -- (predict2);
+                            \path [line] (predict2) -- (assess);
+                             \path [line] (assess) -- (do2);
+                    \end{tikzpicture}}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+%\subsection{Importance Sampling}
+%\frame{\frametitle{Importance sampling}
+%\framesubtitle{Importance sampling (IS) increases the probability of ``desired'' outcomes in Monte-Carlo-Simulations.}
+%\begin{itemize}
+%\item Typical IS approaches:
+%\begin{itemize}
+%		\item Stratification: select only relevant strata of the sampling range
+%		\item Scaling: Scale random variable
+%		\item Translation: Move random variable to more relevant part of sampling space
+%		\item Change of random variable: Replace random variable by one more likely to produce outcomes in the relevant range
+%		\item Adaptive approaches
+%		\end{itemize}
+%\item Effect: higher number of samples in region of interest
+%\item Correction factor: Likelihood ratio $L(y) = \frac{f(y)}{\tilde{f}(y)}$
+%\end{itemize}
+%}
+%
+%\frame{\frametitle{Example: Application of IS to braking curves}
+%\framesubtitle{Change identified random variables, in the case at hand $\mu_{B}$}
+%\begin{center}
+%\includegraphics[width = .9\textwidth]{hist}
+%\end{center}
+%}
+%
+%\frame{\frametitle{Example: Application of IS to braking curves}
+%\framesubtitle{Step 3: Analyse for rare events, here braking distances in excess of 1100 m. $N = 5 \cdot 10^7$}
+%\only<1>{\begin{center}
+%\includegraphics[width = .9\textwidth]{rare}
+%\end{center}}
+%\only<2>{
+%%\hspace{-.62cm}
+%\begin{tabular}{|c|c|c|c|c|c|c|}
+%\hline
+%$s$ & $n_{\mathcal{U}}$ & $p_{\mathcal{U}}$ & $n_{IS, 1}$ & $p_{IS, 1}$ & $n_{IS, 2}$ & $p_{IS, 2}$ \\ \hline
+%1000 & 24400 & 4.89$\cdot 10^{-3}$ & 2.27$\cdot 10^6$ & 1.14$\cdot 10^{-2}$ & 3.11$\cdot 10^5$ & 1.77$\cdot 10^{-3}$ \\ \hline
+%1050 & 2 & 4$\cdot 10^{-7}$ & 6.66$\cdot 10^4$ & 2.02$\cdot 10^{-4}$ & 1.48$\cdot 10^4$ & 1.59$\cdot 10^{-4}$ \\ \hline
+%1100 & 0 & 0 & 115 & 2.04$\cdot 10^{-7}$ & 419 & 7.50$\cdot 10^{-6}$ \\ \hline
+%1150 & 0 & 0 & 0 & 0 & 15 & 3.88$\cdot 10^{-7}$ \\ \hline
+%1160 & 0 & 0 & 0 & 0 & 7 & 2.05$\cdot 10^{-7}$ \\ \hline
+%1170 & 0 & 0 & 0 & 0 & 5 & 1.46$\cdot 10^{-7}$ \\ \hline
+%1180 & 0 & 0 & 0 & 0 & 4 & 1.16$\cdot 10^{-7}$ \\ \hline
+%1190 & 0 & 0 & 0 & 0 & 1 & 2.90$\cdot 10^{-8}$ \\ \hline
+%\end{tabular}
+%}
+%}
+
+
+\subsection{Weibull-Verteilung und Analyse}
+\frame{\frametitle{Formulierung der Weibull-Verteilung}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{Fr\"uhausf\"alle}
+     	\begin{itemize}
+     		\item $R(t) = e^{- \left( \frac{t}{\eta}\right)^\beta}$
+		\item $\lambda(t) = \frac{\beta}{\eta} \left( \frac{t}{\eta} \right)^{\beta-1}$
+		\item $T = \eta \Gamma\left( 1 + \frac{1}{\beta} \right) $
+		\item $\beta > 1$, $t > 0$
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	\textbf{Alterung}
+         \begin{itemize}
+     		\item $R(t) = e^{- \left( \frac{t-t_{2}}{\eta}\right)^\beta}$
+		\item $\lambda(t) = \frac{\beta}{\eta} \left( \frac{t - t_{2}}{\eta} \right)^{\beta-1}$
+		\item $T = \eta \Gamma\left( 1 + \frac{1}{\beta} \right)  $
+		\item $\beta > 1$, $t > t_{2}$
+     	\end{itemize}
+     \end{column}
+ \end{columns}
+}
+
+%\begin{frame}[fragile]
+%\frametitle{Weibull-Plot}
+%\framesubtitle{}
+%\begin{center}
+%\begin{tikzpicture}
+%\begin{axis}[scale only axis,
+%        only marks,
+%         xmin=10,xmax = 1000,
+%         ymin=0.001, ymax=0.999,
+%         grid=major,
+%         xtick={10, 20, 50, 100, 200, 500, 1000},
+%         ytick={0.001,0.05,0.4,0.99},
+%         yticklabels={0.1,5,40,99},
+%        xmode=log,
+%        log ticks with fixed point,
+%y coord trafo/.code=\pgfmathparse{ln(-ln(1-#1)))},
+%y coord inv trafo/.code=\pgfmathparse{exp(-exp(-#1-1))}
+%         ]
+%%
+%\addplot [domain=10:1000, sharp plot] {1-exp(-(x/820)^1.96)};
+%\addplot [mark=o, mark size=1.5, black] table {
+%96  0.02
+%147 0.04
+%202 0.0604
+%232 0.0813
+%277 0.1022
+%278 0.1231
+%325 0.1439
+%346 0.1648
+%354 0.1857
+%367 0.2066
+%414 0.228
+%440 0.2501
+%471 0.2721
+%525 0.2942
+%541 0.3163
+%542 0.3383
+%574 0.3604
+%608 0.3824
+%631 0.4045
+%643 0.4265
+%661 0.4504
+%669 0.4743
+%706 0.4982
+%720 0.5221
+%722 0.546
+%738 0.5712
+%747 0.598
+%770 0.6248
+%802 0.6537
+%841 0.6825
+%850 0.7114
+%884 0.7403
+%893 0.7691
+%901 0.798
+%};
+%\end{axis} 
+%\end{tikzpicture}
+%
+%\end{center}
+%\end{frame}

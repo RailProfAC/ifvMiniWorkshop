@@ -1,0 +1,587 @@
+% !TEX root = ../16_MdQM_Vorlesung RevB.tex
+
+%\sectionpage
+
+%\frame{\frametitle{}
+%\begin{center}
+%            		\begin{tikzpicture}[limb/.style={line cap=round,line width=1.5mm,line join=bevel}]
+%\draw[line width=2mm,rounded corners,fill=yellow] (-2,0) -- (0,-2) -- (2,0) -- (0,2) -- cycle;
+%\fill (1.5mm,7mm) circle (1.5mm);
+%\fill(0,-7.5mm) -- ++(10mm,0mm) -- ++(120:2mm)--++(100:1mm)--++(150:2mm) arc (70:170:2.5mm and 1mm);
+%\draw[limb] (-7.5mm,-6.5mm)--++(70:4mm)--++(85:4mm) coordinate(a)--++(-45:5mm)--(-2.5mm,-6.5mm);
+%\fill[rotate around={45:(a)}] ([shift={(-0.5mm,0.55mm)}]a) --++(0mm,-3mm)--++
+%        (7mm,-0.5mm)coordinate(b)--++(0mm,4mm)coordinate(c)--cycle;
+%\draw[limb] ([shift={(-0.6mm,-0.4mm)}]b) --++(-120:5mm) ([shift={(-0.5mm,-0.5mm)}]c) --++
+%        (-3mm,0mm)--++(-100:3mm)coordinate (d);
+%\draw[ultra thick] (d) -- ++(-45:1.25cm);
+%\end{tikzpicture}
+%        		\end{center}
+%}
+
+\subsection{Exkurs: Vertragspr\"ufung}
+\subsectionpage
+
+\frame{\frametitle{Aufgaben der Vertragspr\"ufung}
+\framesubtitle{}
+\begin{itemize}
+\item Angebotsphase
+\begin{itemize}
+	\item Pr\"ufung auf Vollst\"andigkeit
+	\item Pr\"ufung auf Risiken
+\end{itemize}
+\item Vertragsabschlussphase
+\begin{itemize}
+	\item Pr\"ufung auf Vollst\"andigkeit
+	\item Pr\"ufung auf Unstimmigkeit
+	\item Pr\"ufung auf Widerspr\"uchlichkeit
+\end{itemize}
+\item Abwicklungsphase
+\begin{itemize}
+	\item Verfolgen von \"Anderungen
+	\item Verfolgen von Abweichungen
+\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Vorgehen in der Angebotsphase}
+\framesubtitle{}
+\begin{itemize}
+\item Rechte und Pflichten der Vertragsparteien
+\begin{itemize}
+	\item Dokumentenhierarchie
+	\item Liefer- und Leistungsumfang
+\end{itemize}
+\item Mitwirkungspflichten
+\begin{itemize}
+	\item Auftraggeber
+	\item Auftragnehmer
+\end{itemize}
+\item Analyse der Regelungen u.a. zu
+\begin{itemize}
+	\item Vertragsstrafen (z.B. Gewichtsp\"onale, Lieferverzug,...)
+	\item Abnahmen
+	\item \"Anderungen
+	\item Verz\"ogerungen
+\end{itemize}
+\item Beurteilen besonderer vertraglicher Risiken
+\end{itemize}
+\begin{enumerate}
+\item Lesen der Dokumente
+\item Herausforderungen erkennen
+\item Ma{\ss}nahmen erarbeiten und umsetzen
+\end{enumerate}
+}
+
+\frame[allowframebreaks]{\frametitle{Wichtige Aspekte bei der Vertragspr\"ufung}
+\framesubtitle{}
+\begin{itemize}
+\item Anwendbares Recht, Gerichtsstand
+\item Regelung von Folgesch\"aden
+\item Verzeichnis der Vertragsdokumente (inkl. Ausgabestand)
+\item Liefer- und Leistungsumfang
+\item Preisstellung (DDP Oslo vs. EXW), Preiseskalation
+\item Umgang mit Abweichungen, technischem Fortschritt
+\item Technische Termine
+\item Optionen
+\item Teillieferungen
+\item Versp\"atung bei Lieferung, Dokumentation, IBS und P\"onalen
+\item Nichteinhalten der vertraglichen Leistungswerte (Qualit\"at, RAMS, LCC,...)
+\item Force-Majeur-Klausel
+\item Produktionsstandorte
+\item Logistik, Verpackung und Konservierung
+\item Pr\"ufungen und Tests
+\item Schulungen (Kunde und Betreiber)
+\item Zertifikate
+\item Gew\"ahrleistung
+\end{itemize}
+}
+
+\subsection{Exkurs: Kosten- und Aufwandssch\"atzung}
+\subsectionpage
+
+\frame{\frametitle{Warum Kosten- und Aufwandssch\"atzung?}
+\framesubtitle{Kosten- und Aufwandssch\"atzung ist die Grundlage f\"ur erfolgreiche Projektbearbeitung.}
+\begin{itemize}
+\item Aufwandssch\"atzung (Gr\"o{\ss}e: Zeit)
+\begin{itemize}
+	\item Identifikation von Arbeitspaketen
+	\item Input f\"ur Kostensch\"atzung
+	\item Ressourcenplanung und -allokation
+	\item Terminplanung (auch projekt\"ubergreifend)
+\end{itemize}
+\item Kostensch\"atzung (Gr\"o{\ss}e: Geld)
+\begin{itemize}
+	\item Bestimmung von:
+	\begin{itemize}
+		\item Einmalkosten \textit{non recurring cost (NRC)}
+		\item St\"uckkosten \textit{recurring cost (RC)}
+	\end{itemize}
+	\item Identifikation von Investitionen
+\end{itemize}
+\item Entscheidungshilfe im Entwicklungsprozess
+\item Bestimmung des Angebotspreises
+\end{itemize}
+}
+
+\frame{\frametitle{Herausforderungen Aufwands- und Kostensch\"atzung}
+\framesubtitle{}
+\begin{itemize}
+\item Informationen:
+\begin{itemize}
+	\item unvollst\"andig
+	\item unsicher
+	\item fehlerbehaftet 
+	\item Daher: Sch\"atzung, d.h. wahrscheinlichste Vorhersage \"uber den wahren Aufwand %{\color{red!80!black} Was wird gesch\"atzt?}
+\end{itemize}
+\item Projektdefinition:
+\begin{itemize}
+	\item Anforderungen nicht final (``to be defined during design stage'')
+	\item \"Anderungen m\"oglich
+\end{itemize}
+\item Projektablauf:
+\begin{itemize}
+	\item Beginn durch Angebotsrunden verz\"ogert
+	\item Projektverlauf durch externe Einfl\"usse (teil-)gesteuert 
+\end{itemize}
+\item Projektressourcen:
+\begin{itemize}
+	\item Durch andere Projekte Ressourcen blockiert oder eingeschr\"ankt nutzbar 
+\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Ans\"atze zur Aufwandssch\"atzung}
+\framesubtitle{}
+\begin{itemize}
+\item Expertensch\"atzverfahren, z.B.:
+\begin{itemize}
+	\item Projektstrukturplan-basiert \textit{(WBS-based)}
+	\item Gruppensch\"atzung
+\end{itemize}
+\item Formale Sch\"atzverfahren, z.B.:
+\begin{itemize}
+	\item Analogie-basiert (z.B. Bremszange wie ..., jedoch mit ...)
+	\item Parametrische Modelle (z.B. E-Kupplung Verkabelung: 100 h)
+	\item Gr\"o{\ss}enbasiert: (z.B. Anpasskonstruktion: 500 h)
+\end{itemize}
+\item Kombinierte Sch\"atzverfahren, z.B.:
+\begin{itemize}
+	\item Zerlegung mit WBS, parametrische Sch\"atzung der Pakete
+\end{itemize}
+\item Auswahl des Verfahrens:
+\begin{itemize}
+	\item Abh\"angig von der Organisation
+	\item Formale Verfahren weniger ``lernf\"ahig''
+	\item Expertensch\"atzverfahren anf\"allig f\"ur ``wishful thinking''
+\end{itemize}
+\item Psychologische Herausforderungen \textit{(Cognitive biases)}:
+\begin{itemize}
+	\item \textit{Planning fallacy, cognitive dissonance, anchoring, confirmation bias, wishful thinking}
+\end{itemize}
+\end{itemize}
+}
+
+
+\frame{\frametitle{Projektstrukturplan}
+\framesubtitle{Work Breakdown Structure (WBS) f\"ur die Ermittlung von Arbeitspaketen}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+		\item Dekomposition eines Projekts
+		\begin{itemize}
+		\item Hierarchisch
+		\item Inkrementell
+		\end{itemize}
+		\item Baumstruktur
+		\item Gliederung gem\"a{\ss} DIN 69900
+		\begin{itemize}
+		\item Funktionsorientiert
+		\item \textbf{Objektorientiert}
+		\item Zeitorientiert
+		\end{itemize}
+		\item Starke Abh\"angigkeit von Deliverables
+		\item Erstellung \"ublicherweise Top-Down
+		\item Nutzen: Vollst\"andige \"Ubersicht
+		\item Hilfreich: ``Tickler list'' 
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=1\textwidth]{WBS}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Aufbereitung WBS f\"ur Projektplanung}
+\framesubtitle{Die Identifikation der Arbeitspakete allein l\"asst keine Planung des Projekts zu.}
+\begin{itemize}
+\item Sch\"atzung des Aufwands
+\begin{itemize}
+	\item Besprechung: m\"oglicher Bias
+	\item Alternative: Planning Poker
+\end{itemize}
+\item Abh\"angigkeit (Reihenfolge) der Projektbearbeitung
+\item Externe Inputs oder Vorbedingungen f\"ur Arbeitspakete
+\item Vertraglich zugesicherte Termine
+\item Zuordnung zu:
+\begin{itemize}
+	\item Ressourcen
+	\item Phasen
+\end{itemize}
+\item Zieldefinition (Definition of Done)
+\end{itemize}
+}
+
+\frame{\frametitle{Kostensch\"atzung}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \textbf{NRC estimation}
+     	\begin{itemize}
+     		\item Basierend auf Aufwandssch\"atzung
+		\item Erg\"anzend:
+		\begin{itemize}
+		\item Kundenbetreuung
+		\item Reisekosten
+		\item Externe Dienstleistungen (z.B. Tests, Abnahmen, ...)
+		\item Prototypen, Muster
+		\item Investitionen
+		\end{itemize}
+		\item Zu beachten:
+		\begin{itemize}
+		\item Stundens\"atze
+		\item Kostenentwicklung
+		\end{itemize}
+		\item N\"utzlich: Checkliste
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+	\textbf{RC estimation} (\cite{niazi05, pahlbeitz})
+         \begin{itemize}
+         	\item Intuitive Verfahren:
+		\begin{itemize}
+		\item Basierend auf Expertensch\"atzung
+		\item Unterst\"utzt durch Regeln
+		\end{itemize} 
+         	\item Analogiebasierte Sch\"atzung
+		\begin{itemize}
+		\item \"Ahnlichkeit
+		\item Komplexit\"at 
+		\end{itemize} 
+     		\item Parametrische Sch\"atzung:
+		\begin{itemize}
+		\item z.B. Gewicht, Material oder kombiniert %, z.B. \tiny
+%		\begin{equation*} 
+%		C = FC+\left(C_{co} N_{co} +  \frac{C_{rm}TF}{1-SC} \right)W
+%		\end{equation*}
+		\end{itemize}
+		\item Analytische Verfahren, z.B.
+		\begin{itemize}
+		\item Bearbeitungssimulation
+		\item Feature based cost estimation
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Risiko}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{center}
+     		\Large Wenn Sie alle Risiken vermeiden wollen, haben Sie bald keine Risiken mehr zu vermeiden, weil Sie nicht mehr im Geschäft sind.
+     	\end{center}	
+\begin{flushright}
+ Josef Ackermann
+\end{flushright}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.8\textwidth]{Ackermann}\source{Quelle: Agencia Brasil}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\subsection{Ausgew\"ahlte Elementare Qualit\"atstools}
+\frame{\frametitle{Ausgew\"ahlte elementare Qualit\"atstools}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Histogramm
+		\begin{itemize}
+		\item Diagramm relativer H\"aufigkeiten
+		\end{itemize}
+		\item 5 x Warum
+		\begin{itemize}
+		\item Wiederholtes Fragen nach der Ursache f\"uhrt zur Root-Cause
+		\end{itemize}
+		\item Paretoanalyse
+		\begin{itemize}
+		\item 80\% Fehlerh\"aufigkeit bei 20\% der Arten
+		\end{itemize}
+		\item Ishikawa-Diagramm
+		\begin{itemize}
+		\item Systematische Ursachensuche
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.8\textwidth]{Histogramm}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\subsection{Quality Function Deployment (QFD)}
+\subsectionpage
+
+\subsection{Quality Function Deployment (QFD)}
+\frame{\frametitle{Quality Function Deployment (QFD) - Einf\"uhrung}
+\framesubtitle{``Copy the spririt, not the form.''}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Hauptidee: Korrelationen feststellen
+		\item Zeilen: Was?
+		\begin{itemize}
+		\item Was braucht der Kunde?
+		\end{itemize}
+		\item Spalten: Wie?
+		\begin{itemize}
+		\item Wie bekommt der Kunde das Gew\"unschte?
+		\end{itemize}
+		\item Gewichtung der Merkmale
+		\item Autokorrelation zeigt Widerspr\"uche auf
+		\item Korrelationsmatrizen an jeder Schnittstelle denkbar
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\vspace{-.5cm}
+         	\begin{center}
+            		\includegraphics[width=0.8\textwidth]{QFD7}\source{}
+        		\end{center}
+
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Quality Function Deployment (QFD) - Vor- und Nachteile}
+\framesubtitle{``Copy the spririt, not the form.''}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     \vspace{-.5cm}
+     	\begin{itemize}
+     		\item[-] Exponentielles Wachstum
+		\item[-] Mangelnde Kunden- und Anwenderinformationen
+		\item[-] Schnittstellen = Machtkonflikte
+		\item[+] Qualit\"atssteigerung
+		\item[+] Anforderungen und Zielkonflikte fr\"uhzeitig identifizieren
+		\item[+] Optimale Anforderungsabdeckung
+		\item[+] Abstraktion von L\"osungen 
+		\begin{itemize}
+		\item Kundenverst\"andnis
+		\item Innovationsans\"atze
+		\end{itemize}
+		\item[+] Nachvollziehbarkeit der Entscheidungen 
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+		\vspace{-.5cm}
+         	\begin{center}
+            		\includegraphics[width=0.8\textwidth]{QFD7}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{QFD in der Praxis}
+\framesubtitle{}
+\begin{itemize}
+\item H\"aufig nur erste Planungsphase durchgef\"uhrt
+\item Teamzusammensetzung
+\begin{itemize}
+	\item Abteilungs\"ubergreifend: Entwicklung, Konstruktion, Marketing, Vertrieb, Fertigung, QM, Einkauf
+	\item Erfahrener Moderator
+\end{itemize}
+\item (M\"oglicher) Ablauf:
+\begin{itemize}
+	\item Ermittlung und Gewichtung der Kundenforderungen
+	\item Ableitung korrelierender Merkmale
+	\item Korrelationen bewerten
+	\item Wechselwirkungen pr\"ufen
+	\item Festlegung von Optimierungsrichtungen f\"ur die Merkmale
+	\item Benchmarking
+	\item Festlegung von Zielgr\"o{\ss}en f\"ur Merkmale
+\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Vorgehen QFD}
+\framesubtitle{Am Beispiel des Antriebssystems Railway Challenge}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{enumerate}
+     		\item Kundenanforderungen sammeln und wichten
+		\item Merkmale ableiten
+		\item Optimierungsrichtung festlegen
+		\item Korrelation Anforderungen/Merkmale
+		\item Wechselwirkung der Merkmale
+		\item Absolutes Gewicht bestimmen
+		\item Benchmarking gegen Wettbewerb
+		\item Weiterf\"uhren, z.B.:
+		\begin{itemize}
+		\item Festlegen Zielwerte
+		\item Technische Bedeutung
+		\end{itemize}
+     	\end{enumerate}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+			\vspace{-.5cm}
+            		\only<1>{\includegraphics[width=0.8\textwidth]{QFD1}\source{}}
+			\only<2>{\includegraphics[width=0.8\textwidth]{QFD2}\source{}}
+			\only<3>{\includegraphics[width=0.8\textwidth]{QFD3}\source{}}
+			\only<4>{\includegraphics[width=0.8\textwidth]{QFD4}\source{}}
+			\only<5>{\includegraphics[width=0.8\textwidth]{QFD5}\source{}}
+			\only<6>{\includegraphics[width=0.8\textwidth]{QFD6}\source{}}
+			\only<7>{\includegraphics[width=0.8\textwidth]{QFD7}\source{}}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+
+\subsection{Fehlerbaumanalyse (FTA)}
+\subsectionpage
+
+\frame{\frametitle{Einf\"uhrung Fehlerbaumanalyse}
+\framesubtitle{Das Tool FTA stammt urspr\"unglich aus den Bereichen Aerospace und Reaktortechnik.}
+\begin{itemize}
+\item Ermittlung der logischen Verkn\"upfungen von Komponenten- und Subsystemausf\"allen
+\item Ausgangspunkt: Fehlerevent (Core Hazard, Top Event)
+\item Ermittlung aller m\"oglichen Ausfallskombinationen
+\item Darstellung als Fehlerbaum
+\begin{itemize}
+		\item Endlicher gerichteter Graph
+		\item Endlich viele Eing\"ange
+		\item Ein Ausgang (Core Hazard)
+	\end{itemize} 
+\item Ziele der FTA:
+\begin{itemize}
+		\item Systematische Identifikation aller m\"oglichen Ausfallkombinationen, die zum Core Hazard f\"uhren
+		\item Ermittlung von Zuverl\"assigkeitskenngr\"o{\ss}en:
+		\begin{itemize}
+		\item Eintrittsh\"aufigkeit Ausfallkombinationen/Core Hazard
+		\item Unverf\"ugbarkeit des Systems
+		\end{itemize}
+		\item Aufstellung eines grafischen Systemmodells
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Vorgehen FTA}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Systemanalyse
+		\begin{itemize}
+		\item Funktionen, Leistungsziele, Abweichungen
+		\item Betriebszust\"ande
+		\item Umgebungsbedingungen
+		\item Hilfsquellen
+		\item Systemkomponenten und Zusammenwirken
+		\item Analyse Operation und Verhalten
+		\end{itemize}
+		\item Aufstellung Fehlerbaum
+		\begin{itemize}
+		\item Core Hazard
+		\item Logisch 1 entspricht Ausfall
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{enumerate}
+            		\item Systemuntersuchung
+			\item Festlegung des unerw\"unschten Ereignisses, Ausfallkriterien
+			\item Festlegung Zuverl\"assigkeitskenngr\"o{\ss}e, Zeitintervalle
+			\item Ausfallarten der Komponenten
+			\item Fehlerbaum aufstellen
+			\item Bestimmung Eingangsgr\"o{\ss}en
+			\item Auswertung Fehlerbaum, Bewertung
+        		\end{enumerate}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Blockdiagramm Antriebssystem}
+\framesubtitle{}
+\begin{center}
+ \includegraphics[width = .9\textwidth]{RCBlockDiagram}
+\end{center}
+}
+
+\frame{\frametitle{Resultierender Fehlerbaum}
+\framesubtitle{}
+\begin{center}
+ \includegraphics[width = \textwidth]{FTA}
+\end{center}
+}
+
+
+\subsection{Failure Mode and Effect Analysis (FMEA)}
+\subsectionpage
+
+\frame{\frametitle{FMEA - Einf\"uhrung}
+\framesubtitle{}
+\begin{itemize}
+\item Arten:
+\begin{itemize}
+		\item Design-FMEA: Produkt-/Bauteilebene
+		\item Prozess-FMEA
+		\end{itemize}
+\item Vorgehen:
+\begin{itemize}
+		\item Team-Bildung: interdisziplin\"ar
+		\item System- und Funktionsanalyse: Funktionsstruktur
+		\item Fehleranalyse
+		\item Bewertung mittels Risikopriorit\"atszahl (RPZ):
+		\begin{itemize}
+		\item $A \in[1,10]$: Auftretenswahrscheinlichkeit
+		\item $B \in[1,10$: Bedeutung des Fehlers f\"ur den Kunden
+		\item $E \in[1,10$: Wahrscheinlichkeit der Entdeckung (vor der Auslieferung)
+		\item $RPZ = A B E$
+		\end{itemize}
+		\end{itemize}	
+\end{itemize}
+}
+
+\frame{\frametitle{FMEA - Auswertung}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Kritik: Multiplikation ordinal skalierter Merkmale nicht definiert
+		\item Eindeutigkeit RPZ fraglich
+		\item Optimierung h\"aufig nach:
+		\begin{itemize}
+		\item Bedeutung $B$
+		\item Technische Kardinalit\"at $B A$
+		\end{itemize}
+		\item Vergleich mit akzeptierten Risiken oder \textit{ALARP}
+		\item Wichtig: Nachverfolgung der Ma{\ss}nahmen
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.8\textwidth]{Risikograph}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}

@@ -1,0 +1,319 @@
+% !TEX root = ../SFV15001_MdQM_Fertigungsmesstechnik_Rev03.tex
+% \section{Prüfdatenerfassung und -auswertung elektrischer Komponenten}
+\label{Sec:Elektrisch}
+
+\frame{\frametitle{Motivation}
+\framesubtitle{Warum elektrische Komponenten in MdQM aufnehmen?}
+\begin{itemize}
+\item Zunahme mechatronischer Komponenten
+	\begin{itemize}
+		\item Integrationsleistung steigt
+		\item Engineering/Fertigung h\"aufig extern
+		\item Aber Qualit\"atsmanagement?
+	\end{itemize}
+\item Fehlereingrenzung
+	\begin{itemize}
+		\item H\"aufig im elektrischen Subsystem
+	\end{itemize}
+\item Indirekte Messung
+	\begin{itemize}
+		\item Kraft, Weg \"uber Widerstand
+		\item Schichtdicke \"uber Induktivit\"at
+		\item ...
+	\end{itemize}
+\end{itemize}
+}
+
+
+\subsection{Eigenschaften elektrischer Messger\"ate}
+\frame{\subsectionpage}
+
+\frame{\frametitle{Statisches Verhalten}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Statischer Zustand:
+		\begin{itemize}
+		\item Eingangsgr\"o{\ss}e konstant
+		\item Ausgangsgr\"o{\ss}e eingeschwungen
+		\end{itemize}
+		\item Kennlinie:
+		\begin{itemize}
+		\item Eindeutige Zuordung Eingang zu Ausgang
+		\item Ideal: Linear
+		\item Real: Nichtlinear
+		\end{itemize}
+		\item Empfindlichkeit:
+		\begin{itemize}
+		\item $E = \frac{\delta x_{a}}{\delta x_{a}} \approx \frac{x_{a}}{x_{e}}$
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}	
+		\begin{tikzpicture}
+ 			\node[rectangle, draw, thick, align= center] (m) at (2,5) {Mess-\\ger\"at};
+			\draw[->, thick] (0,5) -- (m) node[pos = 0.2, above] {$x_{e}$};
+			\draw[->, thick] (m) -- (4,5)node[pos = 0.8, above] {$x_{a}$};
+			
+			\begin{axis}[
+			axis lines=left,
+			xmin = 0, xmax = 1, ymin = 0, ymax = 1,
+			ytick = \empty, xtick = \empty,
+			xlabel = $x_{e}$, ylabel = $x_{a}$,
+			every axis x label/.style={
+  				  at={(ticklabel* cs:1.05)},
+ 				   anchor=west,
+				},
+					every axis y label/.style={
+				    at={(ticklabel* cs:1.05)},
+				    anchor=south,
+				},]
+                            \addplot[smooth, blue] coordinates {
+                                (0,   0)
+                                (0.7,  0.75)
+                                (0.9,  0.85)
+                                (1,  0.87)
+                                };
+				\addplot[smooth, red] coordinates {
+                                (0,   0)
+                                (1,  1)
+                                };
+                            \end{axis}
+		\end{tikzpicture}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Anzeige- und Messbereich}
+\framesubtitle{}
+     	\begin{itemize}
+     		\item Anzeigebereich
+		\begin{itemize}
+		\item Werte werden angezeigt
+		\end{itemize}
+		\item Messbereich
+		\begin{itemize}
+		\item Werte werden erfasst
+		\item Genauigkeitsangabe gilt
+		\end{itemize}
+		\item Aufl\"osung
+		\begin{itemize}
+		\item Kleinste darstellbare \"Anderung von $x_{a}$
+		\item Nicht mit Genauigkeit verwechseln!
+		\end{itemize}
+     	\end{itemize}
+}
+
+\frame{\frametitle{Dynamisches Verhalten}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Messeinrichtung folgt nicht beliebig schnell der Eingangsgr\"o{\ss}e
+		\item Dynamische Messabweichung:
+		\begin{equation*}
+			e_{dyn} = x(t) - x_{w}(t)
+		\end{equation*}
+		\item Einschwingzeit
+		\begin{itemize}
+		\item Zeit, die nach Sprung auf $x_{e}$ gewartet werden muss
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\begin{tikzpicture}
+ 			\node[rectangle, draw, thick, align= center] (m) at (2,5) {Mess-\\ger\"at};
+			\draw[->, thick] (0,5) -- (m) node[pos = 0.2, above] {$x_{e}$};
+			\draw[->, thick] (m) -- (4,5)node[pos = 0.8, above] {$x_{a}$};
+			
+			\begin{axis}[
+			axis lines=left,
+			%xmin = 0, xmax = 1, ymin = 0, ymax = 1,
+			ytick = \empty, xtick = \empty,
+			xlabel = $t$, ylabel = $x$,
+			legend entries = {$x_{e}$, $x_{a}$},
+			every axis x label/.style={
+  				  at={(ticklabel* cs:1.05)},
+ 				   anchor=west,
+				},
+					every axis y label/.style={
+				    at={(ticklabel* cs:1.05)},
+				    anchor=south,
+				},
+				every axis legend/.append style={
+        				at={(0.7,0.8)},
+        				anchor=south west}]
+				  \addplot[thick, draw = blue!70!black] table[x=t,y=u, 
+				  ] {Output.dat}; 
+  
+				  \addplot[thick, draw = red!70!black] table[x=t,y=y, 
+				  ] {Output.dat}; 
+    
+\end{axis}
+		\end{tikzpicture}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Genauigkeitsangaben elektrischer Messger\"ate}
+\framesubtitle{}
+\begin{itemize}
+\item Fehlergrenze:
+\begin{itemize}
+		\item Maximal zul\"assige Messabweichung $G = \left\| e \right\|_{max} = \left\| x-x_{w} \right\|_{max}$
+		\item Interpretation: F\"ur Messwert $x_{m}$ gilt: $x_{w} \in \left[ x_{w}-G; x_{w} + G \right]$
+		\end{itemize}
+		\item Eigenabweichung:
+		\begin{itemize}
+		\item Grunds\"atzliche Messabweichung unter Normbedingungen, an einem Punkt im Messbereich
+		\end{itemize}
+		\item Betriebsmessabweichung:
+		\begin{itemize}
+		\item Im Betrieb erzielte Messabweichung, unter tats\"achlichen Bedingungen
+		\end{itemize}
+		\item Vereinbart: Abweichungen mit $U_{95\%}$-Konfidenz
+		\item Angabe Fehlergrenzen:
+		\begin{itemize}
+		\item Absolut: $\pm 1 \mathrm{V}$
+		\item Relativ: $\pm 0{,}5 \%$ des Anzeigewerts
+		\item Kombiniert: $\pm\left(0{,}5 \%+ 1 \mathrm{V}\right)$
+		\end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Grunds\"atzliche Bauarten}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Elektromechanisch:
+		\begin{itemize}
+		\item Drehspulmesswerk
+		\item Dreheisenmesswerk
+		\item Elektrodynamisches Messwerk
+		\item Elektrostatisches Messwerk
+		\item und weitere
+		\end{itemize}
+		\item Digitale Messger\"ate
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.5\textwidth]{Drehspul}\source{Quelle: wikimedia/S\o ren Peo Pedersen}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Effekte digitaler Messger\"ate}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Abtastung:
+		\begin{itemize}
+		\item Zeitdiskretion der Anzeigewerte
+		\item Abtastrate $f_{a} = \frac{1}{T_{a}}$
+		\item Sampling-Theorem (Shannon-Nyquist): 
+		\begin{itemize}
+		\item $f_{a} > 2 f_{max}$
+		\item i.d.R. h\"oher
+		\end{itemize}
+		\end{itemize}
+		\item Quantisierung:
+		\begin{itemize}
+		\item Umwandlung in Wert mit endlicher Aufl\"osung
+		\item F\"ur $N$ Bit:
+			$\triangle U = \frac{U_{max}}{2^N-1}$
+		\item Abweichung durch Quantisierung $\pm \frac{\triangle U}{2}$
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\only<1>{\includegraphics[width=0.6\textwidth]{Multimeter}\source{Quelle: wikimedia/Harke}}
+			\only<2>{\includegraphics[width=0.75\textwidth]{ShannonNyquist}\source{Quelle: wikimedia/Peterpall}}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\subsubsection{Strom- und Spannungsmessung}
+\frame{\subsectionpage}
+\offslide{Gleichstrommessung}
+
+\offslide{Gleichspannungsmessung}
+
+\subsubsection{Messung Ohmscher Widerst\"ande}
+\frame{\subsectionpage}
+
+\frame{\frametitle{Stromrichtige Messung}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{equation*}
+		R = \frac{U}{I} = \frac{I \left(R_{x} + R_{I} \right)}{I} = R_{X} + R_{I}
+	\end{equation*}
+	\begin{equation*}
+		R_{korr} = \frac{U}{I} - R_{I}
+	\end{equation*}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.9\textwidth]{Stromrichtig}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Spannungsrichtige Messung}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{equation*}
+		R = \frac{U}{I} = R_{X} \| R_{U} = \frac{R_{X} R_{U}}{R_{X}+R_{U}}
+	\end{equation*}
+	\begin{equation*}
+		R_{korr} = \frac{U}{I - \frac{U}{R_{U}}}
+	\end{equation*}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.9\textwidth]{Spannungsrichtig}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\frame{\frametitle{Wheatstone-Messbr\"ucke}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     Spannungsteiler:
+     	\begin{equation*}
+		U_{1} = U_{0}\frac{R_{1}}{R_{1} + R_{2}}\quad U_{3} = U_{0}\frac{R_{3}}{R_{3} + R_{4}}
+	\end{equation*}
+	Maschenumlauf oben:
+	\begin{equation*}
+	\begin{split}
+	U_{B} &= U_{3} - U_{1} = U_{0}\left(\frac{R_{3}}{R_{3} + R_{4}} - \frac{R_{1}}{R_{1} + R_{2}} \right)\\
+	&= U_{0} \left(\frac{R_{2}R_{3} - R_{1}R_{4}}{\left(R_{1} + R_{2} \right)\left(R_{3} + R_{4} \right)} \right)
+	\end{split}
+	\end{equation*}
+	Abgleich: $U_{B} = 0$
+	\begin{equation*}
+	R_{2} = R_{1}\frac{R_{4}}{R_{3}}
+	\end{equation*}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.9\textwidth]{Wheatstone}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
