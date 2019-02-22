@@ -1,17 +1,17 @@
 \babel@toc {ngerman}{}
 \beamer@subsectionintoc {0}{1}{Brief Introduction to Data Science}{2}{0}{0}
-\beamer@subsectionintoc {0}{2}{Data Science: Tools and Techniques}{9}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{1}{Visualisation}{15}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{2}{Density Estimation}{23}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{3}{Unsupervised Learning (Clustering)}{25}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{4}{Monte-Carlo-Simulation}{49}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{5}{Monte-Carlo-Simulation Application Example}{51}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{6}{Principal Component Analysis}{52}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{7}{Support Vector Machines}{68}{0}{0}
-\beamer@subsubsectionintoc {0}{2}{8}{Practical hints}{70}{0}{0}
-\beamer@subsectionintoc {0}{3}{Recap Fertigungsmesstechnik}{72}{0}{0}
-\beamer@subsectionintoc {0}{4}{Pr\"ufdatenauswertung}{77}{0}{0}
-\beamer@subsectionintoc {0}{5}{Messunsicherheit}{89}{0}{0}
-\beamer@subsubsectionintoc {0}{5}{1}{Verfahren gem\IeC {\"a}\IeC {\ss } GUM}{91}{0}{0}
-\beamer@subsubsectionintoc {0}{5}{2}{Bestimmung der Messunsicherheit durch Monte Carlo Simulation, Faltungsintegrale}{95}{0}{0}
-\beamer@sectionintoc {1}{Manufacturing data}{105}{0}{1}
+\beamer@sectionintoc {1}{Data Science: Tools and Techniques}{9}{0}{1}
+\beamer@subsectionintoc {1}{1}{Visualisation}{16}{0}{1}
+\beamer@subsectionintoc {1}{2}{Density Estimation}{25}{0}{1}
+\beamer@subsectionintoc {1}{3}{Unsupervised Learning (Clustering)}{29}{0}{1}
+\beamer@subsectionintoc {1}{4}{Principal Component Analysis}{43}{0}{1}
+\beamer@subsectionintoc {1}{5}{Support Vector Machines}{46}{0}{1}
+\beamer@subsectionintoc {1}{6}{Monte-Carlo-Simulation}{49}{0}{1}
+\beamer@subsubsectionintoc {1}{6}{1}{Monte-Carlo-Simulation Application Example}{52}{0}{1}
+\beamer@subsectionintoc {1}{7}{Practical hints}{53}{0}{1}
+\beamer@subsectionintoc {1}{8}{Recap Fertigungsmesstechnik}{56}{0}{1}
+\beamer@subsectionintoc {1}{9}{Pr\"ufdatenauswertung}{61}{0}{1}
+\beamer@subsectionintoc {1}{10}{Messunsicherheit}{73}{0}{1}
+\beamer@subsubsectionintoc {1}{10}{1}{Verfahren gem\IeC {\"a}\IeC {\ss } GUM}{75}{0}{1}
+\beamer@subsubsectionintoc {1}{10}{2}{Bestimmung der Messunsicherheit durch Monte Carlo Simulation, Faltungsintegrale}{79}{0}{1}
+\beamer@sectionintoc {2}{Manufacturing data}{89}{0}{2}

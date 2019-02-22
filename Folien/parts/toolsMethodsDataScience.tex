@@ -1,9 +1,9 @@
-% !TEX root = ../17-MdQM-Vorlesung.tex
-\subsection{Data Science: Tools and Techniques}
+% !TEX root = ../ifvWorkshopQuality.tex
+\section{Data Science: Tools and Techniques}
 \frame{\frametitle{Tools for Data Scientist}
 \framesubtitle{}
 \begin{columns}[t] 
-     \begin{column}[T]{6cm} 
+     \begin{column}[T]{7cm} 
      	\begin{itemize}
      		\item Programming languages:
 		\begin{itemize}
@@ -32,7 +32,7 @@
   Data folder:\\
   http://bit.ly/ifv122019
      \end{column}
-     	\begin{column}[T]{6cm} 
+     	\begin{column}[T]{7cm} 
          	\begin{center}
             		\includegraphics[width=0.95\textwidth]{Jupyter}\source{}
         		\end{center}
@@ -41,7 +41,13 @@
 }
 
 \frame{\frametitle{Python Introduction}
-	\begin{itemize}
+	}
+
+\frame{\frametitle{Get started}
+\framesubtitle{Create your first jupyter notebook}
+\begin{columns}[t] 
+     \begin{column}[T]{7cm} 
+     	\begin{itemize}
 		\item Python 
 		\begin{itemize}
 			\item is interpreted
@@ -58,20 +64,46 @@
 		\end{itemize}
 		\item Data structures
 		\begin{itemize}
-			\item List: \texttt{l = [1, 2, "a"]}
-			\item Tuples: \texttt{t = (1, 2, "a")}
-			\item Dictionaries: \texttt{d = \{"a":1, "b":2\}}
+			\item List: \texttt{l = [1, 2, ``a'']}
+			\item Tuples: \texttt{t = (1, 2, ``a'')}
+			\item Dictionaries: \texttt{d = \{``a'':1, ``b'':2\}}
 			\item Sets: \texttt{s = set(\[1, 2, 3, 4\])}
 		\end{itemize}
 	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{7cm} 
+         	%\begin{center}
+            		\StickyNote[5cm]{
+			\begin{itemize}
+				\item[$\square$] Open a new jupyter notebook
+				\item[$\square$] Print ``Hello World''
+				\item[$\square$] Run a \texttt{for}-loop
+				\begin{itemize}
+					\item using \texttt{range(...)}
+					\item printing the loop variable
+				\end{itemize}
+				\item[$\square$] Create an example of the data structures listed
+				\item[$\square$] Access their elements
+				\end{itemize}}
+        		%\end{center}
+     \end{column}
+ \end{columns}
 }
 
 \frame{\frametitle{Pandas Introduction}
-\begin{itemize}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{7cm} 
+     	\begin{itemize}
 	\item Pandas is a framework for manipulation and handling of series and rectangular data
+	\item Extremely efficient and powerful
 	\item Syntax
 		\begin{itemize}
-			\item Refer to example worksheets
+			\item \texttt{import pandas as pd}
+			\item \texttt{df = pd.DataFrame(...)}
+			\item \texttt{df.head()}
+			\item \texttt{df[``Column'']}
+			\item \texttt{df[df[``Column''] == 0]}	
 		\end{itemize}
 	\item Data structures:
 	\begin{itemize}
@@ -79,6 +111,17 @@
 		\item DataFrame (\texttt{pd.DataFrame(\textsf{from e.g. dicts})})
 	\end{itemize}
 \end{itemize}
+     \end{column}
+     	\begin{column}[T]{7cm} 
+         	\StickyNote[5cm]{
+			\begin{itemize}
+				\item[$\square$] Import Pandas
+				\item[$\square$] Create a DataFrame (\texttt{pd.DataFrame}) from a dictionary
+				\item[$\square$] Show the \texttt{head} of the DataFrame 
+				\item[$\square$] Show only certain parts of the DataFrame, e.g. all non-zeros entries
+			\end{itemize}}
+     \end{column}
+ \end{columns}
 }
 
 \frame{\frametitle{Get to work!}
@@ -109,7 +152,7 @@
 \end{itemize}
 }
 
-\subsubsection{Visualisation}
+\subsection{Visualisation}
 \frame{\frametitle{Visualisation approaches}
 \framesubtitle{Likely, you will all know Excel plots - there is much more to it...}
 \begin{columns}[t] 
@@ -167,7 +210,7 @@
  \end{columns}
 }
 
-\subsubsection{Density Estimation}
+\subsection{Density Estimation}
 \frame{\frametitle{Density estimation}
 \framesubtitle{Estimate underlying probability density function from observed data}
 \begin{columns}[t] 
@@ -200,7 +243,7 @@
      \end{column}
  \end{columns}
 }
-%\subsubsection{Time Series}
+%\subsection{Time Series}
 
 \frame{\frametitle{Get to work!}
 \framesubtitle{Load and try \texttt{1-Visualisation.ipynb}  (http://bit.ly/ifv122019
@@ -210,191 +253,161 @@
 \end{center}
 }
 
-\subsubsection{Unsupervised Learning (Clustering)}
-\frame{\frametitle{Machine Learning}
-\framesubtitle{Using MIT OpenCourseware Slides}
-Source:
-\begin{center}
-Eric Grimson, John Guttag, and Ana Bell. 6.0002 Introduction to Computational Thinking and Data Science. Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
-\end{center}
-}
-\setbeamercolor{background canvas}{bg=}
-%\frame{
-\includepdf[page = 4-6]{OCW/ML.pdf}%}
-\frame{\frametitle{Clustering}
-\framesubtitle{Using MIT OpenCourseware Slides}
-Source:
-\begin{center}
-Eric Grimson, John Guttag, and Ana Bell. 6.0002 Introduction to Computational Thinking and Data Science. Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
-\end{center}
-}
-\includepdf[page = 3-21]{OCW/Clustering.pdf}%}
-
-\subsubsection{Monte-Carlo-Simulation}
-\frame{\frametitle{Monte-Carlo-Simulation (MC-Simulation) recap}
-\framesubtitle{}
-\begin{itemize}
-\item Method of estimating value of unknown quantity using inferential statistics
-\item Inferential statistics terms:
-\begin{itemize}
-		\item Population: set of examples
-		\item Sample: Proper subset of population
-\end{itemize}
-\item Random sample tends to exhibit same properties as population it is drawn from
-\end{itemize}
-\begin{example}[Flip coins]
- Let's estimate the probabilities of heads vs. tails for an infinite number of coin flips:
- \begin{itemize}
-		\item One flip (heads): 100\% heads? 
-		\item Two flips (h, h): still 100 \% heads? Confidence level?
-		\item 100 flips (52 h, 48 t): Probability of next coin coming up heads 52/100.
-		\end{itemize}
-\end{example}
-}
-
-\frame{\frametitle{Key aspects to be asked in MC-Simulations}
-\framesubtitle{}
-\begin{itemize}
-\item Never possible to guarantee perfect accuracy through sampling
-\item Never assume that an estimate is precisely correct
-\item How many samples do we need to look at before we can have justified confidence in our answers?
-\begin{itemize}
-	\item Answer depends on underlying distribution
-	\item Especially hard for defects ``Rare event simulation''
-\end{itemize}
-\end{itemize}
-}
-
-\subsubsection{Monte-Carlo-Simulation Application Example}
-\frame{\frametitle{MC-Simulation application example: Braking curve}
-\framesubtitle{CCS systems rely on braking curves to describe the train's braking capability.}
+\frame{\frametitle{What is machine learning?}
+\framesubtitle{ML is a field of study that gives computers the ability to learn without being explicitly programmed.}
 \begin{columns}[t] 
-     \begin{column}[T]{6cm} 
+     \begin{column}[T]{7cm} 
      	\begin{itemize}
-     		\item To supervise train velocity, CCS systems predict the future braking capability of the train
-		\item However, there is not \textit{the} braking capability
-		\item Braking curves exhibit a randomised behaviour
+     		\item Different paradigm:
+		\begin{itemize}
+		\item Derive rules from observations
+		\end{itemize}
+		\item Typical procedure:
+		\begin{itemize}
+		\item \textbf{Train:} Observe set of examples ``training data''
+		\item \textbf{Fit:} Infer information of process behind data
+		\item \textbf{Test:} Make prediction on unseen data ``Test data''
+		\end{itemize}
+		\item Variations:
+		\begin{itemize}
+		\item Supervised learning: provide labels with data
+		\item Unsupervised learning: cluster data based on patterns
+		\end{itemize}
      	\end{itemize}
      \end{column}
-     	\begin{column}[T]{6cm} 
+     	\begin{column}[T]{7cm} 
          	\begin{center}
-			\includegraphics[width=\textwidth]{brakingcurvesND}
+			Traditional approach:
+			\vspace{.5cm}
+			\begin{tikzpicture}
+ 				\node[anchor = east] (d) at (0,0) {Data};
+				\node[anchor = east, fill = red!20] (p) at (0,-1) {Program};
+				\node[anchor = west] (o) at (4,-.5) {Output};
+				\node[draw, fill = gray!20] (c) at (2,-.5) {Computer};
+				\draw[->, thick] (d) -- (c);
+				\draw[->, thick] (p)-- (c);
+				\draw[->, thick] (c) -- (o);
+			\end{tikzpicture}
+			
+			Machine learning approach:
+			\vspace{.5cm}
+			\begin{tikzpicture}
+ 				\node[anchor = east] (d) at (0,0) {Data};
+				\node[anchor = east] (p) at (0,-1) {Output};
+				\node[anchor = west,  fill = red!20] (o) at (4,-.5) {Program};
+				\node[draw, fill = gray!20] (c) at (2,-.5) {Computer};
+				\draw[->, thick] (d) -- (c);
+				\draw[->, thick] (p)-- (c);
+				\draw[->, thick] (c) -- (o);
+			\end{tikzpicture}
+
+		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\subsection{Unsupervised Learning (Clustering)}
+%\frame{\frametitle{Machine Learning}
+%\framesubtitle{Using MIT OpenCourseware Slides}
+%Source:
+%\begin{center}
+%Eric Grimson, John Guttag, and Ana Bell. 6.0002 Introduction to Computational Thinking and Data Science. Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+%\end{center}
+%}
+%\setbeamercolor{background canvas}{bg=}
+%%\frame{
+%\includepdf[page = 4-6]{OCW/ML.pdf}%}
+
+\frame{\frametitle{Clustering}
+\framesubtitle{Two fundamental approaches, $k$ number of clusters defined \textit{a priori}}
+\begin{columns}[t] 
+     \begin{column}[T]{7cm} 
+     \textbf{Hierarchical clustering}
+     	\begin{enumerate}
+     		\item Assign each item to one cluster
+		\item Find closest (most similar cluster): merge them
+		\item Continue until desired number of clusters $k$ is reached
+     	\end{enumerate}
+     \end{column}
+     	\begin{column}[T]{7cm} 
+         	\textbf{K-means clustering}
+     	\begin{enumerate}
+		\item Randomly choose $k$ initial centroids
+		\item While centroids don't change
+		\begin{enumerate}
+		\item[E:] Create $k$ clusters by assigning each item to closest centroid
+		\item[M:] Compute $k$ new centroids by averaging items in each cluster
+		\end{enumerate}
+     	\end{enumerate}
+     \end{column}
+ \end{columns}
+ 
+\begin{center}
+ 	\includegraphics[width = .9\textwidth]{expectation-maximization}
+\end{center}
+}
+
+\frame{\frametitle{K-means clustering procedure}
+         	\begin{center}
+            		\only<1>{\includegraphics[width=0.7\textwidth]{PCAprocedure0}\source{}}
+			\only<2>{\includegraphics[width=0.7\textwidth]{PCAprocedure1}\source{}}
+			\only<3>{\includegraphics[width=0.7\textwidth]{PCAprocedure2}\source{}}
+			\only<4>{\includegraphics[width=0.7\textwidth]{PCAprocedure3}\source{}}
+			\only<5>{\includegraphics[width=0.7\textwidth]{PCAprocedure4}\source{}}
+			\only<6>{\includegraphics[width=0.7\textwidth]{PCAprocedure5}\source{}}
+			%\only<7>{\includegraphics[width=0.7\textwidth]{PCAprocedure6}\source{}}
+
+        		\end{center}}
+		
+\frame{\frametitle{K-means inappropriate cluster number}
+         	\begin{center}
+            		\only<1>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster0}\source{}}
+			\only<2>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster1}\source{}}
+			\only<3>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster2}\source{}}
+			\only<4>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster3}\source{}}
+			\only<5>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster4}\source{}}
+			\only<6>{\includegraphics[width=0.7\textwidth]{PCAprocedureFewCluster5}\source{}}
+			%\only<7>{\includegraphics[width=0.7\textwidth]{PCAprocedure6}\source{}}
+
+        		\end{center}}
+
+
+
+\subsection{Principal Component Analysis}
+%\frame{\frametitle{Principal Component Analysis (PCA)}
+%\framesubtitle{Using MIT OpenCourseware Slides}
+%Source:
+%\begin{center}
+%Philippe Rigollet. 18.650 Statistics for Applications . Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+%\end{center}
+%}
+%
+%\setbeamercolor{background canvas}{bg=}
+%%\frame{
+%\includepdf[page = 2-16]{OCW/PCA.pdf}%}
+
+\frame{\frametitle{Principal Component Analysis (PCA)}
+\framesubtitle{Reduce dimensionality of data}
+\begin{columns}[t] 
+     \begin{column}[T]{7cm} 
+     	\begin{itemize}
+     		\item Sample $X_{1}, \ldots, X_{n}$ is a cloud of points in $\mathbb{R}^d$
+		\item Typically, $d$ is large
+		\item<1-> \textbf{Question:} can we project the point cloud onto a linear subspace of dimension $d' < d$ while keeping as much of the information as possible?
+		\item<2-> \textbf{Answer:} PCA achieves this by keeping important aspects of the covariance structure in orthogonal directions.
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{7cm} 
+         	\begin{center}
+            		\includegraphics[width=0.6\textwidth]{GaussianScatterPCA}\source{}
         		\end{center}
      \end{column}
  \end{columns}
 }
 
-% \frame{\frametitle{White Box Modelling of the braking system}
-% \framesubtitle{Which parameters can be identified and which effect do they have on the braking distance?}
-% \begin{itemize}
-% \item Brake pipe: propagation velocity, flow resistances, train length
-% \item Distributor valve: Filling time, brake cylinder pressure
-% \item Braking force generation: efficiency, brake radius (for disc brakes), pad/block friction coefficient
-% \item Wheel/rail contact: rail surface, contaminants, slip, ...
-% \end{itemize}
-% \begin{center}
-% \begin{center}
-%           \includegraphics[width=\textwidth]{TrainBPDiagram}
-% \end{center}
-% \end{center}
-% \begin{itemize}
-% 	\item Also discrete failure events need to be considered 
-% \end{itemize}
-% }
-
-% \frame{\frametitle{Why chose MC-Simulation? What are the challenges?}
-% \framesubtitle{}
-% \begin{itemize}
-% \item Error-propagation:
-% \begin{itemize}
-% 		\item Conservative: assumes normal distribution for all parameters
-% 		\item Complex: requires explicit function formulation and partial differentiation
-% \end{itemize}
-% \item (Standard) Monte-Carlo-Simulation:
-% \begin{itemize}
-% 		\item Efficient (in terms of confidence): returns shortest (also asymmetric) confidence interval
-% 		\item Inefficient (in terms of computational effort):
-% 		\begin{itemize}
-% 		\item For rare event $\varepsilon \ll 1$, $N \approx \frac{100}{\varepsilon}$ trials required
-% 		\item Typical according to CSM: $\varepsilon \in \left[10^{-7} \ldots  10^{-9}\right] \, \Rightarrow \, N \approx 10^{11}$
-% 		\end{itemize}
-% \end{itemize}
-% \item ERA proposes to precalculate braking curves for limited number of train formations
-% \begin{itemize}
-% 		\item Freight trains to be handled using braked weight and correction factor
-% 		\end{itemize}
-% \end{itemize}
-% }
-
-% \frame{\frametitle{Importance sampling for MC-Simulations}
-% \framesubtitle{Importance sampling (IS) increases the probability of ``desired'' outcomes in Monte-Carlo-Simulations.}
-% \begin{itemize}
-% \item Typical IS approaches:
-% \begin{itemize}
-% 		\item Stratification: select only relevant strata of the sampling range
-% 		\item Scaling: Scale random variable
-% 		\item Translation: Move random variable to more relevant part of sampling space
-% 		\item Change of random variable: Replace random variable by one more likely to produce outcomes in the relevant range
-% 		\item Adaptive approaches
-% 		\end{itemize}
-% \item Effect: higher number of samples in region of interest
-% \item Correction factor: Likelihood ratio $L(y) = \frac{f(y)}{\tilde{f}(y)}$
-% \end{itemize}
-% }
-
-% \frame{\frametitle{Application of IS to braking curves}
-% \framesubtitle{Select relevant variables for IS.}
-% \begin{center}
-% \includegraphics[width = .9\textwidth]{mhist}
-% \end{center}
-% }
-
-% \frame{\frametitle{Application of IS to braking curves}
-% \framesubtitle{Change identified random variables, in the case at hand $\mu_{B}$}
-% \begin{center}
-% \includegraphics[width = .9\textwidth]{BChist}
-% \end{center}
-% }
-
-% \frame{\frametitle{Application of IS to braking curves}
-% \framesubtitle{Analyse for rare events, here braking distances in excess of 1100 m. $N = 5 \cdot 10^7$}
-% \only<1>{\begin{center}
-% \includegraphics[width = .9\textwidth]{rare}
-% \end{center}}
-% \only<2>{
-% %\hspace{-.62cm}
-% \begin{tabular}{|c|c|c|c|c|c|c|}
-% \hline
-% $s$ & $n_{\mathcal{U}}$ & $p_{\mathcal{U}}$ & $n_{IS, 1}$ & $p_{IS, 1}$ & $n_{IS, 2}$ & $p_{IS, 2}$ \\ \hline
-% 1000 & 24400 & 4.89$\cdot 10^{-3}$ & 2.27$\cdot 10^6$ & 1.14$\cdot 10^{-2}$ & 3.11$\cdot 10^5$ & 1.77$\cdot 10^{-3}$ \\ \hline
-% 1050 & 2 & 4$\cdot 10^{-7}$ & 6.66$\cdot 10^4$ & 2.02$\cdot 10^{-4}$ & 1.48$\cdot 10^4$ & 1.59$\cdot 10^{-4}$ \\ \hline
-% 1100 & 0 & 0 & 115 & 2.04$\cdot 10^{-7}$ & 419 & 7.50$\cdot 10^{-6}$ \\ \hline
-% 1150 & 0 & 0 & 0 & 0 & 15 & 3.88$\cdot 10^{-7}$ \\ \hline
-% 1160 & 0 & 0 & 0 & 0 & 7 & 2.05$\cdot 10^{-7}$ \\ \hline
-% 1170 & 0 & 0 & 0 & 0 & 5 & 1.46$\cdot 10^{-7}$ \\ \hline
-% 1180 & 0 & 0 & 0 & 0 & 4 & 1.16$\cdot 10^{-7}$ \\ \hline
-% 1190 & 0 & 0 & 0 & 0 & 1 & 2.90$\cdot 10^{-8}$ \\ \hline
-% \end{tabular}
-% }
-% }
-
-\subsubsection{Principal Component Analysis}
-\frame{\frametitle{Principal Component Analysis (PCA)}
-\framesubtitle{Using MIT OpenCourseware Slides}
-Source:
-\begin{center}
-Philippe Rigollet. 18.650 Statistics for Applications . Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
-\end{center}
-}
-
-\setbeamercolor{background canvas}{bg=}
-%\frame{
-\includepdf[page = 2-16]{OCW/PCA.pdf}%}
 
 
-
-
-\subsubsection{Support Vector Machines}
+\subsection{Support Vector Machines}
 
 \frame{\frametitle{Support Vector Machine}
 \framesubtitle{Separate data into subsets according to their $nD$-coordinates.}
@@ -576,9 +589,157 @@ Philippe Rigollet. 18.650 Statistics for Applications . Fall 2016. Massachusetts
  \end{columns}
 }
 
-%\subsubsection{Further Outlook}
+%\subsection{Further Outlook}
 
-\subsubsection{Practical hints}
+\subsection{Monte-Carlo-Simulation}
+\frame{\frametitle{Monte-Carlo-Simulation (MC-Simulation)}
+\framesubtitle{}
+\begin{itemize}
+\item Method of estimating value of unknown quantity using inferential statistics
+\item Inferential statistics terms:
+\begin{itemize}
+		\item Population: set of examples
+		\item Sample: Proper subset of population
+\end{itemize}
+\item Random sample tends to exhibit same properties as population it is drawn from
+\end{itemize}
+\begin{example}[Flip coins]
+ Let's estimate the probabilities of heads vs. tails for an infinite number of coin flips:
+ \begin{itemize}
+		\item One flip (heads): 100\% heads? 
+		\item Two flips (h, h): still 100 \% heads? Confidence level?
+		\item 100 flips (52 h, 48 t): Probability of next coin coming up heads 52/100.
+		\end{itemize}
+\end{example}
+}
+
+\frame{\frametitle{Key aspects to be asked in MC-Simulations}
+\framesubtitle{}
+\begin{itemize}
+\item Never possible to guarantee perfect accuracy through sampling
+\item Never assume that an estimate is precisely correct
+\item How many samples do we need to look at before we can have justified confidence in our answers?
+\begin{itemize}
+	\item Answer depends on underlying distribution
+	\item Especially hard for defects ``Rare event simulation''
+\end{itemize}
+\end{itemize}
+}
+
+\subsubsection{Monte-Carlo-Simulation Application Example}
+\frame{\frametitle{MC-Simulation application example: Braking curve}
+\framesubtitle{CCS systems rely on braking curves to describe the train's braking capability.}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item To supervise train velocity, CCS systems predict the future braking capability of the train
+		\item However, there is not \textit{the} braking capability
+		\item Braking curves exhibit a randomised behaviour
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+			\includegraphics[width=\textwidth]{brakingcurvesND}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+% \frame{\frametitle{White Box Modelling of the braking system}
+% \framesubtitle{Which parameters can be identified and which effect do they have on the braking distance?}
+% \begin{itemize}
+% \item Brake pipe: propagation velocity, flow resistances, train length
+% \item Distributor valve: Filling time, brake cylinder pressure
+% \item Braking force generation: efficiency, brake radius (for disc brakes), pad/block friction coefficient
+% \item Wheel/rail contact: rail surface, contaminants, slip, ...
+% \end{itemize}
+% \begin{center}
+% \begin{center}
+%           \includegraphics[width=\textwidth]{TrainBPDiagram}
+% \end{center}
+% \end{center}
+% \begin{itemize}
+% 	\item Also discrete failure events need to be considered 
+% \end{itemize}
+% }
+
+% \frame{\frametitle{Why chose MC-Simulation? What are the challenges?}
+% \framesubtitle{}
+% \begin{itemize}
+% \item Error-propagation:
+% \begin{itemize}
+% 		\item Conservative: assumes normal distribution for all parameters
+% 		\item Complex: requires explicit function formulation and partial differentiation
+% \end{itemize}
+% \item (Standard) Monte-Carlo-Simulation:
+% \begin{itemize}
+% 		\item Efficient (in terms of confidence): returns shortest (also asymmetric) confidence interval
+% 		\item Inefficient (in terms of computational effort):
+% 		\begin{itemize}
+% 		\item For rare event $\varepsilon \ll 1$, $N \approx \frac{100}{\varepsilon}$ trials required
+% 		\item Typical according to CSM: $\varepsilon \in \left[10^{-7} \ldots  10^{-9}\right] \, \Rightarrow \, N \approx 10^{11}$
+% 		\end{itemize}
+% \end{itemize}
+% \item ERA proposes to precalculate braking curves for limited number of train formations
+% \begin{itemize}
+% 		\item Freight trains to be handled using braked weight and correction factor
+% 		\end{itemize}
+% \end{itemize}
+% }
+
+% \frame{\frametitle{Importance sampling for MC-Simulations}
+% \framesubtitle{Importance sampling (IS) increases the probability of ``desired'' outcomes in Monte-Carlo-Simulations.}
+% \begin{itemize}
+% \item Typical IS approaches:
+% \begin{itemize}
+% 		\item Stratification: select only relevant strata of the sampling range
+% 		\item Scaling: Scale random variable
+% 		\item Translation: Move random variable to more relevant part of sampling space
+% 		\item Change of random variable: Replace random variable by one more likely to produce outcomes in the relevant range
+% 		\item Adaptive approaches
+% 		\end{itemize}
+% \item Effect: higher number of samples in region of interest
+% \item Correction factor: Likelihood ratio $L(y) = \frac{f(y)}{\tilde{f}(y)}$
+% \end{itemize}
+% }
+
+% \frame{\frametitle{Application of IS to braking curves}
+% \framesubtitle{Select relevant variables for IS.}
+% \begin{center}
+% \includegraphics[width = .9\textwidth]{mhist}
+% \end{center}
+% }
+
+% \frame{\frametitle{Application of IS to braking curves}
+% \framesubtitle{Change identified random variables, in the case at hand $\mu_{B}$}
+% \begin{center}
+% \includegraphics[width = .9\textwidth]{BChist}
+% \end{center}
+% }
+
+% \frame{\frametitle{Application of IS to braking curves}
+% \framesubtitle{Analyse for rare events, here braking distances in excess of 1100 m. $N = 5 \cdot 10^7$}
+% \only<1>{\begin{center}
+% \includegraphics[width = .9\textwidth]{rare}
+% \end{center}}
+% \only<2>{
+% %\hspace{-.62cm}
+% \begin{tabular}{|c|c|c|c|c|c|c|}
+% \hline
+% $s$ & $n_{\mathcal{U}}$ & $p_{\mathcal{U}}$ & $n_{IS, 1}$ & $p_{IS, 1}$ & $n_{IS, 2}$ & $p_{IS, 2}$ \\ \hline
+% 1000 & 24400 & 4.89$\cdot 10^{-3}$ & 2.27$\cdot 10^6$ & 1.14$\cdot 10^{-2}$ & 3.11$\cdot 10^5$ & 1.77$\cdot 10^{-3}$ \\ \hline
+% 1050 & 2 & 4$\cdot 10^{-7}$ & 6.66$\cdot 10^4$ & 2.02$\cdot 10^{-4}$ & 1.48$\cdot 10^4$ & 1.59$\cdot 10^{-4}$ \\ \hline
+% 1100 & 0 & 0 & 115 & 2.04$\cdot 10^{-7}$ & 419 & 7.50$\cdot 10^{-6}$ \\ \hline
+% 1150 & 0 & 0 & 0 & 0 & 15 & 3.88$\cdot 10^{-7}$ \\ \hline
+% 1160 & 0 & 0 & 0 & 0 & 7 & 2.05$\cdot 10^{-7}$ \\ \hline
+% 1170 & 0 & 0 & 0 & 0 & 5 & 1.46$\cdot 10^{-7}$ \\ \hline
+% 1180 & 0 & 0 & 0 & 0 & 4 & 1.16$\cdot 10^{-7}$ \\ \hline
+% 1190 & 0 & 0 & 0 & 0 & 1 & 2.90$\cdot 10^{-8}$ \\ \hline
+% \end{tabular}
+% }
+% }
+
+\subsection{Practical hints}
 \frame{\frametitle{Practical hints for application of data science methods}
 \framesubtitle{}
 \begin{columns}[t] 

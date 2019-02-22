@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  11 DEC 2018 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  21 FEB 2019 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -666,12 +666,174 @@ Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemeseagull.st
 y)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles
-.sty) (/usr/local/texlive/2018/texmf-dist/tex/latex/epigraph/epigraph.sty
+.sty)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\c_max_int=\count156
+\l_tmpa_int=\count157
+\l_tmpb_int=\count158
+\g_tmpa_int=\count159
+\g_tmpb_int=\count160
+\g__intarray_font_int=\count161
+\g__prg_map_int=\count162
+\c_log_iow=\count163
+\l_iow_line_count_int=\count164
+\l__iow_line_target_int=\count165
+\l__iow_one_indent_int=\count166
+\l__iow_indent_int=\count167
+\c_zero_dim=\dimen190
+\c_max_dim=\dimen191
+\l_tmpa_dim=\dimen192
+\l_tmpb_dim=\dimen193
+\g_tmpa_dim=\dimen194
+\g_tmpb_dim=\dimen195
+\c_zero_skip=\skip57
+\c_max_skip=\skip58
+\l_tmpa_skip=\skip59
+\l_tmpb_skip=\skip60
+\g_tmpa_skip=\skip61
+\g_tmpb_skip=\skip62
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count168
+\c__fp_leading_shift_int=\count169
+\c__fp_middle_shift_int=\count170
+\c__fp_trailing_shift_int=\count171
+\c__fp_big_leading_shift_int=\count172
+\c__fp_big_middle_shift_int=\count173
+\c__fp_big_trailing_shift_int=\count174
+\c__fp_Bigg_leading_shift_int=\count175
+\c__fp_Bigg_middle_shift_int=\count176
+\c__fp_Bigg_trailing_shift_int=\count177
+\c__fp_rand_size_int=\count178
+\c__fp_rand_four_int=\count179
+\c__fp_rand_eight_int=\count180
+\l__sort_length_int=\count181
+\l__sort_min_int=\count182
+\l__sort_top_int=\count183
+\l__sort_max_int=\count184
+\l__sort_true_max_int=\count185
+\l__sort_block_int=\count186
+\l__sort_begin_int=\count187
+\l__sort_end_int=\count188
+\l__sort_A_int=\count189
+\l__sort_B_int=\count190
+\l__sort_C_int=\count191
+\l__tl_build_start_index_int=\count192
+\l__tl_build_index_int=\count193
+\l__tl_analysis_normal_int=\count194
+\l__tl_analysis_index_int=\count195
+\l__tl_analysis_nesting_int=\count196
+\l__tl_analysis_type_int=\count197
+\l__regex_internal_a_int=\count198
+\l__regex_internal_b_int=\count199
+Normal \count register pool exhausted, switching to extended pool.
+\l__regex_internal_c_int=\count277
+\l__regex_balance_int=\count278
+\l__regex_group_level_int=\count279
+\l__regex_mode_int=\count280
+\c__regex_cs_in_class_mode_int=\count281
+\c__regex_cs_mode_int=\count282
+\l__regex_catcodes_int=\count283
+\l__regex_default_catcodes_int=\count284
+\c__regex_catcode_D_int=\count285
+\c__regex_catcode_S_int=\count286
+\c__regex_catcode_L_int=\count287
+\c__regex_catcode_O_int=\count288
+\c__regex_catcode_A_int=\count289
+\c__regex_all_catcodes_int=\count290
+\l__regex_show_lines_int=\count291
+\l__regex_min_state_int=\count292
+\l__regex_max_state_int=\count293
+\l__regex_left_state_int=\count294
+\l__regex_right_state_int=\count295
+\l__regex_capturing_group_int=\count296
+\l__regex_min_pos_int=\count297
+\l__regex_max_pos_int=\count298
+\l__regex_curr_pos_int=\count299
+\l__regex_start_pos_int=\count300
+\l__regex_success_pos_int=\count301
+\l__regex_curr_char_int=\count302
+\l__regex_curr_catcode_int=\count303
+\l__regex_last_char_int=\count304
+\l__regex_case_changed_char_int=\count305
+\l__regex_curr_state_int=\count306
+\l__regex_step_int=\count307
+\l__regex_min_active_int=\count308
+\l__regex_max_active_int=\count309
+\l__regex_replacement_csnames_int=\count310
+\l__regex_match_count_int=\count311
+\l__regex_min_submatch_int=\count312
+\l__regex_submatch_int=\count313
+\l__regex_zeroth_submatch_int=\count314
+\g__regex_trace_regex_int=\count315
+\c_empty_box=\box53
+\l_tmpa_box=\box54
+\l_tmpb_box=\box55
+\g_tmpa_box=\box56
+\g_tmpb_box=\box57
+\l__box_top_dim=\dimen196
+\l__box_bottom_dim=\dimen197
+\l__box_left_dim=\dimen198
+\l__box_right_dim=\dimen199
+Normal \dimen register pool exhausted, switching to extended pool.
+\l__box_top_new_dim=\dimen256
+\l__box_bottom_new_dim=\dimen257
+\l__box_left_new_dim=\dimen258
+\l__box_right_new_dim=\dimen259
+\l__box_internal_box=\box58
+\l__coffin_internal_box=\box59
+\l__coffin_internal_dim=\dimen260
+\l__coffin_offset_x_dim=\dimen261
+\l__coffin_offset_y_dim=\dimen262
+\l__coffin_x_dim=\dimen263
+\l__coffin_y_dim=\dimen264
+\l__coffin_x_prime_dim=\dimen265
+\l__coffin_y_prime_dim=\dimen266
+\c_empty_coffin=\box60
+\l__coffin_aligned_coffin=\box61
+\l__coffin_aligned_internal_coffin=\box62
+\l_tmpa_coffin=\box63
+\l_tmpb_coffin=\box64
+\l__coffin_display_coffin=\box65
+\l__coffin_display_coord_coffin=\box66
+\l__coffin_display_pole_coffin=\box67
+\l__coffin_display_offset_dim=\dimen267
+\l__coffin_display_x_dim=\dimen268
+\l__coffin_display_y_dim=\dimen269
+\l__coffin_bounding_shift_dim=\dimen270
+\l__coffin_left_corner_dim=\dimen271
+\l__coffin_right_corner_dim=\dimen272
+\l__coffin_bottom_corner_dim=\dimen273
+\l__coffin_top_corner_dim=\dimen274
+\l__coffin_scaled_total_height_dim=\dimen275
+\l__coffin_scaled_width_dim=\dimen276
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count316
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count317
+\g__xparse_grabber_int=\count318
+\l__xparse_m_args_int=\count319
+\l__xparse_mandatory_args_int=\count320
+\l__xparse_v_nesting_int=\count321
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/epigraph/epigraph.sty
 Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
-\beforeepigraphskip=\skip57
-\afterepigraphskip=\skip58
-\epigraphwidth=\skip59
-\epigraphrule=\skip60
+\beforeepigraphskip=\skip63
+\afterepigraphskip=\skip64
+\epigraphwidth=\skip65
+\epigraphrule=\skip66
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
@@ -689,22 +851,22 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks43
-\@arclen=\dimen190
-\@arcrad=\dimen191
-\@tempdimd=\dimen192
+\@arclen=\dimen277
+\@arcrad=\dimen278
+\@tempdimd=\dimen279
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count156
+\c@AlgoLine=\count322
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip61
+\algocf@hangindent=\skip67
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count157
+\c@checkoddpage=\count323
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -712,41 +874,41 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip62
-\skiplinenumber=\skip63
-\skiprule=\skip64
-\skiphlne=\skip65
-\skiptext=\skip66
-\skiplength=\skip67
-\algomargin=\skip68
-\skipalgocfslide=\skip69
-\algowidth=\dimen193
-\inoutsize=\dimen194
-\inoutindent=\dimen195
-\interspacetitleruled=\dimen196
-\interspacealgoruled=\dimen197
-\interspacetitleboxruled=\dimen198
-\algocf@ruledwidth=\skip70
-\algocf@inoutbox=\box53
-\algocf@inputbox=\box54
-\AlCapSkip=\skip71
-\AlCapHSkip=\skip72
-\algoskipindent=\skip73
-\algocf@nlbox=\box55
-\algocf@hangingbox=\box56
-\algocf@untilbox=\box57
-\algocf@skipuntil=\skip74
-\algocf@capbox=\box58
-\algocf@lcaptionbox=\skip75
-\algoheightruledefault=\skip76
-\algoheightrule=\skip77
-\algotitleheightruledefault=\skip78
-\algotitleheightrule=\skip79
-\c@algocfline=\count158
-\c@algocfproc=\count159
-\c@algocf=\count160
-\algocf@algoframe=\box59
-\algocf@algobox=\box60
+\skiptotal=\skip68
+\skiplinenumber=\skip69
+\skiprule=\skip70
+\skiphlne=\skip71
+\skiptext=\skip72
+\skiplength=\skip73
+\algomargin=\skip74
+\skipalgocfslide=\skip75
+\algowidth=\dimen280
+\inoutsize=\dimen281
+\inoutindent=\dimen282
+\interspacetitleruled=\dimen283
+\interspacealgoruled=\dimen284
+\interspacetitleboxruled=\dimen285
+\algocf@ruledwidth=\skip76
+\algocf@inoutbox=\box68
+\algocf@inputbox=\box69
+\AlCapSkip=\skip77
+\AlCapHSkip=\skip78
+\algoskipindent=\skip79
+\algocf@nlbox=\box70
+\algocf@hangingbox=\box71
+\algocf@untilbox=\box72
+\algocf@skipuntil=\skip80
+\algocf@capbox=\box73
+\algocf@lcaptionbox=\skip81
+\algoheightruledefault=\skip82
+\algoheightrule=\skip83
+\algotitleheightruledefault=\skip84
+\algotitleheightrule=\skip85
+\c@algocfline=\count324
+\c@algocfproc=\count325
+\c@algocf=\count326
+\algocf@algoframe=\box74
+\algocf@algobox=\box75
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
@@ -764,12 +926,12 @@ aphy)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count161
-\U@D=\dimen199
+\babel@savecnt=\count327
+\U@D=\dimen286
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
 LaTeX Info: Redefining \textlatin on input line 1839.
-\bbl@dirlevel=\count162
+\bbl@dirlevel=\count328
 )
 Package babel Info: Making " an active character on input line 121.
 )))
@@ -780,7 +942,7 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box61
+\pgfnodeparttextbox=\box76
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -789,9 +951,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-Normal \dimen register pool exhausted, switching to extended pool.
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen287
+\pgf@nodesepend=\dimen288
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -806,8 +967,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
+\pgffor@iter=\dimen289
+\pgffor@skip=\dimen290
 \pgffor@stack=\toks44
 \pgffor@toks=\toks45
 ))
@@ -818,32 +979,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count163
-\pgfplotmarksize=\dimen260
+\pgf@plot@mark@count=\count329
+\pgfplotmarksize=\dimen291
 )
-\tikz@lastx=\dimen261
-\tikz@lasty=\dimen262
-\tikz@lastxsaved=\dimen263
-\tikz@lastysaved=\dimen264
-\tikzleveldistance=\dimen265
-\tikzsiblingdistance=\dimen266
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count164
-\tikznumberofchildren=\count165
-\tikznumberofcurrentchild=\count166
-\tikz@fig@count=\count167
+\tikz@lastx=\dimen292
+\tikz@lasty=\dimen293
+\tikz@lastxsaved=\dimen294
+\tikz@lastysaved=\dimen295
+\tikzleveldistance=\dimen296
+\tikzsiblingdistance=\dimen297
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count330
+\tikznumberofchildren=\count331
+\tikznumberofcurrentchild=\count332
+\tikz@fig@count=\count333
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count168
-\pgfmatrixcurrentcolumn=\count169
-\pgf@matrix@numberofcolumns=\count170
+\pgfmatrixcurrentrow=\count334
+\pgfmatrixcurrentcolumn=\count335
+\pgf@matrix@numberofcolumns=\count336
 )
-\tikz@expandcount=\count171
+\tikz@expandcount=\count337
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -861,23 +1022,23 @@ File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen267
-\pgfdecoratedremainingdistance=\dimen268
-\pgfdecoratedinputsegmentcompleteddistance=\dimen269
-\pgfdecoratedinputsegmentremainingdistance=\dimen270
-\pgf@decorate@distancetomove=\dimen271
-\pgf@decorate@repeatstate=\count172
-\pgfdecorationsegmentamplitude=\dimen272
-\pgfdecorationsegmentlength=\dimen273
+\pgfdecoratedcompleteddistance=\dimen298
+\pgfdecoratedremainingdistance=\dimen299
+\pgfdecoratedinputsegmentcompleteddistance=\dimen300
+\pgfdecoratedinputsegmentremainingdistance=\dimen301
+\pgf@decorate@distancetomove=\dimen302
+\pgf@decorate@repeatstate=\count338
+\pgfdecorationsegmentamplitude=\dimen303
+\pgfdecorationsegmentlength=\dimen304
 )
-\tikz@lib@dec@box=\box66
+\tikz@lib@dec@box=\box81
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip80
-\multirow@cntb=\count173
-\multirow@dima=\skip81
-\bigstrutjot=\dimen274
+\multirow@colwidth=\skip86
+\multirow@cntb=\count339
+\multirow@dima=\skip87
+\bigstrutjot=\dimen305
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
@@ -886,7 +1047,7 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/multimedia.sty
 Package: multimedia 2012/05/02 ver 0.02
-\mm@movie=\count174
+\mm@movie=\count340
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -896,9 +1057,9 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@toka=\toks48
 \t@pgfplots@tokb=\toks49
 \t@pgfplots@tokc=\toks50
-\pgfplots@tmpa=\dimen275
-\c@pgfplots@coordindex=\count175
-\c@pgfplots@scanlineindex=\count176
+\pgfplots@tmpa=\dimen306
+\c@pgfplots@coordindex=\count341
+\c@pgfplots@scanlineindex=\count342
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -914,7 +1075,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count177
+\c@pgfmathroundto@lastzeros=\count343
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_leq.code.tex))
@@ -926,13 +1087,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count178
+\c@pgfplotsarray@tmp=\count344
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count179
+\c@pgfplotstable@counta=\count345
 \t@pgfplotstable@a=\toks51
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -945,7 +1106,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count180
+\c@pgfplotslibrarysurf@no=\count346
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -981,13 +1142,13 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count181
-\pgfplots@xmin@reg=\dimen276
-\pgfplots@xmax@reg=\dimen277
-\pgfplots@ymin@reg=\dimen278
-\pgfplots@ymax@reg=\dimen279
-\pgfplots@zmin@reg=\dimen280
-\pgfplots@zmax@reg=\dimen281
+\pgfplots@numplots=\count347
+\pgfplots@xmin@reg=\dimen307
+\pgfplots@xmax@reg=\dimen308
+\pgfplots@ymin@reg=\dimen309
+\pgfplots@ymax@reg=\dimen310
+\pgfplots@zmin@reg=\dimen311
+\pgfplots@zmax@reg=\dimen312
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -999,7 +1160,7 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/sansmath/sansmath.sty
 Package: sansmath 2007/02/28  ver 1.1 Donald Arseneau
-\c@mv@sans=\count182
+\c@mv@sans=\count348
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `sans'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathsfsl' in version `sans'
@@ -1023,13 +1184,13 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen282
+\arrowsize=\dimen313
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box68
-\pgf@layerboxsaved@background=\box69
+\pgf@layerbox@background=\box83
+\pgf@layerboxsaved@background=\box84
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -1061,31 +1222,30 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.
 tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count183
+\pgfcalendarcurrentjulian=\count349
 ))
-\gtt@currentline=\count184
-\gtt@lasttitleline=\count185
-\gtt@currgrid=\count186
-\gtt@chartwidth=\count187
-\gtt@lasttitleslot=\count188
-\gtt@elementid=\count189
-\gtt@today@slot=\count190
-\gtt@startjulian=\count191
-\gtt@endjulian=\count192
-\gtt@chartid=\count193
-\gtt@vrule@slot=\count194
-\gtt@calendar@slots=\count195
-\gtt@calendar@weeknumber=\count196
-\gtt@calendar@startofweek=\count197
-\gtt@left@slot=\count198
-\gtt@right@slot=\count199
+\gtt@currentline=\count350
+\gtt@lasttitleline=\count351
+\gtt@currgrid=\count352
+\gtt@chartwidth=\count353
+\gtt@lasttitleslot=\count354
+\gtt@elementid=\count355
+\gtt@today@slot=\count356
+\gtt@startjulian=\count357
+\gtt@endjulian=\count358
+\gtt@chartid=\count359
+\gtt@vrule@slot=\count360
+\gtt@calendar@slots=\count361
+\gtt@calendar@weeknumber=\count362
+\gtt@calendar@startofweek=\count363
+\gtt@left@slot=\count364
+\gtt@right@slot=\count365
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/graphs/tikzlibrarygraphs.code.tex
 File: tikzlibrarygraphs.code.tex 2015/06/05 v3.0.1a (rcs-revision 1.44)
-Normal \count register pool exhausted, switching to extended pool.
-\tikz@lib@auto@number=\count277
-\tikz@qnode@count=\count278
+\tikz@lib@auto@number=\count366
+\tikz@qnode@count=\count367
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryautomata.code.tex
@@ -1100,31 +1260,31 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box69
-\pgfnodeparttwobox=\box70
-\pgfnodepartthreebox=\box71
-\pgfnodepartfourbox=\box72
-\pgfnodeparttwentybox=\box73
-\pgfnodepartnineteenbox=\box74
-\pgfnodeparteighteenbox=\box75
-\pgfnodepartseventeenbox=\box76
-\pgfnodepartsixteenbox=\box77
-\pgfnodepartfifteenbox=\box78
-\pgfnodepartfourteenbox=\box79
-\pgfnodepartthirteenbox=\box80
-\pgfnodeparttwelvebox=\box81
-\pgfnodepartelevenbox=\box82
-\pgfnodeparttenbox=\box83
-\pgfnodepartninebox=\box84
-\pgfnodeparteightbox=\box85
-\pgfnodepartsevenbox=\box86
-\pgfnodepartsixbox=\box87
-\pgfnodepartfivebox=\box88
+\pgfnodepartlowerbox=\box84
+\pgfnodeparttwobox=\box85
+\pgfnodepartthreebox=\box86
+\pgfnodepartfourbox=\box87
+\pgfnodeparttwentybox=\box88
+\pgfnodepartnineteenbox=\box89
+\pgfnodeparteighteenbox=\box90
+\pgfnodepartseventeenbox=\box91
+\pgfnodepartsixteenbox=\box92
+\pgfnodepartfifteenbox=\box93
+\pgfnodepartfourteenbox=\box94
+\pgfnodepartthirteenbox=\box95
+\pgfnodeparttwelvebox=\box96
+\pgfnodepartelevenbox=\box97
+\pgfnodeparttenbox=\box98
+\pgfnodepartninebox=\box99
+\pgfnodeparteightbox=\box100
+\pgfnodepartsevenbox=\box101
+\pgfnodepartsixbox=\box102
+\pgfnodepartfivebox=\box103
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryspy.code.tex
 File: tikzlibraryspy.code.tex 2011/05/19 v3.0.1a (rcs-revision 1.4)
-\tikz@lib@spybox=\box89
+\tikz@lib@spybox=\box104
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.gates.logic.US.code.tex
@@ -1135,41 +1295,53 @@ n 1.1)
 gflibraryshapes.gates.logic.US.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.logic.code.tex)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen283
-\ar@mcellbox=\box90
-\extrarowheight=\dimen284
+\col@sep=\dimen314
+\ar@mcellbox=\box105
+\extrarowheight=\dimen315
 \NC@list=\toks52
-\extratabsurround=\skip82
-\backup@length=\skip83
-\ar@cellbox=\box91
+\extratabsurround=\skip88
+\backup@length=\skip89
+\ar@cellbox=\box106
 )
 \everycr=\toks53
-\minrowclearance=\skip84
+\minrowclearance=\skip90
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count279
-\lst@gtempboxa=\box92
+\lst@mode=\count368
+\lst@gtempboxa=\box107
 \lst@token=\toks54
-\lst@length=\count280
-\lst@currlwidth=\dimen285
-\lst@column=\count281
-\lst@pos=\count282
-\lst@lostspace=\dimen286
-\lst@width=\dimen287
-\lst@newlines=\count283
-\lst@lineno=\count284
-\lst@maxwidth=\dimen288
+\lst@length=\count369
+\lst@currlwidth=\dimen316
+\lst@column=\count370
+\lst@pos=\count371
+\lst@lostspace=\dimen317
+\lst@width=\dimen318
+\lst@newlines=\count372
+\lst@lineno=\count373
+\lst@maxwidth=\dimen319
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count285
-\lst@skipnumbers=\count286
-\lst@framebox=\box93
+\c@lstnumber=\count374
+\lst@skipnumbers=\count375
+\lst@framebox=\box108
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1181,49 +1353,61 @@ Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count287
-\calc@Bcount=\count288
-\calc@Adimen=\dimen289
-\calc@Bdimen=\dimen290
-\calc@Askip=\skip85
-\calc@Bskip=\skip86
+\calc@Acount=\count376
+\calc@Bcount=\count377
+\calc@Adimen=\dimen320
+\calc@Bdimen=\dimen321
+\calc@Askip=\skip91
+\calc@Bskip=\skip92
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count289
-\calc@Cskip=\skip87
+\calc@Ccount=\count378
+\calc@Cskip=\skip93
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
-\AM@pagewidth=\dimen291
-\AM@pageheight=\dimen292
+\AM@pagewidth=\dimen322
+\AM@pageheight=\dimen323
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box94
+\AM@pagebox=\box109
 \AM@global@opts=\toks55
 \AM@toc@title=\toks56
-\c@AM@survey=\count290
-\AM@templatesizebox=\box95
+\c@AM@survey=\count379
+\AM@templatesizebox=\box110
 )
-(./ifWorkshopQuality.aux)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \StickyNote with sig. 'O{4.5cm}mO{4.5cm}' on line 106.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \StickyNotePi with sig. 'O{4.5cm}mO{4.5cm}' on line 121.
+.................................................
+
+(./ifWorkshopQuality.aux (./MCIntro.aux) (./MCIntro.aux) (./Federspeicher.aux)
+(./Federspeicher.aux))
 \openout1 = `ifWorkshopQuality.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1233,12 +1417,12 @@ LaTeX Font Info:    ... okay on input line 82.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(22.76228pt, 318.67079pt, 22.76228pt)
-* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
-* \paperwidth=364.19536pt
-* \paperheight=273.14662pt
-* \textwidth=318.67079pt
-* \textheight=244.6939pt
+* h-part:(L,W,R)=(22.76228pt, 409.71951pt, 22.76228pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=256.0748pt
+* \textwidth=409.71951pt
+* \textheight=227.62207pt
 * \oddsidemargin=-49.5077pt
 * \evensidemargin=-49.5077pt
 * \topmargin=-72.26999pt
@@ -1261,16 +1445,16 @@ LaTeX Font Info:    ... okay on input line 82.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen293
-\scratchbox=\box96
-\nofMPsegments=\count292
-\nofMParguments=\count293
+\scratchcounter=\count380
+\scratchdimen=\dimen324
+\scratchbox=\box111
+\nofMPsegments=\count381
+\nofMParguments=\count382
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen294
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
+\MPscratchCnt=\count383
+\MPscratchDim=\dimen325
+\MPnumerator=\count384
+\makeMPintoPDFobject=\count385
 \everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1290,8 +1474,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 82.
+\AtBeginShipoutBox=\box112
+Package hyperref Info: Link coloring OFF on input line 156.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1299,11 +1483,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count297
+\c@section@level=\count386
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
 
 (./ifWorkshopQuality.out) (./ifWorkshopQuality.out)
 \@outlinefile=\write5
@@ -1338,9 +1522,9 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 82.
+ on input line 156.
 
-\c@lstlisting=\count298
+\c@lstlisting=\count387
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
@@ -1352,41 +1536,35 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 (./ifWorkshopQuality.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 98.
+(hyperref)                setting the option has no effect on input line 172.
 
-<../../figures/by-nc-saeu.png, id=14, 404.51125pt x 141.52875pt>
-File: ../../figures/by-nc-saeu.png Graphic file (type png)
-<use ../../figures/by-nc-saeu.png>
-Package pdftex.def Info: ../../figures/by-nc-saeu.png  used on input line 104.
-(pdftex.def)             Requested size: 113.81102pt x 39.81781pt.
-<../../figures/logo.jpg, id=15, 76.285pt x 257.96375pt>
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 104.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+<../../../figures/logoR.pdf, id=90, 91.34125pt x 137.51375pt>
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 178.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../../f
-igures/logo.jpg> <../../figures/by-nc-saeu.png (PNG copy)>]
-(./parts/introDataScience.tex
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 4.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../../.
+./figures/logoR.pdf>] (./parts/introDataScience.tex
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 4.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [2
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 28.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 28.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [3
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 57.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 57.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [4
 
 ]
@@ -1394,10 +1572,10 @@ Overfull \hbox (2.23236pt too wide) in paragraph at lines 105--105
  [] 
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 105.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 105.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
 [5
 
 ]
@@ -1405,119 +1583,143 @@ Overfull \hbox (2.23236pt too wide) in paragraph at lines 152--152
  [] 
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 152.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 152.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
 [6
 
 ]
-<../../figures/DataScienceProcess.png, id=187, 722.7pt x 542.025pt>
-File: ../../figures/DataScienceProcess.png Graphic file (type png)
-<use ../../figures/DataScienceProcess.png>
-Package pdftex.def Info: ../../figures/DataScienceProcess.png  used on input li
-ne 159.
-(pdftex.def)             Requested size: 254.93759pt x 191.2003pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 159.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [7
+<../../../figures/DataScienceProcess.png, id=263, 722.7pt x 542.025pt>
+File: ../../../figures/DataScienceProcess.png Graphic file (type png)
+<use ../../../figures/DataScienceProcess.png>
+Package pdftex.def Info: ../../../figures/DataScienceProcess.png  used on input
+ line 159.
+(pdftex.def)             Requested size: 327.77686pt x 245.83604pt.
 
- <../../figures/DataScienceProcess.png>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 176.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+Overfull \vbox (33.0877pt too high) detected at line 159
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 159.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[7
+
+ <../../../figures/DataScienceProcess.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 176.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [8
 
 ])
 (./parts/toolsMethodsDataScience.tex
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 2.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 2.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [9
 
 ]
-<../../figures/Jupyter.png, id=269, 686.565pt x 743.77875pt>
-File: ../../figures/Jupyter.png Graphic file (type png)
-<use ../../figures/Jupyter.png>
-Package pdftex.def Info: ../../figures/Jupyter.png  used on input line 41.
-(pdftex.def)             Requested size: 162.18016pt x 175.6846pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 41.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [10
+<../../../figures/Jupyter.png, id=346, 686.565pt x 743.77875pt>
+File: ../../../figures/Jupyter.png Graphic file (type png)
+<use ../../../figures/Jupyter.png>
+Package pdftex.def Info: ../../../figures/Jupyter.png  used on input line 41.
+(pdftex.def)             Requested size: 189.2102pt x 204.97673pt.
 
- <../../figures/Jupyter.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 67.
+Overfull \vbox (11.25166pt too high) detected at line 41
+ []
 
-LaTeX Font Info:    No file OMScmtt.fd. on input line 67.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 41.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[10
+
+ <../../../figures/Jupyter.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 44.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [11
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 91.
+
+LaTeX Font Info:    No file OMScmtt.fd. on input line 91.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 67.
+(Font)              for symbol `textbraceleft' on input line 91.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 91.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 67.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [11
+Overfull \vbox (11.00163pt too high) detected at line 91
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 91.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[12
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 82.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [12
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 125.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [13
 
 ]
-<../../figures/Wagenmeister.png, id=349, 815.045pt x 1284.8pt>
-File: ../../figures/Wagenmeister.png Graphic file (type png)
-<use ../../figures/Wagenmeister.png>
-Package pdftex.def Info: ../../figures/Wagenmeister.png  used on input line 90.
-
-(pdftex.def)             Requested size: 95.6022pt x 150.69936pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 90.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-
-[13
-
- <../../figures/Wagenmeister.png>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 110.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+<../../../figures/Wagenmeister.png, id=455, 815.045pt x 1284.8pt>
+File: ../../../figures/Wagenmeister.png Graphic file (type png)
+<use ../../../figures/Wagenmeister.png>
+Package pdftex.def Info: ../../../figures/Wagenmeister.png  used on input line 
+133.
+(pdftex.def)             Requested size: 122.9171pt x 193.75072pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 133.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [14
 
-]
-<../../figures/SingularValues.pdf, id=405, 259.56874pt x 258.36423pt>
-File: ../../figures/SingularValues.pdf Graphic file (type pdf)
-<use ../../figures/SingularValues.pdf>
-Package pdftex.def Info: ../../figures/SingularValues.pdf  used on input line 1
-68.
-(pdftex.def)             Requested size: 153.64381pt x 152.9303pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/Wagenmeister.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 153.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [15
 
- <../../figures/SingularValues.pdf>]
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 155.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [16
+
+]
+<../../../figures/SingularValues.pdf, id=536, 259.56874pt x 258.36423pt>
+File: ../../../figures/SingularValues.pdf Graphic file (type pdf)
+<use ../../../figures/SingularValues.pdf>
+Package pdftex.def Info: ../../../figures/SingularValues.pdf  used on input lin
+e 211.
+(pdftex.def)             Requested size: 153.64381pt x 152.9303pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [17
+
+ <../../../figures/SingularValues.pdf>]
 Missing character: There is no / in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -1555,1027 +1757,539 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ; in font nullfont!
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [16
-
-]
-<../../figures/MuHist.pdf, id=467, 361.35pt x 361.35pt>
-File: ../../figures/MuHist.pdf Graphic file (type pdf)
-<use ../../figures/MuHist.pdf>
-Package pdftex.def Info: ../../figures/MuHist.pdf  used on input line 168.
-(pdftex.def)             Requested size: 162.18016pt x 162.18144pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [17
-
- <../../figures/MuHist.pdf>]
-<../../figures/Scatter.png, id=517, 335.2525pt x 230.8625pt>
-File: ../../figures/Scatter.png Graphic file (type png)
-<use ../../figures/Scatter.png>
-Package pdftex.def Info: ../../figures/Scatter.png  used on input line 168.
-(pdftex.def)             Requested size: 162.18016pt x 111.6793pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [18
 
- <../../figures/Scatter.png>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-
-[19
-
 ]
-<../../figures/ReichweiteFilm.png, id=570, 492.33937pt x 456.20438pt>
-File: ../../figures/ReichweiteFilm.png Graphic file (type png)
-<use ../../figures/ReichweiteFilm.png>
-Package pdftex.def Info: ../../figures/ReichweiteFilm.png  used on input line 1
-68.
-(pdftex.def)             Requested size: 162.18016pt x 150.27641pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+<../../../figures/MuHist.pdf, id=594, 361.35pt x 361.35pt>
+File: ../../../figures/MuHist.pdf Graphic file (type pdf)
+<use ../../../figures/MuHist.pdf>
+Package pdftex.def Info: ../../../figures/MuHist.pdf  used on input line 211.
+(pdftex.def)             Requested size: 162.18016pt x 162.18144pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [19
+
+ <../../../figures/MuHist.pdf>]
+<../../../figures/Scatter.png, id=646, 335.2525pt x 230.8625pt>
+File: ../../../figures/Scatter.png Graphic file (type png)
+<use ../../../figures/Scatter.png>
+Package pdftex.def Info: ../../../figures/Scatter.png  used on input line 211.
+(pdftex.def)             Requested size: 162.18016pt x 111.6793pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [20
 
- <../../figures/ReichweiteFilm.png (PNG copy)>]
-<../../figures/VTPowerConsumption.pdf, id=597, 423.35107pt x 291.54953pt>
-File: ../../figures/VTPowerConsumption.pdf Graphic file (type pdf)
-<use ../../figures/VTPowerConsumption.pdf>
-Package pdftex.def Info: ../../figures/VTPowerConsumption.pdf  used on input li
-ne 168.
-(pdftex.def)             Requested size: 162.18016pt x 111.6886pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/Scatter.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [21
 
- <../../figures/VTPowerConsumption.pdf>]
-<../../figures/fxfyr.png, id=630, 443.6575pt x 345.29pt>
-File: ../../figures/fxfyr.png Graphic file (type png)
-<use ../../figures/fxfyr.png>
-Package pdftex.def Info: ../../figures/fxfyr.png  used on input line 168.
-(pdftex.def)             Requested size: 162.18016pt x 126.21683pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 168.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+]
+<../../../figures/ReichweiteFilm.png, id=698, 492.33937pt x 456.20438pt>
+File: ../../../figures/ReichweiteFilm.png Graphic file (type png)
+<use ../../../figures/ReichweiteFilm.png>
+Package pdftex.def Info: ../../../figures/ReichweiteFilm.png  used on input lin
+e 211.
+(pdftex.def)             Requested size: 162.18016pt x 150.27641pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [22
 
- <../../figures/fxfyr.png>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 202.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/ReichweiteFilm.png (PNG copy)>]
+<../../../figures/VTPowerConsumption.pdf, id=724, 423.35107pt x 291.54953pt>
+File: ../../../figures/VTPowerConsumption.pdf Graphic file (type pdf)
+<use ../../../figures/VTPowerConsumption.pdf>
+Package pdftex.def Info: ../../../figures/VTPowerConsumption.pdf  used on input
+ line 211.
+(pdftex.def)             Requested size: 162.18016pt x 111.6886pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [23
 
-]
-File: ../../figures/Wagenmeister.png Graphic file (type png)
-<use ../../figures/Wagenmeister.png>
-Package pdftex.def Info: ../../figures/Wagenmeister.png  used on input line 211
-.
-(pdftex.def)             Requested size: 95.6022pt x 150.69936pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 211.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/VTPowerConsumption.pdf>]
+<../../../figures/fxfyr.png, id=758, 443.6575pt x 345.29pt>
+File: ../../../figures/fxfyr.png Graphic file (type png)
+<use ../../../figures/fxfyr.png>
+Package pdftex.def Info: ../../../figures/fxfyr.png  used on input line 211.
+(pdftex.def)             Requested size: 162.18016pt x 126.21683pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 211.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [24
 
-]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 220.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/fxfyr.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 213.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [25
 
 ]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 245.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [26
 
-Package pdfpages Warning: Option `page' is unknow to \includepdf.
-(pdfpages)                Did you mean `pages'? (Note the `s'!)
-(pdfpages)                OK, I'll proceed as if it were `pages'.
+]
+File: ../../../figures/Wagenmeister.png Graphic file (type png)
+<use ../../../figures/Wagenmeister.png>
+Package pdftex.def Info: ../../../figures/Wagenmeister.png  used on input line 
+254.
+(pdftex.def)             Requested size: 122.9171pt x 193.75072pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 254.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [27
 
-<OCW/ML.pdf, id=736, 794.97pt x 614.295pt>
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf>
-Package pdftex.def Info: OCW/ML.pdf  used on input line 223.
-(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf>
-Package pdftex.def Info: OCW/ML.pdf  used on input line 223.
-(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-<OCW/ML.pdf, id=739, page=4, 794.97pt x 614.295pt>
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 4>
-Package pdftex.def Info: OCW/ML.pdf , page4 used on input line 223.
-(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 4>
-Package pdftex.def Info: OCW/ML.pdf , page4 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 4>
-Package pdftex.def Info: OCW/ML.pdf , page4 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 4>
-Package pdftex.def Info: OCW/ML.pdf , page4 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 4>
-Package pdftex.def Info: OCW/ML.pdf , page4 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-[26
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 307.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [28
 
- <./OCW/ML.pdf, page is rotated 90 degrees>]
-<OCW/ML.pdf, id=795, page=5, 794.97pt x 614.295pt>
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 5>
-Package pdftex.def Info: OCW/ML.pdf , page5 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 5>
-Package pdftex.def Info: OCW/ML.pdf , page5 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 5>
-Package pdftex.def Info: OCW/ML.pdf , page5 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
- [27 <./OCW/ML.pdf, page is rotated 90 degrees>]
-<OCW/ML.pdf, id=832, page=6, 794.97pt x 614.295pt>
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 6>
-Package pdftex.def Info: OCW/ML.pdf , page6 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 6>
-Package pdftex.def Info: OCW/ML.pdf , page6 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
-File: OCW/ML.pdf Graphic file (type pdf)
-<use OCW/ML.pdf, page 6>
-Package pdftex.def Info: OCW/ML.pdf , page6 used on input line 223.
-(pdftex.def)             Requested size: 353.6453pt x 273.27136pt.
- [28 <./OCW/ML.pdf, page is rotated 90 degrees>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 230.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [29]
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 309.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [29
 
-Package pdfpages Warning: Option `page' is unknow to \includepdf.
-(pdfpages)                Did you mean `pages'? (Note the `s'!)
-(pdfpages)                OK, I'll proceed as if it were `pages'.
+]
+<../../../figures/expectation-maximization.png, id=916, 1084.05pt x 289.08pt>
+File: ../../../figures/expectation-maximization.png Graphic file (type png)
+<use ../../../figures/expectation-maximization.png>
+Package pdftex.def Info: ../../../figures/expectation-maximization.png  used on
+ input line 348.
+(pdftex.def)             Requested size: 368.74506pt x 98.33pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 348.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [30
 
+ <../../../figures/expectation-maximization.png>]
+<../../../figures/PCAprocedure0.png, id=947, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure0.png Graphic file (type png)
+<use ../../../figures/PCAprocedure0.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure0.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=887, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf>
-Package pdftex.def Info: OCW/Clustering.pdf  used on input line 231.
-(pdftex.def)             Requested size: 722.69823pt x 542.02367pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[31
 
+ <../../../figures/PCAprocedure0.png>]
+<../../../figures/PCAprocedure1.png, id=978, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure1.png Graphic file (type png)
+<use ../../../figures/PCAprocedure1.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure1.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf>
-Package pdftex.def Info: OCW/Clustering.pdf  used on input line 231.
-(pdftex.def)             Requested size: 722.69823pt x 542.02367pt.
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[32
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
+ <../../../figures/PCAprocedure1.png>]
+<../../../figures/PCAprocedure2.png, id=1005, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure2.png Graphic file (type png)
+<use ../../../figures/PCAprocedure2.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure2.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=890, page=3, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 3>
-Package pdftex.def Info: OCW/Clustering.pdf , page3 used on input line 231.
-(pdftex.def)             Requested size: 722.69823pt x 542.02367pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 3>
-Package pdftex.def Info: OCW/Clustering.pdf , page3 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 3>
-Package pdftex.def Info: OCW/Clustering.pdf , page3 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 3>
-Package pdftex.def Info: OCW/Clustering.pdf , page3 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 3>
-Package pdftex.def Info: OCW/Clustering.pdf , page3 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[30
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[33
 
- <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedure2.png>]
+<../../../figures/PCAprocedure3.png, id=1032, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure3.png Graphic file (type png)
+<use ../../../figures/PCAprocedure3.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure3.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=943, page=4, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 4>
-Package pdftex.def Info: OCW/Clustering.pdf , page4 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 4>
-Package pdftex.def Info: OCW/Clustering.pdf , page4 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 4>
-Package pdftex.def Info: OCW/Clustering.pdf , page4 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[31 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=976, page=5, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 5>
-Package pdftex.def Info: OCW/Clustering.pdf , page5 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 5>
-Package pdftex.def Info: OCW/Clustering.pdf , page5 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 5>
-Package pdftex.def Info: OCW/Clustering.pdf , page5 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[32 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[34
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1002, page=6, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 6>
-Package pdftex.def Info: OCW/Clustering.pdf , page6 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 6>
-Package pdftex.def Info: OCW/Clustering.pdf , page6 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 6>
-Package pdftex.def Info: OCW/Clustering.pdf , page6 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[33 <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedure3.png>]
+<../../../figures/PCAprocedure4.png, id=1059, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure4.png Graphic file (type png)
+<use ../../../figures/PCAprocedure4.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure4.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1028, page=7, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 7>
-Package pdftex.def Info: OCW/Clustering.pdf , page7 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 7>
-Package pdftex.def Info: OCW/Clustering.pdf , page7 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 7>
-Package pdftex.def Info: OCW/Clustering.pdf , page7 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[34 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1054, page=8, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 8>
-Package pdftex.def Info: OCW/Clustering.pdf , page8 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 8>
-Package pdftex.def Info: OCW/Clustering.pdf , page8 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 8>
-Package pdftex.def Info: OCW/Clustering.pdf , page8 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[35 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[35
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1094, page=9, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 9>
-Package pdftex.def Info: OCW/Clustering.pdf , page9 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 9>
-Package pdftex.def Info: OCW/Clustering.pdf , page9 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 9>
-Package pdftex.def Info: OCW/Clustering.pdf , page9 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[36 <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedure4.png>]
+<../../../figures/PCAprocedure5.png, id=1086, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedure5.png Graphic file (type png)
+<use ../../../figures/PCAprocedure5.png>
+Package pdftex.def Info: ../../../figures/PCAprocedure5.png  used on input line
+ 360.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1120, page=10, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 10>
-Package pdftex.def Info: OCW/Clustering.pdf , page10 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 10>
-Package pdftex.def Info: OCW/Clustering.pdf , page10 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 10>
-Package pdftex.def Info: OCW/Clustering.pdf , page10 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[37 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 360
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1151, page=11, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 11>
-Package pdftex.def Info: OCW/Clustering.pdf , page11 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 11>
-Package pdftex.def Info: OCW/Clustering.pdf , page11 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 11>
-Package pdftex.def Info: OCW/Clustering.pdf , page11 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[38 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 360.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[36
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1183, page=12, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 12>
-Package pdftex.def Info: OCW/Clustering.pdf , page12 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 12>
-Package pdftex.def Info: OCW/Clustering.pdf , page12 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 12>
-Package pdftex.def Info: OCW/Clustering.pdf , page12 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[39 <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedure5.png>]
+<../../../figures/PCAprocedureFewCluster0.png, id=1112, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster0.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster0.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster0.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1212, page=13, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 13>
-Package pdftex.def Info: OCW/Clustering.pdf , page13 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 13>
-Package pdftex.def Info: OCW/Clustering.pdf , page13 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 13>
-Package pdftex.def Info: OCW/Clustering.pdf , page13 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[40 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1241, page=14, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 14>
-Package pdftex.def Info: OCW/Clustering.pdf , page14 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 14>
-Package pdftex.def Info: OCW/Clustering.pdf , page14 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 14>
-Package pdftex.def Info: OCW/Clustering.pdf , page14 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[41 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[37
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1270, page=15, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 15>
-Package pdftex.def Info: OCW/Clustering.pdf , page15 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 15>
-Package pdftex.def Info: OCW/Clustering.pdf , page15 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 15>
-Package pdftex.def Info: OCW/Clustering.pdf , page15 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[42 <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedureFewCluster0.png>]
+<../../../figures/PCAprocedureFewCluster1.png, id=1140, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster1.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster1.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster1.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1300, page=16, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 16>
-Package pdftex.def Info: OCW/Clustering.pdf , page16 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 16>
-Package pdftex.def Info: OCW/Clustering.pdf , page16 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 16>
-Package pdftex.def Info: OCW/Clustering.pdf , page16 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[43 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1330, page=17, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 17>
-Package pdftex.def Info: OCW/Clustering.pdf , page17 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 17>
-Package pdftex.def Info: OCW/Clustering.pdf , page17 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 17>
-Package pdftex.def Info: OCW/Clustering.pdf , page17 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[44 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[38
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1359, page=18, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 18>
-Package pdftex.def Info: OCW/Clustering.pdf , page18 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 18>
-Package pdftex.def Info: OCW/Clustering.pdf , page18 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 18>
-Package pdftex.def Info: OCW/Clustering.pdf , page18 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[45 <./OCW/Clustering.pdf>]
+ <../../../figures/PCAprocedureFewCluster1.png>]
+<../../../figures/PCAprocedureFewCluster2.png, id=1167, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster2.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster2.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster2.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1385, page=19, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 19>
-Package pdftex.def Info: OCW/Clustering.pdf , page19 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 19>
-Package pdftex.def Info: OCW/Clustering.pdf , page19 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 19>
-Package pdftex.def Info: OCW/Clustering.pdf , page19 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[46 <./OCW/Clustering.pdf>]
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1411, page=20, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 20>
-Package pdftex.def Info: OCW/Clustering.pdf , page20 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 20>
-Package pdftex.def Info: OCW/Clustering.pdf , page20 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 20>
-Package pdftex.def Info: OCW/Clustering.pdf , page20 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[47 <./OCW/Clustering.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[39
 
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/Clustering.pdf): PDF inclusion: found PDF version <1.6>, but at most version <
-1.5> allowed
-<OCW/Clustering.pdf, id=1441, page=21, 722.7pt x 542.025pt>
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 21>
-Package pdftex.def Info: OCW/Clustering.pdf , page21 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 21>
-Package pdftex.def Info: OCW/Clustering.pdf , page21 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-File: OCW/Clustering.pdf Graphic file (type pdf)
-<use OCW/Clustering.pdf, page 21>
-Package pdftex.def Info: OCW/Clustering.pdf , page21 used on input line 231.
-(pdftex.def)             Requested size: 364.20523pt x 273.15392pt.
-[48 <./OCW/Clustering.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 253.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [49]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 266.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+ <../../../figures/PCAprocedureFewCluster2.png>]
+<../../../figures/PCAprocedureFewCluster3.png, id=1195, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster3.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster3.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster3.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
+
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[40
+
+ <../../../figures/PCAprocedureFewCluster3.png>]
+<../../../figures/PCAprocedureFewCluster4.png, id=1222, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster4.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster4.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster4.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
+
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[41
+
+ <../../../figures/PCAprocedureFewCluster4.png>]
+<../../../figures/PCAprocedureFewCluster5.png, id=1248, 578.16pt x 433.62pt>
+File: ../../../figures/PCAprocedureFewCluster5.png Graphic file (type png)
+<use ../../../figures/PCAprocedureFewCluster5.png>
+Package pdftex.def Info: ../../../figures/PCAprocedureFewCluster5.png  used on 
+input line 372.
+(pdftex.def)             Requested size: 286.8024pt x 215.1024pt.
+
+Overfull \vbox (2.35406pt too high) detected at line 372
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 372.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[42
+
+ <../../../figures/PCAprocedureFewCluster5.png>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 376.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [43
+
+]
+<../../../figures/GaussianScatterPCA.png, id=1304, 251.4996pt x 365.08395pt>
+File: ../../../figures/GaussianScatterPCA.png Graphic file (type png)
+<use ../../../figures/GaussianScatterPCA.png>
+Package pdftex.def Info: ../../../figures/GaussianScatterPCA.png  used on input
+ line 406.
+(pdftex.def)             Requested size: 119.50278pt x 173.47795pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 406.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [44
+
+ <../../../figures/GaussianScatterPCA.png>]
+File: ../../../figures/GaussianScatterPCA.png Graphic file (type png)
+<use ../../../figures/GaussianScatterPCA.png>
+Package pdftex.def Info: ../../../figures/GaussianScatterPCA.png  used on input
+ line 406.
+(pdftex.def)             Requested size: 119.50278pt x 173.47795pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 406.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [45
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 410.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [46
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 590.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [47
+
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 590.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [48
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 594.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [49
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 614.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [50
 
 ]
-<../../figures/brakingcurvesND.pdf, id=1522, 289.08pt x 289.08pt>
-File: ../../figures/brakingcurvesND.pdf Graphic file (type pdf)
-<use ../../figures/brakingcurvesND.pdf>
-Package pdftex.def Info: ../../figures/brakingcurvesND.pdf  used on input line 
-285.
-(pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 285.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 627.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
  [51
 
- <../../figures/brakingcurvesND.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 388.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+]
+<../../../figures/brakingcurvesND.pdf, id=1516, 289.08pt x 289.08pt>
+File: ../../../figures/brakingcurvesND.pdf Graphic file (type pdf)
+<use ../../../figures/brakingcurvesND.pdf>
+Package pdftex.def Info: ../../../figures/brakingcurvesND.pdf  used on input li
+ne 646.
+(pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 646.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [52
 
-[52
+ <../../../figures/brakingcurvesND.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 742.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [53
 
 ]
-
-Package pdfpages Warning: Option `page' is unknow to \includepdf.
-(pdfpages)                Did you mean `pages'? (Note the `s'!)
-(pdfpages)                OK, I'll proceed as if it were `pages'.
-
-
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1595, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf>
-Package pdftex.def Info: OCW/PCA.pdf  used on input line 392.
-(pdftex.def)             Requested size: 364.19473pt x 273.14581pt.
-
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf>
-Package pdftex.def Info: OCW/PCA.pdf  used on input line 392.
-(pdftex.def)             Requested size: 364.19473pt x 273.14581pt.
-
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1598, page=2, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 2>
-Package pdftex.def Info: OCW/PCA.pdf , page2 used on input line 392.
-(pdftex.def)             Requested size: 364.19473pt x 273.14581pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 2>
-Package pdftex.def Info: OCW/PCA.pdf , page2 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 2>
-Package pdftex.def Info: OCW/PCA.pdf , page2 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 2>
-Package pdftex.def Info: OCW/PCA.pdf , page2 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 2>
-Package pdftex.def Info: OCW/PCA.pdf , page2 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[53
-
- <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1719, page=3, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 3>
-Package pdftex.def Info: OCW/PCA.pdf , page3 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 3>
-Package pdftex.def Info: OCW/PCA.pdf , page3 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 3>
-Package pdftex.def Info: OCW/PCA.pdf , page3 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[54 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1745, page=4, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 4>
-Package pdftex.def Info: OCW/PCA.pdf , page4 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 4>
-Package pdftex.def Info: OCW/PCA.pdf , page4 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 4>
-Package pdftex.def Info: OCW/PCA.pdf , page4 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[55 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1772, page=5, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 5>
-Package pdftex.def Info: OCW/PCA.pdf , page5 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 5>
-Package pdftex.def Info: OCW/PCA.pdf , page5 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 5>
-Package pdftex.def Info: OCW/PCA.pdf , page5 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[56 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1835, page=6, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 6>
-Package pdftex.def Info: OCW/PCA.pdf , page6 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 6>
-Package pdftex.def Info: OCW/PCA.pdf , page6 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 6>
-Package pdftex.def Info: OCW/PCA.pdf , page6 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[57 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1861, page=7, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 7>
-Package pdftex.def Info: OCW/PCA.pdf , page7 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 7>
-Package pdftex.def Info: OCW/PCA.pdf , page7 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 7>
-Package pdftex.def Info: OCW/PCA.pdf , page7 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[58 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1887, page=8, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 8>
-Package pdftex.def Info: OCW/PCA.pdf , page8 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 8>
-Package pdftex.def Info: OCW/PCA.pdf , page8 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 8>
-Package pdftex.def Info: OCW/PCA.pdf , page8 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[59 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1919, page=9, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 9>
-Package pdftex.def Info: OCW/PCA.pdf , page9 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 9>
-Package pdftex.def Info: OCW/PCA.pdf , page9 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 9>
-Package pdftex.def Info: OCW/PCA.pdf , page9 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[60 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1952, page=10, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 10>
-Package pdftex.def Info: OCW/PCA.pdf , page10 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 10>
-Package pdftex.def Info: OCW/PCA.pdf , page10 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 10>
-Package pdftex.def Info: OCW/PCA.pdf , page10 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[61 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=1979, page=11, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 11>
-Package pdftex.def Info: OCW/PCA.pdf , page11 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 11>
-Package pdftex.def Info: OCW/PCA.pdf , page11 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 11>
-Package pdftex.def Info: OCW/PCA.pdf , page11 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[62 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=2023, page=12, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 12>
-Package pdftex.def Info: OCW/PCA.pdf , page12 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 12>
-Package pdftex.def Info: OCW/PCA.pdf , page12 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 12>
-Package pdftex.def Info: OCW/PCA.pdf , page12 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[63 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=2050, page=13, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 13>
-Package pdftex.def Info: OCW/PCA.pdf , page13 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 13>
-Package pdftex.def Info: OCW/PCA.pdf , page13 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 13>
-Package pdftex.def Info: OCW/PCA.pdf , page13 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[64 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=2076, page=14, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 14>
-Package pdftex.def Info: OCW/PCA.pdf , page14 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 14>
-Package pdftex.def Info: OCW/PCA.pdf , page14 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 14>
-Package pdftex.def Info: OCW/PCA.pdf , page14 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[65 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=2117, page=15, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 15>
-Package pdftex.def Info: OCW/PCA.pdf , page15 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 15>
-Package pdftex.def Info: OCW/PCA.pdf , page15 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 15>
-Package pdftex.def Info: OCW/PCA.pdf , page15 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[66 <./OCW/PCA.pdf>]
-
-pdfTeX warning: /Library/TeX/Distributions/Programs/texbin/pdflatex (file ./OCW
-/PCA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
-lowed
-<OCW/PCA.pdf, id=2143, page=16, 364.19562pt x 273.14648pt>
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 16>
-Package pdftex.def Info: OCW/PCA.pdf , page16 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 16>
-Package pdftex.def Info: OCW/PCA.pdf , page16 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-File: OCW/PCA.pdf Graphic file (type pdf)
-<use OCW/PCA.pdf, page 16>
-Package pdftex.def Info: OCW/PCA.pdf , page16 used on input line 392.
-(pdftex.def)             Requested size: 364.38922pt x 273.29169pt.
-[67 <./OCW/PCA.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 577.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [68]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 577.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [69
-
-]
-Overfull \hbox (31.69868pt too wide) in paragraph at lines 616--616
+Overfull \hbox (31.69868pt too wide) in paragraph at lines 777--777
  [] 
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 616.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[70
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 777.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[54
 
 ]
-File: ../../figures/Wagenmeister.png Graphic file (type png)
-<use ../../figures/Wagenmeister.png>
-Package pdftex.def Info: ../../figures/Wagenmeister.png  used on input line 624
-.
-(pdftex.def)             Requested size: 95.6022pt x 150.69936pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 624.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [71
+File: ../../../figures/Wagenmeister.png Graphic file (type png)
+<use ../../../figures/Wagenmeister.png>
+Package pdftex.def Info: ../../../figures/Wagenmeister.png  used on input line 
+785.
+(pdftex.def)             Requested size: 122.9171pt x 193.75072pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 785.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [55
 
 ]) (./parts/part2.tex
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 9.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [72
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 9.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [56
 
 ]
-
-LaTeX Warning: Citation `pfeifer10' on page 73 undefined on input line 36.
-
-
 Underfull \hbox (badness 5231) in paragraph at lines 36--36
 []\OT1/cmss/m/it/10 [...] Ober-be-griff f[]ur al-le
  []
@@ -2590,184 +2304,188 @@ Underfull \hbox (badness 2401) in paragraph at lines 36--36
 \OT1/cmss/m/it/10 ver-bun-de-nen T[]atigkeiten, die
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 36.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[73
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 36.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[57
 
 ]
-<../../figures/Fehlerbehebung.pdf, id=2335, 397.00319pt x 316.0608pt>
-File: ../../figures/Fehlerbehebung.pdf Graphic file (type pdf)
-<use ../../figures/Fehlerbehebung.pdf>
-Package pdftex.def Info: ../../figures/Fehlerbehebung.pdf  used on input line 6
-3.
+<../../../figures/Fehlerbehebung.pdf, id=1694, 397.00319pt x 316.0608pt>
+File: ../../../figures/Fehlerbehebung.pdf Graphic file (type pdf)
+<use ../../../figures/Fehlerbehebung.pdf>
+Package pdftex.def Info: ../../../figures/Fehlerbehebung.pdf  used on input lin
+e 63.
 (pdftex.def)             Requested size: 153.64381pt x 122.31796pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 63.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [74
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 63.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [58
 
- <../../figures/Fehlerbehebung.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 91.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [75
+ <../../../figures/Fehlerbehebung.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 91.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [59
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 210.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [76
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 210.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [60
 
 ]) (./parts/part3.tex
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 620.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 620.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
 
-[77
+[61
 
 ]
-<../../figures/hist2.pdf, id=2447, 329.55121pt x 446.1468pt>
-File: ../../figures/hist2.pdf Graphic file (type pdf)
-<use ../../figures/hist2.pdf>
-Package pdftex.def Info: ../../figures/hist2.pdf  used on input line 656.
+<../../../figures/hist2.pdf, id=1806, 329.55121pt x 446.1468pt>
+File: ../../../figures/hist2.pdf Graphic file (type pdf)
+<use ../../../figures/hist2.pdf>
+Package pdftex.def Info: ../../../figures/hist2.pdf  used on input line 656.
 (pdftex.def)             Requested size: 128.03653pt x 173.33621pt.
 
-Overfull \vbox (100.96048pt too high) detected at line 656
+Overfull \vbox (118.0323pt too high) detected at line 656
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 656.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[78
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 656.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[62
 
- <../../figures/hist2.pdf>]
-<../../figures/cont.pdf, id=2480, 401.5pt x 501.875pt>
-File: ../../figures/cont.pdf Graphic file (type pdf)
-<use ../../figures/cont.pdf>
-Package pdftex.def Info: ../../figures/cont.pdf  used on input line 675.
+ <../../../figures/hist2.pdf>]
+<../../../figures/cont.pdf, id=1839, 401.5pt x 501.875pt>
+File: ../../../figures/cont.pdf Graphic file (type pdf)
+<use ../../../figures/cont.pdf>
+Package pdftex.def Info: ../../../figures/cont.pdf  used on input line 675.
 (pdftex.def)             Requested size: 135.15015pt x 168.94283pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 675.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [79
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 675.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [63
 
- <../../figures/cont.pdf>]
-<../../figures/poisson.pdf, id=2513, 401.5pt x 501.875pt>
-File: ../../figures/poisson.pdf Graphic file (type pdf)
-<use ../../figures/poisson.pdf>
-Package pdftex.def Info: ../../figures/poisson.pdf  used on input line 700.
+ <../../../figures/cont.pdf>]
+<../../../figures/poisson.pdf, id=1871, 401.5pt x 501.875pt>
+File: ../../../figures/poisson.pdf Graphic file (type pdf)
+<use ../../../figures/poisson.pdf>
+Package pdftex.def Info: ../../../figures/poisson.pdf  used on input line 700.
 (pdftex.def)             Requested size: 135.15015pt x 168.94283pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 700.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [80
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 700.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [64
 
- <../../figures/poisson.pdf>]
-File: ../../figures/cont.pdf Graphic file (type pdf)
-<use ../../figures/cont.pdf>
-Package pdftex.def Info: ../../figures/cont.pdf  used on input line 723.
+ <../../../figures/poisson.pdf>]
+File: ../../../figures/cont.pdf Graphic file (type pdf)
+<use ../../../figures/cont.pdf>
+Package pdftex.def Info: ../../../figures/cont.pdf  used on input line 723.
 (pdftex.def)             Requested size: 135.15015pt x 168.94283pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 723.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [81
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 723.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [65
 
 ]
-Package epstopdf Info: Source file: <../../figures/ZentralerGWS.eps>
+Package epstopdf Info: Source file: <../../../figures/ZentralerGWS.eps>
 (epstopdf)                    date: 2014-10-14 22:01:39
 (epstopdf)                    size: 58412 bytes
-(epstopdf)             Output file: <../../figures/ZentralerGWS-eps-converted-t
-o.pdf>
+(epstopdf)             Output file: <../../../figures/ZentralerGWS-eps-converte
+d-to.pdf>
 (epstopdf)                    date: 2015-01-06 08:28:19
 (epstopdf)                    size: 5461 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/ZentralerGWS
--eps-converted-to.pdf ../../figures/ZentralerGWS.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/Zentraler
+GWS-eps-converted-to.pdf ../../../figures/ZentralerGWS.eps>
 (epstopdf)             \includegraphics on input line 902.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/ZentralerGWS-eps-converted-to.pdf, id=2569, 200.75pt x 150.5625p
-t>
-File: ../../figures/ZentralerGWS-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/ZentralerGWS-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/ZentralerGWS-eps-converted-to.pdf  used 
-on input line 902.
+<../../../figures/ZentralerGWS-eps-converted-to.pdf, id=1927, 200.75pt x 150.56
+25pt>
+File: ../../../figures/ZentralerGWS-eps-converted-to.pdf Graphic file (type pdf
+)
+<use ../../../figures/ZentralerGWS-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/ZentralerGWS-eps-converted-to.pdf  us
+ed on input line 902.
 (pdftex.def)             Requested size: 200.7495pt x 150.56212pt.
 
 Overfull \hbox (5.7645pt too wide) in paragraph at lines 902--902
  [] 
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 902.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[82
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 902.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[66
 
- <../../figures/ZentralerGWS-eps-converted-to.pdf>]
-<../../figures/gaussian.pdf, id=2599, 401.5pt x 501.875pt>
-File: ../../figures/gaussian.pdf Graphic file (type pdf)
-<use ../../figures/gaussian.pdf>
-Package pdftex.def Info: ../../figures/gaussian.pdf  used on input line 953.
+ <../../../figures/ZentralerGWS-eps-converted-to.pdf>]
+<../../../figures/gaussian.pdf, id=1957, 401.5pt x 501.875pt>
+File: ../../../figures/gaussian.pdf Graphic file (type pdf)
+<use ../../../figures/gaussian.pdf>
+Package pdftex.def Info: ../../../figures/gaussian.pdf  used on input line 953.
+
 (pdftex.def)             Requested size: 135.15015pt x 168.94283pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 953.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [83
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 953.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [67
 
- <../../figures/gaussian.pdf>]
-Package epstopdf Info: Source file: <../../figures/cont2.eps>
+ <../../../figures/gaussian.pdf>]
+Package epstopdf Info: Source file: <../../../figures/cont2.eps>
 (epstopdf)                    date: 2014-10-16 18:32:22
 (epstopdf)                    size: 23049 bytes
-(epstopdf)             Output file: <../../figures/cont2-eps-converted-to.pdf>
+(epstopdf)             Output file: <../../../figures/cont2-eps-converted-to.pd
+f>
 (epstopdf)                    date: 2015-01-06 08:39:29
 (epstopdf)                    size: 3802 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/cont2-eps-co
-nverted-to.pdf ../../figures/cont2.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/cont2-eps
+-converted-to.pdf ../../../figures/cont2.eps>
 (epstopdf)             \includegraphics on input line 1016.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/cont2-eps-converted-to.pdf, id=2631, 401.5pt x 200.75pt>
-File: ../../figures/cont2-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/cont2-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/cont2-eps-converted-to.pdf  used on inpu
-t line 1016.
+<../../../figures/cont2-eps-converted-to.pdf, id=1990, 401.5pt x 200.75pt>
+File: ../../../figures/cont2-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/cont2-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/cont2-eps-converted-to.pdf  used on i
+nput line 1016.
 (pdftex.def)             Requested size: 161.00148pt x 80.50073pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 1016.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [84
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 1016.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [68
 
- <../../figures/cont2-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <../../figures/cont2.eps>
+ <../../../figures/cont2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../../../figures/cont2.eps>
 (epstopdf)                    date: 2014-10-16 18:32:22
 (epstopdf)                    size: 23049 bytes
-(epstopdf)             Output file: <../../figures/cont2-eps-converted-to.pdf>
+(epstopdf)             Output file: <../../../figures/cont2-eps-converted-to.pd
+f>
 (epstopdf)                    date: 2015-01-06 08:39:29
 (epstopdf)                    size: 3802 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/cont2-eps-co
-nverted-to.pdf ../../figures/cont2.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/cont2-eps
+-converted-to.pdf ../../../figures/cont2.eps>
 (epstopdf)             \includegraphics on input line 1050.
 Package epstopdf Info: Output file is already uptodate.
-File: ../../figures/cont2-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/cont2-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/cont2-eps-converted-to.pdf  used on inpu
-t line 1050.
+File: ../../../figures/cont2-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/cont2-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/cont2-eps-converted-to.pdf  used on i
+nput line 1050.
 (pdftex.def)             Requested size: 321.20042pt x 160.6002pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 1050.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [85
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 1050.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [69
 
 ]
 Overfull \hbox (1.2808pt too wide) detected at line 1110
@@ -2775,21 +2493,22 @@ Overfull \hbox (1.2808pt too wide) detected at line 1110
 ][]
  []
 
-Package epstopdf Info: Source file: <../../figures/cont3.eps>
+Package epstopdf Info: Source file: <../../../figures/cont3.eps>
 (epstopdf)                    date: 2014-10-20 18:24:59
 (epstopdf)                    size: 25827 bytes
-(epstopdf)             Output file: <../../figures/cont3-eps-converted-to.pdf>
+(epstopdf)             Output file: <../../../figures/cont3-eps-converted-to.pd
+f>
 (epstopdf)                    date: 2015-01-06 08:39:30
 (epstopdf)                    size: 5054 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/cont3-eps-co
-nverted-to.pdf ../../figures/cont3.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/cont3-eps
+-converted-to.pdf ../../../figures/cont3.eps>
 (epstopdf)             \includegraphics on input line 1110.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/cont3-eps-converted-to.pdf, id=2690, 301.125pt x 401.5pt>
-File: ../../figures/cont3-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/cont3-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/cont3-eps-converted-to.pdf  used on inpu
-t line 1110.
+<../../../figures/cont3-eps-converted-to.pdf, id=2048, 301.125pt x 401.5pt>
+File: ../../../figures/cont3-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/cont3-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/cont3-eps-converted-to.pdf  used on i
+nput line 1110.
 (pdftex.def)             Requested size: 168.62885pt x 224.83846pt.
 
 Overfull \hbox (26.2848pt too wide) in paragraph at lines 1110--1110
@@ -2797,174 +2516,181 @@ Overfull \hbox (26.2848pt too wide) in paragraph at lines 1110--1110
  []
 
 
-Overfull \vbox (6.91129pt too high) detected at line 1110
+Overfull \vbox (23.98311pt too high) detected at line 1110
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 1110.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[86
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 1110.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[70
 
- <../../figures/cont3-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <../../figures/cont4.eps>
+ <../../../figures/cont3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../../../figures/cont4.eps>
 (epstopdf)                    date: 2014-10-20 18:49:03
 (epstopdf)                    size: 22287 bytes
-(epstopdf)             Output file: <../../figures/cont4-eps-converted-to.pdf>
+(epstopdf)             Output file: <../../../figures/cont4-eps-converted-to.pd
+f>
 (epstopdf)                    date: 2015-01-06 08:39:32
 (epstopdf)                    size: 3954 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/cont4-eps-co
-nverted-to.pdf ../../figures/cont4.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/cont4-eps
+-converted-to.pdf ../../../figures/cont4.eps>
 (epstopdf)             \includegraphics on input line 1147.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/cont4-eps-converted-to.pdf, id=2718, 301.125pt x 301.125pt>
-File: ../../figures/cont4-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/cont4-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/cont4-eps-converted-to.pdf  used on inpu
-t line 1147.
+<../../../figures/cont4-eps-converted-to.pdf, id=2076, 301.125pt x 301.125pt>
+File: ../../../figures/cont4-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/cont4-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/cont4-eps-converted-to.pdf  used on i
+nput line 1147.
 (pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
 
 Overfull \hbox (8.24892pt too wide) in paragraph at lines 1147--1147
  [] 
  []
 
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 1147.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[87
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 1147.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[71
 
- <../../figures/cont4-eps-converted-to.pdf>]
-<../../figures/Toleranzfeld.png, id=2747, 1364.09625pt x 687.56876pt>
-File: ../../figures/Toleranzfeld.png Graphic file (type png)
-<use ../../figures/Toleranzfeld.png>
-Package pdftex.def Info: ../../figures/Toleranzfeld.png  used on input line 116
-5.
-(pdftex.def)             Requested size: 223.06857pt x 112.43677pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 1165.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [88
+ <../../../figures/cont4-eps-converted-to.pdf>]
+<../../../figures/Toleranzfeld.png, id=2105, 1364.09625pt x 687.56876pt>
+File: ../../../figures/Toleranzfeld.png Graphic file (type png)
+<use ../../../figures/Toleranzfeld.png>
+Package pdftex.def Info: ../../../figures/Toleranzfeld.png  used on input line 
+1165.
+(pdftex.def)             Requested size: 286.8024pt x 144.56155pt.
 
- <../../figures/Toleranzfeld.png>]) (./parts/part4.tex
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 3.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [89
+Overfull \vbox (6.14655pt too high) detected at line 1165
+ []
+
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 1165.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+[72
+
+ <../../../figures/Toleranzfeld.png>]) (./parts/part4.tex
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 3.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [73
 
 ]
-<../../figures/Messfehler.pdf, id=2800, 418.4433pt x 466.1415pt>
-File: ../../figures/Messfehler.pdf Graphic file (type pdf)
-<use ../../figures/Messfehler.pdf>
-Package pdftex.def Info: ../../figures/Messfehler.pdf  used on input line 37.
+<../../../figures/Messfehler.pdf, id=2158, 418.4433pt x 466.1415pt>
+File: ../../../figures/Messfehler.pdf Graphic file (type pdf)
+<use ../../../figures/Messfehler.pdf>
+Package pdftex.def Info: ../../../figures/Messfehler.pdf  used on input line 37
+.
 (pdftex.def)             Requested size: 106.69783pt x 118.86095pt.
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 37.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [90
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 37.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [74
 
- <../../figures/Messfehler.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 186.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [91
-
-]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 218.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-
-[92
+ <../../../figures/Messfehler.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 186.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [75
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 256.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [93
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 218.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [76
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 300.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [94
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 256.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [77
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 300.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [78
 
 ]
 \openout2 = `MCIntro.aux'.
 
  (./MCIntro.tex
-Package epstopdf Info: Source file: <../../figures/MCIntro.eps>
+Package epstopdf Info: Source file: <../../../figures/MCIntro.eps>
 (epstopdf)                    date: 2014-11-14 16:48:07
 (epstopdf)                    size: 37317 bytes
-(epstopdf)             Output file: <../../figures/MCIntro-eps-converted-to.pdf
->
+(epstopdf)             Output file: <../../../figures/MCIntro-eps-converted-to.
+pdf>
 (epstopdf)                    date: 2015-08-27 18:02:32
 (epstopdf)                    size: 4136 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/MCIntro-eps-
-converted-to.pdf ../../figures/MCIntro.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/MCIntro-e
+ps-converted-to.pdf ../../../figures/MCIntro.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/MCIntro-eps-converted-to.pdf, id=2937, 170.6375pt x 200.75pt>
-File: ../../figures/MCIntro-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/MCIntro-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/MCIntro-eps-converted-to.pdf  used on in
-put line 172.
+<../../../figures/MCIntro-eps-converted-to.pdf, id=2295, 170.6375pt x 200.75pt>
+
+File: ../../../figures/MCIntro-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/MCIntro-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/MCIntro-eps-converted-to.pdf  used on
+ input line 172.
 (pdftex.def)             Requested size: 170.63707pt x 200.7495pt.
 )
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 402.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [95
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 402.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [79
 
 
 
- <../../figures/MCIntro-eps-converted-to.pdf>]
+ <../../../figures/MCIntro-eps-converted-to.pdf>]
 \openout2 = `MCIntro.aux'.
 
  (./MCIntro.tex
-Package epstopdf Info: Source file: <../../figures/MCIntro.eps>
+Package epstopdf Info: Source file: <../../../figures/MCIntro.eps>
 (epstopdf)                    date: 2014-11-14 16:48:07
 (epstopdf)                    size: 37317 bytes
-(epstopdf)             Output file: <../../figures/MCIntro-eps-converted-to.pdf
->
+(epstopdf)             Output file: <../../../figures/MCIntro-eps-converted-to.
+pdf>
 (epstopdf)                    date: 2015-08-27 18:02:32
 (epstopdf)                    size: 4136 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/MCIntro-eps-
-converted-to.pdf ../../figures/MCIntro.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/MCIntro-e
+ps-converted-to.pdf ../../../figures/MCIntro.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
-File: ../../figures/MCIntro-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/MCIntro-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/MCIntro-eps-converted-to.pdf  used on in
-put line 172.
+File: ../../../figures/MCIntro-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/MCIntro-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/MCIntro-eps-converted-to.pdf  used on
+ input line 172.
 (pdftex.def)             Requested size: 170.63707pt x 200.7495pt.
 )
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 433.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [96
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 433.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [80
 
 
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 457.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [97
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 457.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [81
 
 ]
 \openout2 = `Federspeicher.aux'.
 
- (./Federspeicher.tex)
+
+(./Federspeicher.tex)
 Overfull \hbox (9.31947pt too wide) detected at line 485
 []
  []
@@ -2975,133 +2701,124 @@ Overfull \hbox (20.00003pt too wide) detected at line 485
  []
 
 (./MCExample.tex
-Package epstopdf Info: Source file: <../../figures/MCExample.eps>
+Package epstopdf Info: Source file: <../../../figures/MCExample.eps>
 (epstopdf)                    date: 2014-11-14 21:34:44
 (epstopdf)                    size: 51721 bytes
-(epstopdf)             Output file: <../../figures/MCExample-eps-converted-to.p
-df>
+(epstopdf)             Output file: <../../../figures/MCExample-eps-converted-t
+o.pdf>
 (epstopdf)                    date: 2015-08-27 17:59:49
 (epstopdf)                    size: 5071 bytes
-(epstopdf)             Command: <repstopdf --outfile=../../figures/MCExample-ep
-s-converted-to.pdf ../../figures/MCExample.eps>
+(epstopdf)             Command: <repstopdf --outfile=../../../figures/MCExample
+-eps-converted-to.pdf ../../../figures/MCExample.eps>
 (epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
-<../../figures/MCExample-eps-converted-to.pdf, id=3018, 170.6375pt x 200.75pt>
-File: ../../figures/MCExample-eps-converted-to.pdf Graphic file (type pdf)
-<use ../../figures/MCExample-eps-converted-to.pdf>
-Package pdftex.def Info: ../../figures/MCExample-eps-converted-to.pdf  used on 
-input line 248.
+<../../../figures/MCExample-eps-converted-to.pdf, id=2375, 170.6375pt x 200.75p
+t>
+File: ../../../figures/MCExample-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../figures/MCExample-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../figures/MCExample-eps-converted-to.pdf  used 
+on input line 248.
 (pdftex.def)             Requested size: 170.63707pt x 200.7495pt.
 )
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 485.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [98
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 485.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [82
 
 
 
- <../../figures/MCExample-eps-converted-to.pdf>]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 507.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [99
+ <../../../figures/MCExample-eps-converted-to.pdf>]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 507.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
 
-]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 536.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-
-[100
+[83
 
 ]
-Overfull \hbox (21.32921pt too wide) in paragraph at lines 586--586
-[][]  
- []
-
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 586.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[101
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 536.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [84
 
 ]
-
-LaTeX Warning: Citation `en13005' on page 102 undefined on input line 604.
-
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 604.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
-[102
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 586.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [85
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 627.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [103
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 604.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [86
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 653.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [104
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 627.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [87
+
+]
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 653.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [88
 
 ]) (./parts/part5.tex) (./parts/part6.tex)
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 133.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [105
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 207.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [89
 
 ]
 (./parts/manufacturingdata.tex
 \openout2 = `Federspeicher.aux'.
 
  (./Federspeicher.tex)
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 8.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [106
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 8.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [90
 
 
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 31.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [107
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 31.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [91
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 50.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [108
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 50.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [92
 
 ]
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 70.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [109
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 70.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [93
 
 ])
-
-LaTeX Warning: Citation `pfeifer10' undefined on input line 148.
-
 (./ifWorkshopQuality.bbl)
-File: ../../figures/logo.jpg Graphic file (type jpg)
-<use ../../figures/logo.jpg>
-Package pdftex.def Info: ../../figures/logo.jpg  used on input line 155.
-(pdftex.def)             Requested size: 17.07182pt x 57.72836pt.
- [110
+File: ../../../figures/logoR.pdf Graphic file (type pdf)
+<use ../../../figures/logoR.pdf>
+Package pdftex.def Info: ../../../figures/logoR.pdf  used on input line 229.
+(pdftex.def)             Requested size: 39.83368pt x 59.96907pt.
+ [94
 
 ]
 \tf@nav=\write6
@@ -3113,83 +2830,69 @@ Package pdftex.def Info: ../../figures/logo.jpg  used on input line 155.
 \tf@snm=\write8
 \openout8 = `ifWorkshopQuality.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (./ifWorkshopQuality.aux (./MCIntro.aux)
 (./MCIntro.aux) (./Federspeicher.aux) (./Federspeicher.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package rerunfilecheck Info: File `ifWorkshopQuality.out' has not changed.
+(rerunfilecheck)             Checksum: 79702C333512433BC5A8685D8672158C;920.
 
-
-Package rerunfilecheck Warning: File `ifWorkshopQuality.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ifWorkshopQuality.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  51086F5902A09D59288790334E108F96;384.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 38855 strings out of 492649
- 927958 string characters out of 6129622
- 1204179 words of memory out of 5000000
- 41642 multiletter control sequences out of 15000+600000
- 23173 words of font info for 86 fonts, out of 8000000 for 9000
+ 47238 strings out of 492649
+ 1105129 string characters out of 6129622
+ 1357892 words of memory out of 5000000
+ 50014 multiletter control sequences out of 15000+600000
+ 550618 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,21n,138p,801b,2795s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,21n,138p,10389b,2792s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-doublestroke/dsrom10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msam5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ifWorkshopQuality.pdf (110 pages, 2160809 bytes).
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam5.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ifWorkshopQuality.pdf (94 pages, 15657732 bytes).
 PDF statistics:
- 3507 PDF objects out of 3580 (max. 8388607)
- 3104 compressed objects within 32 object streams
- 241 named destinations out of 1000 (max. 500000)
- 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2877 PDF objects out of 2984 (max. 8388607)
+ 2592 compressed objects within 26 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 455 words of extra memory for PDF output out of 10000 (max. 10000000)
 

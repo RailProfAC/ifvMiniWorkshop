@@ -1,4 +1,4 @@
-\documentclass[10pt,slidestop,compress,mathserif]{beamer}
+\documentclass[10pt,slidestop,compress,mathserif, aspectratio = 169]{beamer}
 \usepackage{etex}
 %\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2
 %\usetheme{Singapore} % Beamer theme v 3.0
@@ -9,6 +9,7 @@
 \useinnertheme{rectangles}
 %\usepackage{bibentry}
 \usepackage{graphicx}
+\usepackage{xparse}
 \usepackage{epigraph}
 \usepackage{makeidx}
 \usepackage[]{amsmath}
@@ -31,23 +32,96 @@
 \usetikzlibrary{arrows}
 \usetikzlibrary{graphs, automata, spy, positioning}
 \usetikzlibrary{shapes.gates.logic.US,trees}
+\usetikzlibrary{shadows}
 \usepackage{colortbl}
 \usepackage{array}
 \usepackage{listings}
 \usepackage{pdfpages}
 \pgfplotsset{width=6cm}
 
-
+%Bunt und in Farbe!
 \definecolor{RYB1}{RGB}{240,249,232}
 \definecolor{RYB2}{RGB}{186,228,188}
 \definecolor{RYB3}{RGB}{123,204,196}
 \definecolor{RYB4}{RGB}{67,162,202}
 \definecolor{RYB5}{RGB}{18,104,172}
 
+\definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+\definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
 \definecolor{blue}{rgb}{0,0,1}
 \definecolor{mint}{cmyk}{75,0,40,0}
 \definecolor{mint}{rgb}{32,178,170}
-\graphicspath{{../../figures/}}
+\definecolor{myyellow}{RGB}{242,226,149}
+
+\makeatletter
+\pgfdeclareshape{document}{
+\inheritsavedanchors[from=rectangle] % this is nearly a rectangle
+\inheritanchorborder[from=rectangle]
+\inheritanchor[from=rectangle]{center}
+\inheritanchor[from=rectangle]{north}
+\inheritanchor[from=rectangle]{south}
+\inheritanchor[from=rectangle]{west}
+\inheritanchor[from=rectangle]{east}
+% ... and possibly more
+\backgroundpath{% this is new
+% store lower right in xa/ya and upper right in xb/yb
+\southwest \pgf@xa=\pgf@x \pgf@ya=\pgf@y
+\northeast \pgf@xb=\pgf@x \pgf@yb=\pgf@y
+% compute corner of ‘‘flipped page’’
+\pgf@xc=\pgf@xb \advance\pgf@xc by-10pt % this should be a parameter
+\pgf@yc=\pgf@yb \advance\pgf@yc by-10pt
+% construct main path
+\pgfpathmoveto{\pgfpoint{\pgf@xa}{\pgf@ya}}
+\pgfpathlineto{\pgfpoint{\pgf@xa}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{\pgf@xc}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{\pgf@xb}{\pgf@yc}}
+\pgfpathlineto{\pgfpoint{\pgf@xb}{\pgf@ya}}
+\pgfpathclose
+% add little corner
+\pgfpathmoveto{\pgfpoint{\pgf@xc}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{\pgf@xc}{\pgf@yc}}
+\pgfpathlineto{\pgfpoint{\pgf@xb}{\pgf@yc}}
+\pgfpathlineto{\pgfpoint{\pgf@xc}{\pgf@yc}}
+}
+}
+\makeatother
+
+\NewDocumentCommand\StickyNote{O{4.5cm}mO{4.5cm}}{%
+\begin{tikzpicture}
+\node[
+document,
+draw,
+drop shadow={
+  shadow xshift=2pt,
+  shadow yshift=-4pt
+},
+inner xsep=7pt,
+fill=myyellow,
+xslant=-0.1,
+yslant=0.1,
+inner ysep=10pt
+] {\parbox[t][#1][t]{#3}{#2}};
+\end{tikzpicture}%
+}
+
+\NewDocumentCommand\StickyNotePi{O{4.5cm}mO{4.5cm}}{%
+\begin{tikzpicture}
+\node[
+document,
+draw,
+fill=myyellow,
+inner xsep=10pt,
+xslant=-0.1,
+yslant=0.1,
+inner ysep=0pt,
+text depth=\the\dimexpr#1+2.5ex\relax
+] {\parbox[t][#1][c]{#3}{#2}};
+\end{tikzpicture}%
+}
+
+
+\graphicspath{{../../../figures/}}
 
 \mode<handout>{
 \usepackage{pgfpages}
@@ -56,8 +130,8 @@
 
 \AtBeginSection{\frame{\sectionpage}}
 \AtBeginSubsection{\frame{\subsectionpage}}
-\newtranslation[to=ngerman]{Section}{Teil}
-\newtranslation[to=ngerman]{Subsection}{Abschnitt}
+%\newtranslation[to=ngerman]{Section}{Teil}
+%\newtranslation[to=ngerman]{Subsection}{Abschnitt}
 
 \setbeamersize{text margin left=.8cm, text margin right=.8cm}
 
@@ -97,8 +171,8 @@
 %\subtitle{im Produktlebenszyklus mechatronischer Produkte}
 \author[R. Pfaff]{Prof. Dr. Raphael Pfaff}
 \institute[\jobname]{Fachhochschule Aachen}
-\logo{\put(-362, 0){\includegraphics[width=0.6cm]{logo.jpg}}}
-\date{\includegraphics[width = 4cm]{by-nc-saeu}}
+\logo{\put(-18, 170){\includegraphics[width=1.4cm]{logoR}}}
+\date{\today}
 \begin{frame} % Cover slide
 \titlepage
 \end{frame}
